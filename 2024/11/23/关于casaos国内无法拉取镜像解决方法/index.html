@@ -1,0 +1,398 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>萌萌猫的小破站 | 萌萌猫的小破站</title><meta name="author" content="萌萌猫"><meta name="copyright" content="萌萌猫"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="关于casaos国内无法拉取镜像解决方法 | fishcpy blog开启JavaScript才能访问本站哦~console.log(&#39; %c Solitude %c &#39; + &#39;2.0.13&#39; + &#39; %c https:&#x2F;&#x2F;github.com&#x2F;everfu&#x2F;hexo-theme-solitude&#39;,     &#39;background:#35495e ; padding: 1px; border-r">
+<meta property="og:type" content="article">
+<meta property="og:title" content="萌萌猫的小破站">
+<meta property="og:url" content="https://blog.mengmengmao.cn/2024/11/23/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="萌萌猫的小破站">
+<meta property="og:description" content="关于casaos国内无法拉取镜像解决方法 | fishcpy blog开启JavaScript才能访问本站哦~console.log(&#39; %c Solitude %c &#39; + &#39;2.0.13&#39; + &#39; %c https:&#x2F;&#x2F;github.com&#x2F;everfu&#x2F;hexo-theme-solitude&#39;,     &#39;background:#35495e ; padding: 1px; border-r">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.mengmengmao.cn/img/%E5%B0%81%E9%9D%A2%E8%BF%98%E6%B2%A1%E6%83%B3%E5%A5%BD--%E8%90%8C%E8%90%8C%E7%8C%AB.png">
+<meta property="article:published_time" content="2024-11-23T14:37:10.043Z">
+<meta property="article:modified_time" content="2024-11-24T10:31:31.543Z">
+<meta property="article:author" content="萌萌猫">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.mengmengmao.cn/img/%E5%B0%81%E9%9D%A2%E8%BF%98%E6%B2%A1%E6%83%B3%E5%A5%BD--%E8%90%8C%E8%90%8C%E7%8C%AB.png"><link rel="shortcut icon" href="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png"><link rel="canonical" href="https://blog.mengmengmao.cn/2024/11/23/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/null"/><link rel="icon" type="image/png" sizes="32x32" href="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png"/><link rel="mask-icon" href="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '萌萌猫的小破站',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script></head><body><div id="web_bg" style="background-image: url(/img/背景图.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/封面还没想好--萌萌猫.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png" alt="Logo"><span class="site-name">萌萌猫的小破站</span></a><a class="nav-page-title" href="/"><span class="site-name">萌萌猫的小破站</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">无标题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-11-23T14:37:10.043Z" title="发表于 2024-11-23 14:37:10">2024-11-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-11-24T10:31:31.543Z" title="更新于 2024-11-24 10:31:31">2024-11-24</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:500,&quot;messagePrev&quot;:&quot;已经有&quot;,&quot;messageNext&quot;:&quot;天未更新，文章内容可能已过时。&quot;,&quot;postUpdate&quot;:&quot;2024-11-24 10:31:31&quot;}" hidden></div><!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>关于casaos国内无法拉取镜像解决方法 | fishcpy blog</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="https://img.picui.cn/free/2024/09/14/66e570be1d413.png"><!-- index.css--><link rel="stylesheet" href="/css/index.css?v=2.0.13"><!-- inject head--><link rel="canonical" href="http://example.com/2024/09/17/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"><!-- aplayer--><!-- swiper--><!-- fancybox ui--><!-- katex--><!-- Open Graph--><meta name="description" content="1 进入casaos2 打开files3 点击文件下方的root4 打开etc文件夹5 使用cirl+f搜索docker6打开docker文件夹7 在电脑本地创建一个txt，加入以下内容 &amp;#123; &amp;quot;registry-mirrors&amp;quot;: [ &amp;quot;https:&amp;#x2F;&amp;#x2F;docker"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="fishcpy blog"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="https://img.picui.cn/free/2024/09/14/66e570be1d413.png"><link rel="apple-touch-icon" href="https://img.picui.cn/free/2024/09/14/66e570be1d413.png" sizes="180x180"><script>console.log(' %c Solitude %c ' + '2.0.13' + ' %c https://github.com/everfu/hexo-theme-solitude',
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><script>(()=>{
+        const saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
+
+                if (!itemStr) {
+                    return undefined
+                }
+                const item = JSON.parse(itemStr)
+                const now = new Date()
+
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        };
+        window.utils = {
+            saveToLocal: saveToLocal,
+            getCSS: (url, id = false) => new Promise((resolve, reject) => {
+              const link = document.createElement('link')
+              link.rel = 'stylesheet'
+              link.href = url
+              if (id) link.id = id
+              link.onerror = reject
+              link.onload = link.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                link.onload = link.onreadystatechange = null
+                resolve()
+              }
+              document.head.appendChild(link)
+            }),
+            getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+              const script = document.createElement('script')
+              script.src = url
+              script.async = true
+              script.onerror = reject
+              script.onload = script.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                script.onload = script.onreadystatechange = null
+                resolve()
+              }
+
+              Object.keys(attr).forEach(key => {
+                script.setAttribute(key, attr[key])
+              })
+
+              document.head.appendChild(script)
+            }),
+            addGlobalFn: (key, fn, name = false, parent = window) => {
+                const globalFn = parent.globalFn || {}
+                const keyObj = globalFn[key] || {}
+
+                if (name && keyObj[name]) return
+
+                name = name || Object.keys(keyObj).length
+                keyObj[name] = fn
+                globalFn[key] = keyObj
+                parent.globalFn = globalFn
+            },
+            addEventListenerPjax: (ele, event, fn, option = false) => {
+              ele.addEventListener(event, fn, option)
+              utils.addGlobalFn('pjax', () => {
+                  ele.removeEventListener(event, fn, option)
+              })
+          },
+        }
+    })()</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = utils.saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
+    }
+    typeof rm === 'object' && rm.mode(cachedMode === 'dark' && isDarkMode)
+}
+initTheme()</script><!-- global head--><script>const GLOBAL_CONFIG = {
+    root: '/',
+    algolia: undefined,
+    localsearch: undefined,
+    runtime: '2024-09-08 00:00:00',
+    lazyload: {
+        enable: false,
+        error: '/img/error_load.avif'
+    },
+    copyright: false,
+    highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
+    randomlink: false,
+    lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可","barrage":{"title":"热评"}},
+    aside: {
+        sayhello: {
+            morning: "✨ Good morning. It's a new day",
+            noon: "It's time for a midday break",
+            afternoon: "Tea time. 🍵",
+            night: "early bedtime",
+            goodnight: "Good night 😴",
+        },
+        sayhello2: ["你好."],
+        sayhello3: {
+            prefix: '好久不见，',
+            back: '欢迎再次回来，',
+        },
+    },
+    covercolor: {
+        enable: false
+    },
+    comment: {"avatar":"https://gravatar.com/avatar","commentBarrage":true},
+    lightbox: 'null',
+    post_ai: false,
+    right_menu: false,
+    lure: false,
+    expire: {"time":10,"position":"top","text_prev":"本文已于 ","text_next":" 天前过期，如果内容不符，请联系站长"},
+};</script><!-- page-config head--><script id="config-diff">var PAGE_CONFIG = {
+    is_post: true,
+    is_page: false,
+    is_home: false,
+    page: '',
+    toc: true,
+    comment: false,
+    ai_text: false,
+    color: false,
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body id="body"><!-- universe--><!-- background img--><!-- loading--><!-- console--><!-- sidebar--><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude fa-solid fa-circle-half-stroke"></i><span>显示模式</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>节点列表</span></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://zzz.fishcpy.us.kg/"><span>节点1（主节点）</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.fishcpy.us.kg/"><span>节点2</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ys.fishcpy.us.kg/"><span>节点3</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://fishcpy.us.kg/"><span>节点4</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://afdian.com/a/fishcpy"><span>爱发电</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>关于我们</span></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://jiedian.fishcpy.us.kg/"><span>节点检测</span></a></li><li><a class="site-page child" href="/about"><span>关于</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-widget card-tags card-archives card-webinfo card-allinfo"><div class="card-tag-cloud"></div></div></div></div><!-- keyboard--><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><a id="site-name" href="/" title="返回博客主页"><span class="title">fishcpy</span><i class="solitude fa-solid fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">关于casaos国内无法拉取镜像解决方法</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>节点列表</span></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="http://zzz.fishcpy.us.kg/"><span>节点1（主节点）</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.fishcpy.us.kg/"><span>节点2</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ys.fishcpy.us.kg/"><span>节点3</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://fishcpy.us.kg/"><span>节点4</span></a></li></ul></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://afdian.com/a/fishcpy"><span>爱发电</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>关于我们</span></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://jiedian.fishcpy.us.kg/"><span>节点检测</span></a></li><li><a class="site-page child" href="/about"><span>关于</span></a></li></ul></div></div></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机一篇文章" href="javascript:void(0);"><i class="solitude fa-solid fa-dice-d6"></i></a></div><div class="nav-button" id="nav-totop" onclick="sco.toTop()"><a class="totopbtn"><i class="solitude fa-solid fa-arrow-up"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fa-solid fa-bars"></i></a></div></div></div></nav><div class="coverdiv" id="coverdiv"><img class="nolazyload" id="post-cover" src="https://img.picui.cn/free/2024/09/15/66e6b06f211de.jpg" alt="关于casaos国内无法拉取镜像解决方法"></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="该文章为原创文章，注意版权协议">原创</a><div class="tag_share"><div class="post-meta__tag-list"></div></div></div></div><h1 class="post-title">关于casaos国内无法拉取镜像解决方法</h1><div id="post-meta"><div class="meta-secondline"></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container">
+
+<p style="">1 进入casaos</p><p style="">2 打开files</p><p style="">3 点击文件下方的root</p><p style="">4 打开etc文件夹</p><p style="">5 使用cirl+f搜索docker</p><p style="">6打开docker文件夹</p><p style="">7 在电脑本地创建一个txt，加入以下内容</p><pre><code class="language-json"> &#123;
+    "registry-mirrors": [
+      "https://dockerhub.icu",
+      "https://docker.chenby.cn",
+      "https://docker.1panel.live",
+      "https://docker.awsl9527.cn",
+      "https://docker.anyhub.us.kg",
+      "https://dhub.kubesre.xyz",
+      "https://dockerproxy.cn/",
+      "https://hub.rat.dev/",
+      "https://docker.actima.top/"
+    ]
+  &#125;</code></pre><p style="">8 保存，重命名为daemon.json</p><p style="">9 上传到docker文件夹</p><p style="">10使用ssh链接打开终端，输入以下内容</p><pre><code>sudo systemctl daemon-reload
+
+sudo systemctl restart docker
+
+sudo reboot</code></pre><p style="">此时设备会重启，重启好了就可以用应用商店了。</p></article><div class="post-copyright"><div class="post-copyright__author_group"><a class="post-copyright__author_img" href="/about/"><img class="post-copyright__author_img_front" src="https://img.picui.cn/free/2024/09/14/66e570be1d413.png"></a><div class="post-copyright__author_name">fishcpy blog</div><div class="post-copyright__author_desc"></div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" onclick="RemoveRewardMask()"></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>协议，完整转载请注明来自<a href="/">fishcpy blog</a></span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/09/17/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">我的ai网站发布啦</div></div></a></div><div class="next-post pull-right"><a href="/2024/09/17/%E6%B0%B4-1/"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">水-1</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="author-info__top-group"><div class="author-info__sayhi" id="author-info__sayhi" onclick="sco.changeSayHelloText()">sayhello.morning</div></div></div><div class="avatar-img-group"><img class="avatar-img" alt="头像" src="https://img.picui.cn/free/2024/09/14/66e570be1d413.png"></div><div class="author-info__description_group"><div class="author-info__description">hello word</div><div class="author-info__description2">你好世界</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/null"><div class="author-info__name">fishcpy</div><div class="author-info__desc"></div></a><div class="card-info-social-icons is-center"><a class="social-icon" target="_blank" rel="noopener" href="https://github.com/fishcpy" title="Github"><i class="solitude  fab fa-github"></i></a><a class="social-icon" target="_blank" rel="noopener" href="https://space.bilibili.com/1879898443?spm_id_from=333.1007.0.0" title="Bilibili"><i class="solitude  fab fa-bilibili"></i></a></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="solitude fa-solid fa-bars"></i><span>文章目录</span></div><div class="toc-content" id="toc-content"></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude fa-solid fa-map"></i><span>最近发布</span></div><div class="aside-list"><a class="aside-list-item" href="/2024/09/17/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2%E6%B5%8B%E8%AF%95/" title="随机封面测试"><div class="thumbnail"><img alt="随机封面测试" src="/img/default.avif"></div><div class="content"><span class="title" href="/2024/09/17/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2%E6%B5%8B%E8%AF%95/" title="随机封面测试">随机封面测试</span></div></a><a class="aside-list-item" href="/2024/09/17/%E6%89%8B%E8%A1%A8%E9%9F%B3%E4%B9%90%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" title="手表音乐软件推荐"><div class="thumbnail"><img alt="手表音乐软件推荐" src="https://img.picui.cn/free/2024/09/16/66e7f370bd1d0.png"></div><div class="content"><span class="title" href="/2024/09/17/%E6%89%8B%E8%A1%A8%E9%9F%B3%E4%B9%90%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" title="手表音乐软件推荐">手表音乐软件推荐</span></div></a><a class="aside-list-item" href="/2024/09/17/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/" title="我的ai网站发布啦"><div class="thumbnail"><img alt="我的ai网站发布啦" src="https://img.picui.cn/free/2024/06/28/667e71029dec0.png"></div><div class="content"><span class="title" href="/2024/09/17/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/" title="我的ai网站发布啦">我的ai网站发布啦</span></div></a><a class="aside-list-item" href="/2024/09/17/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" title="关于casaos国内无法拉取镜像解决方法"><div class="thumbnail"><img alt="关于casaos国内无法拉取镜像解决方法" src="https://img.picui.cn/free/2024/09/15/66e6b06f211de.jpg"></div><div class="content"><span class="title" href="/2024/09/17/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" title="关于casaos国内无法拉取镜像解决方法">关于casaos国内无法拉取镜像解决方法</span></div></a><a class="aside-list-item" href="/2024/09/17/%E6%B0%B4-1/" title="水-1"><div class="thumbnail"><img alt="水-1" src="https://img.picui.cn/free/2024/09/16/66e7ba6fed43b.png"></div><div class="content"><span class="title" href="/2024/09/17/%E6%B0%B4-1/" title="水-1">水-1</span></div></a></div></div></div></div></main><footer id="footer"><div id="footer_deal"></div><div id="st-footer"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2024 By&nbsp;<a class="footer-bar-link" href="/">fishcpy</a></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude" alt="使用主题Theme">使用主题Theme</a></div></div></div><div class="comment-barrage needEndHide"></div></footer></div><!-- right_menu--><!-- inject body--><div><script src="/js/utils.js?v=2.0.13"></script><script src="/js/main.js?v=2.0.13"></script><script src="/js/third_party/waterfall.min.js?v=2.0.13"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pjax/0.2.8/pjax.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/node-snackbar/0.1.16/snackbar.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"></script><div class="js-pjax"></div></div><!-- pjax--><script>const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: ['title','#body-wrap','#site-config','meta[name="description"]','.js-pjax','meta[property^="og:"]','#config-diff'],
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+})
+
+document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+})
+
+document.addEventListener('pjax:complete', () => {
+    window.refreshFn()
+
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+        const newScript = document.createElement('script')
+        const content = item.text || item.textContent || item.innerHTML || ""
+        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+        newScript.appendChild(document.createTextNode(content))
+        item.parentNode.replaceChild(newScript, item)
+    })
+
+    GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+        pjax.loadUrl('/404.html')
+    }
+})</script><!-- google adsense--><!-- search--><!-- Tianli-Talk--><!-- music--></body></html><script>const posts=["2024/09/17/随机封面测试/","2024/09/17/手表音乐软件推荐/","2024/09/17/我的ai网站发布啦/","2024/09/17/关于casaos国内无法拉取镜像解决方法/","2024/09/17/水-1/"];function toRandomPost(){ pjax.loadUrl(GLOBAL_CONFIG.root+posts[Math.floor(Math.random()*posts.length)]); }</script></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.mengmengmao.cn">萌萌猫</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.mengmengmao.cn/2024/11/23/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">https://blog.mengmengmao.cn/2024/11/23/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.mengmengmao.cn" target="_blank">萌萌猫的小破站</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/%E5%B0%81%E9%9D%A2%E8%BF%98%E6%B2%A1%E6%83%B3%E5%A5%BD--%E8%90%8C%E8%90%8C%E7%8C%AB.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2024/11/23/%E6%89%8B%E8%A1%A8%E9%9F%B3%E4%B9%90%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" title=""><img class="cover" src="/img/%E5%B0%81%E9%9D%A2%E8%BF%98%E6%B2%A1%E6%83%B3%E5%A5%BD--%E8%90%8C%E8%90%8C%E7%8C%AB.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2"></div></div><div class="info-2"><div class="info-item-1">手表音乐软件推荐 | fishcpy blog开启JavaScript才能访问本站哦~console.log(' %c Solitude %c ' + '2.0.13' + ' %c https://github.com/everfu/hexo-theme-solitude',     'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',     'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',     'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff') (()=>{         const saveToLocal = {             set: function setWithExpiry(key, value, ttl) {              ...</div></div></div></a><a class="pagination-related" href="/2024/11/23/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/" title=""><img class="cover" src="/img/%E5%B0%81%E9%9D%A2%E8%BF%98%E6%B2%A1%E6%83%B3%E5%A5%BD--%E8%90%8C%E8%90%8C%E7%8C%AB.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2"></div></div><div class="info-2"><div class="info-item-1">我的ai网站发布啦 | fishcpy blog开启JavaScript才能访问本站哦~console.log(' %c Solitude %c ' + '2.0.13' + ' %c https://github.com/everfu/hexo-theme-solitude',     'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',     'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',     'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff') (()=>{         const saveToLocal = {             set: function setWithExpiry(key, value, ttl) {             ...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">萌萌猫</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/fishcpy"><i class="fab fa-github"></i><span>在github上关注我</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/fishcpy" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:eml@mengmengmao.cn" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">你好陌生人</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#post-info"><span class="toc-number">1.</span> <span class="toc-text">关于casaos国内无法拉取镜像解决方法</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/23/%E6%89%8B%E8%A1%A8%E9%9F%B3%E4%B9%90%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" title="无标题">无标题</a><time datetime="2024-11-23T14:37:10.067Z" title="发表于 2024-11-23 14:37:10">2024-11-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/23/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" title="无标题">无标题</a><time datetime="2024-11-23T14:37:10.043Z" title="发表于 2024-11-23 14:37:10">2024-11-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/23/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/" title="无标题">无标题</a><time datetime="2024-11-23T14:37:10.015Z" title="发表于 2024-11-23 14:37:10">2024-11-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/23/%E9%9A%8F%E6%9C%BA%E5%B0%81%E9%9D%A2%E6%B5%8B%E8%AF%95/" title="无标题">无标题</a><time datetime="2024-11-23T14:37:09.991Z" title="发表于 2024-11-23 14:37:09">2024-11-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/23/%E6%B0%B4-1/" title="无标题">无标题</a><time datetime="2024-11-23T14:37:09.951Z" title="发表于 2024-11-23 14:37:09">2024-11-23</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By 萌萌猫</div><div class="footer_custom_text">服务器由萌萌猫提供 <p style="text-align:center" > <a href="https://icp.gov.moe/?keyword=20241732" target="_blank">萌ICP备20241732号</a> </p> <p style="text-align:center" > <a href="https://ipc.mengmengmao.cn/00000001/" target="_blank">猫ICP备00000001号</a> </p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'https://waline.mengmengmao.cn/',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      comment: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css')
+        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -11,16 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.mengmengmao.cn/2024/11/29/%E6%B0%B4-1/</loc>
-    
-    <lastmod>2024-11-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mengmengmao.cn/2024/11/29/%E8%B7%A8%E5%AD%A6%E7%A7%91%E4%B8%BB%E9%A2%98%E5%AD%A6%E4%B9%A0%E4%BD%9C%E4%B8%9A/</loc>
+    <loc>https://blog.mengmengmao.cn/2024/11/29/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/</loc>
     
     <lastmod>2024-11-26</lastmod>
     
@@ -38,7 +29,16 @@
   </url>
   
   <url>
-    <loc>https://blog.mengmengmao.cn/2024/11/29/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/</loc>
+    <loc>https://blog.mengmengmao.cn/2024/11/29/%E6%B0%B4-1/</loc>
+    
+    <lastmod>2024-11-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mengmengmao.cn/2024/11/29/%E8%B7%A8%E5%AD%A6%E7%A7%91%E4%B8%BB%E9%A2%98%E5%AD%A6%E4%B9%A0%E4%BD%9C%E4%B8%9A/</loc>
     
     <lastmod>2024-11-26</lastmod>
     
@@ -110,6 +110,13 @@
 
   
   <url>
+    <loc>https://blog.mengmengmao.cn/tags/%E5%AE%B6%E6%A0%A1/</loc>
+    <lastmod>2024-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mengmengmao.cn/tags/hallo-word/</loc>
     <lastmod>2024-11-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -123,24 +130,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://blog.mengmengmao.cn/tags/%E5%AE%B6%E6%A0%A1/</loc>
-    <lastmod>2024-11-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>https://blog.mengmengmao.cn/categories/hallo-word/</loc>
+    <loc>https://blog.mengmengmao.cn/categories/%E5%AE%B6%E6%A0%A1/</loc>
     <lastmod>2024-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.mengmengmao.cn/categories/%E5%AE%B6%E6%A0%A1/</loc>
+    <loc>https://blog.mengmengmao.cn/categories/hallo-word/</loc>
     <lastmod>2024-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

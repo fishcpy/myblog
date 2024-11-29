@@ -1376,7 +1376,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: https://github.com/yaoyikoudeyupy/blog/releases/download/qq/XiaolaiMonoSC-Regular.1.ttf;
+  font-family: Xiaolai Mono SC;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   scroll-behavior: smooth;
@@ -1668,7 +1668,7 @@ figure.highlight pre .javascript .function {
 .container pre,
 .container code {
   font-size: var(--global-font-size);
-  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  font-family: Xiaolai Mono SC !important;
   border-radius: 6px;
 }
 .container code {

@@ -49,15 +49,12 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2024/11/29/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/</url>
-    <content><![CDATA[<![CDATA[<p style=""><a href="https://ai.fishcpy.us.kg/" target="_blank" rel="noopener">https://ai.fishcpy.us.kg/</a></p>]]></content>
-  </entry>
-  <entry>
     <title>一班热榜历史记录2024-2025（上半学期）</title>
     <url>/2024/11/29/yi%20ban%20re%20bang%20li%20shi%20ji%20lu%202024-2025%EF%BC%88shang%20ban%20xue%20qi%20%EF%BC%89/</url>
     <content><![CDATA[> # 此页面已于2024.11.29:10:08转为止读
 ## 2024.11.29 星期五
+
+无图片
 
 ## 2024.11.28 星期四
 
@@ -335,8 +332,8 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
   </entry>
   <entry>
     <title></title>
-    <url>/2024/11/29/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<![CDATA[<p style="">1 进入casaos</p><p style="">2 打开files</p><p style="">3 点击文件下方的root</p><p style="">4 打开etc文件夹</p><p style="">5 使用cirl+f搜索docker</p><p style="">6打开docker文件夹</p><p style="">7 在电脑本地创建一个txt，加入以下内容</p><pre><code class="language-json"> {n    "registry-mirrors": [n      "https://dockerhub.icu",n      "https://docker.chenby.cn",n      "https://docker.1panel.live",n      "https://docker.awsl9527.cn",n      "https://docker.anyhub.us.kg",n      "https://dhub.kubesre.xyz",n      "https://dockerproxy.cn/",n      "https://hub.rat.dev/",n      "https://docker.actima.top/"n    ]n  }</code></pre><p style="">8 保存，重命名为daemon.json</p><p style="">9 上传到docker文件夹</p><p style="">10使用ssh链接打开终端，输入以下内容</p><pre><code>sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot</code></pre><p style="">此时设备会重启，重启好了就可以用应用商店了。</p>]]>]]></content>
+    <url>/2024/11/29/%E6%B0%B4-1/</url>
+    <content><![CDATA[<![CDATA[<p style="">提示词：写一篇400字的描述中国的作文</p><h1 style="" id="%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%96%87%E5%8C%96%E4%BC%A0%E7%BB%9F">中国的文化传统</h1><p style="">中国是一个拥有悠久历史和丰富文化传统的国家。中国的文化源远流长，包括诗歌、绘画、音乐、戏剧、建筑等多个领域，都展现出独特的魅力。其中，中国的书法被誉为“东方艺术之花”，每一笔每一画都蕴含着深厚的文化内涵。中国的传统绘画以山水、花鸟为主题，追求意境的抒发和笔墨的韵味，体现了中国人对自然的独特感悟。</p><p style="">中国的音乐也是独具特色，古代的乐曲如《广陵散》、《阳关三叠》等流传至今，展现了中国人对音乐艺术的热爱和追求。中国的传统戏曲更是独树一帜，有京剧、豫剧、越剧等不同类型，每一种戏曲都有其独特的表演风格和表现形式，深受中国人民的喜爱。</p><p style="">此外，中国的建筑也是举世闻名，如万里长城、故宫等建筑奇迹，展现了中国古代建筑工艺的精湛和气势恢宏。中国的传统建筑注重“天人合一”的理念，追求与自然的和谐共生，体现了中国人对宇宙和谐的追求。</p><p style="">总的来说，中国的文化传统是丰富多彩的，融合了诗歌、绘画、音乐、戏剧、建筑等多种艺术形式，展现了中国人民对美好生活的向往和追求。这些传统文化不仅丰富了中国人民的精神生活，也为世界文化的多样性做出了重要贡献。</p><p style=""></p><p style="">AI 也可能犯错，请仔细辨别</p><p style=""></p>]]>]]></content>
   </entry>
   <entry>
     <title></title>
@@ -345,7 +342,12 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
   </entry>
   <entry>
     <title></title>
-    <url>/2024/11/29/%E6%B0%B4-1/</url>
-    <content><![CDATA[<![CDATA[<p style="">提示词：写一篇400字的描述中国的作文</p><h1 style="" id="%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%96%87%E5%8C%96%E4%BC%A0%E7%BB%9F">中国的文化传统</h1><p style="">中国是一个拥有悠久历史和丰富文化传统的国家。中国的文化源远流长，包括诗歌、绘画、音乐、戏剧、建筑等多个领域，都展现出独特的魅力。其中，中国的书法被誉为“东方艺术之花”，每一笔每一画都蕴含着深厚的文化内涵。中国的传统绘画以山水、花鸟为主题，追求意境的抒发和笔墨的韵味，体现了中国人对自然的独特感悟。</p><p style="">中国的音乐也是独具特色，古代的乐曲如《广陵散》、《阳关三叠》等流传至今，展现了中国人对音乐艺术的热爱和追求。中国的传统戏曲更是独树一帜，有京剧、豫剧、越剧等不同类型，每一种戏曲都有其独特的表演风格和表现形式，深受中国人民的喜爱。</p><p style="">此外，中国的建筑也是举世闻名，如万里长城、故宫等建筑奇迹，展现了中国古代建筑工艺的精湛和气势恢宏。中国的传统建筑注重“天人合一”的理念，追求与自然的和谐共生，体现了中国人对宇宙和谐的追求。</p><p style="">总的来说，中国的文化传统是丰富多彩的，融合了诗歌、绘画、音乐、戏剧、建筑等多种艺术形式，展现了中国人民对美好生活的向往和追求。这些传统文化不仅丰富了中国人民的精神生活，也为世界文化的多样性做出了重要贡献。</p><p style=""></p><p style="">AI 也可能犯错，请仔细辨别</p><p style=""></p>]]>]]></content>
+    <url>/2024/11/29/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<![CDATA[<p style="">1 进入casaos</p><p style="">2 打开files</p><p style="">3 点击文件下方的root</p><p style="">4 打开etc文件夹</p><p style="">5 使用cirl+f搜索docker</p><p style="">6打开docker文件夹</p><p style="">7 在电脑本地创建一个txt，加入以下内容</p><pre><code class="language-json"> {n    "registry-mirrors": [n      "https://dockerhub.icu",n      "https://docker.chenby.cn",n      "https://docker.1panel.live",n      "https://docker.awsl9527.cn",n      "https://docker.anyhub.us.kg",n      "https://dhub.kubesre.xyz",n      "https://dockerproxy.cn/",n      "https://hub.rat.dev/",n      "https://docker.actima.top/"n    ]n  }</code></pre><p style="">8 保存，重命名为daemon.json</p><p style="">9 上传到docker文件夹</p><p style="">10使用ssh链接打开终端，输入以下内容</p><pre><code>sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot</code></pre><p style="">此时设备会重启，重启好了就可以用应用商店了。</p>]]>]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/11/29/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/</url>
+    <content><![CDATA[<![CDATA[<p style=""><a href="https://ai.fishcpy.us.kg/" target="_blank" rel="noopener">https://ai.fishcpy.us.kg/</a></p>]]></content>
   </entry>
 </search>

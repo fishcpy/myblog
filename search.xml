@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2024/11/29/hello-world/</url>
+    <content><![CDATA[Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+
+## Quick Start
+
+### Create a new post
+
+```bash
+$ hexo new "My New Post"
+```
+
+More info: [Writing](https://hexo.io/docs/writing.html)
+
+### Run server
+
+```bash
+$ hexo server
+```
+
+More info: [Server](https://hexo.io/docs/server.html)
+
+### Generate static files
+
+```bash
+$ hexo generate
+```
+
+More info: [Generating](https://hexo.io/docs/generating.html)
+
+### Deploy to remote sites
+
+```bash
+$ hexo deploy
+```
+
+More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+]]></content>
+      <categories>
+        <category>hallo word</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hallo word</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一班热榜历史记录2024-2025（上半学期）</title>
     <url>/2024/11/29/yi%20ban%20re%20bang%20li%20shi%20ji%20lu%202024-2025%EF%BC%88shang%20ban%20xue%20qi%20%EF%BC%89/</url>
     <content><![CDATA[> # 此页面已于2024.11.29:10:08转为止读
@@ -284,61 +332,13 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2024/11/29/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/</url>
-    <content><![CDATA[<![CDATA[<p style=""><a href="https://ai.fishcpy.us.kg/" target="_blank" rel="noopener">https://ai.fishcpy.us.kg/</a></p>]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>/2024/11/29/%E5%85%B3%E4%BA%8Ecasaos%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<![CDATA[<p style="">1 进入casaos</p><p style="">2 打开files</p><p style="">3 点击文件下方的root</p><p style="">4 打开etc文件夹</p><p style="">5 使用cirl+f搜索docker</p><p style="">6打开docker文件夹</p><p style="">7 在电脑本地创建一个txt，加入以下内容</p><pre><code class="language-json"> {n    "registry-mirrors": [n      "https://dockerhub.icu",n      "https://docker.chenby.cn",n      "https://docker.1panel.live",n      "https://docker.awsl9527.cn",n      "https://docker.anyhub.us.kg",n      "https://dhub.kubesre.xyz",n      "https://dockerproxy.cn/",n      "https://hub.rat.dev/",n      "https://docker.actima.top/"n    ]n  }</code></pre><p style="">8 保存，重命名为daemon.json</p><p style="">9 上传到docker文件夹</p><p style="">10使用ssh链接打开终端，输入以下内容</p><pre><code>sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot</code></pre><p style="">此时设备会重启，重启好了就可以用应用商店了。</p>]]>]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/11/29/hello-world/</url>
-    <content><![CDATA[Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-
-## Quick Start
-
-### Create a new post
-
-```bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-```bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-```bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-```bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
-]]></content>
-      <categories>
-        <category>hallo word</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hallo word</tag>
-        <tag>hexo</tag>
-      </tags>
+    <title></title>
+    <url>/2024/11/29/%E6%88%91%E7%9A%84ai%E7%BD%91%E7%AB%99%E5%8F%91%E5%B8%83%E5%95%A6/</url>
+    <content><![CDATA[<![CDATA[<p style=""><a href="https://ai.fishcpy.us.kg/" target="_blank" rel="noopener">https://ai.fishcpy.us.kg/</a></p>]]></content>
   </entry>
   <entry>
     <title></title>

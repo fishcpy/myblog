@@ -1,0 +1,107 @@
+/* 圆点鼠标样式开始 */
+        /* 媒体查询，用于检测移动设备 */
+        @media (hover: none) and (pointer: coarse) {
+            /* 如果是移动设备，直接禁用所有样式 */
+            html, body {
+                cursor: default;
+            }
+
+            /* 禁用所有圆点样式 */
+            .circle {
+                display: none;
+            }
+
+            /* 移动设备不应用其他样式 */
+            .small-circle, .large-circle, body.hovered .small-circle::before, .pulse {
+                display: none !important;
+            }
+        }
+
+        /* 非移动设备应用以下样式 */
+
+        html, body {
+            cursor: none; /* 隐藏原始鼠标指针 */
+            margin: 0;
+            background-color: #fff; /* 背景颜色，若设置了其他背景需要注释掉此行 */
+            overflow: visible; /* 允许页面滚动 */
+        }
+
+        html, body, img, div, a, span, path, svg, button, p, h1, h2, h3, h4, h5, h6, 
+        b, strong, i, em, blockquote, ul, ol, li, pre, code, label, textarea, input, 
+        select, option, audio, video, canvas, iframe, table, tr, td, th, thead, tbody, 
+        tfoot, col, colgroup, form, fieldset, legend, nav, header, footer, article, 
+        section, aside, figure, figcaption, details, summary, main {
+            cursor: none !important;
+        }
+
+        /* 圆的通用样式 */
+        .circle {
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            display: none; /* 初始隐藏 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+        }
+
+        /* 小圆的样式 */
+        .small-circle {
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            mix-blend-mode: exclusion;
+            z-index: 99999999; /* 小圆的堆叠顺序，确保在大圆下层 */
+            transition: transform 0.2s ease-out; /* 添加平滑过渡效果 */
+            transform-origin: center; /* 确保缩放以圆心为中心 */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+        }
+
+        /* 大圆的样式 */
+        .large-circle {
+            width: 32px;
+            height: 32px;
+            background: radial-gradient(circle, rgba(34, 34, 34, 0.2) 0%, rgba(34, 34, 34, 0.3) 100%); /* 添加渐变色 */
+            transition: transform 0.2s ease-out, left 0.2s ease-out, top 0.2s ease-out; /* 平滑过渡效果 */
+            z-index: 99999998; /* 大圆的堆叠顺序 */
+            transform-origin: center; /* 确保缩放以圆心为中心 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+        }
+
+        /* 小圆内竖线的样式 */
+        .small-circle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 1px; /* 竖线粗细 */
+            height: 100%;
+            background-color: #000;
+            transform: translateX(-50%);
+            visibility: hidden; /* 初始隐藏竖线 */
+        }
+
+        /* 当鼠标悬停在文本上时，显示竖线 */
+        body.hovered .small-circle::before {
+            visibility: visible;
+        }
+
+        /* 脉冲动画效果 */
+        @keyframes pulse {
+            0% {
+                transform: scale(0.5);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(0.5);
+                opacity: 0.5;
+            }
+        }
+
+        /* 添加一个类控制大圆的脉冲动画 */
+        .pulse {
+            animation: pulse 1.5s infinite;
+        }
+        /* 圆点鼠标样式结束 */

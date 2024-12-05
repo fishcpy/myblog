@@ -10,6 +10,55 @@
       </tags>
   </entry>
   <entry>
+    <title>butterfly导航栏图标修改</title>
+    <url>/42497/</url>
+    <content><![CDATA[# 导航栏图标
+
+我看了官方配置文件，里面好像没有关于导航栏图标的描述，修改完效果如下
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ab17651d2.png)
+
+官方配置代码如下
+
+```
+例： 首页: / || fas fa-home
+```
+
+打开[fontawesome]([https://](https://fontawesome.com/))
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751acefe84bf.png)
+
+点击顶部导航栏的icons
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ad8fe887b.png)
+
+比如我在搜索栏里搜索bilibili
+点击你想要的图标
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ade0a08b5.png)
+
+这里他给了一个html
+
+```
+<i class="fa-brands fa-bilibili"></i>```
+```
+
+把里面的fa-brands fa-bilibili复制下来
+
+```
+# 原来代码
+首页: / || fas fa-home
+#修改后
+首页: / || fa-brands fa-bilibili
+```
+
+至此修改完毕
+]]></content>
+      <tags>
+        <tag>butterfly</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/1243066710/</url>
     <content><![CDATA[Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).

@@ -9,8 +9,37 @@
     <atom:link href="https://blog.mengmengmao.cn/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 03 Dec 2024 10:56:08 GMT</pubDate>
+    <pubDate>Thu, 05 Dec 2024 13:46:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>butterfly导航栏图标修改</title>
+      <link>https://blog.mengmengmao.cn/42497/</link>
+      <guid>https://blog.mengmengmao.cn/42497/</guid>
+      <pubDate>Thu, 05 Dec 2024 13:24:28 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description></description>
+          
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="导航栏图标"><a href="#导航栏图标" class="headerlink" title="导航栏图标"></a>导航栏图标</h1><p>我看了官方配置文件，里面好像没有关于导航栏图标的描述，修改完效果如下<br><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ab17651d2.png"></p><p>官方配置代码如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例： 首页: / || fas fa-home</span><br></pre></td></tr></table></figure><p>打开<a href="%5Bhttps://%5D(https://fontawesome.com/)">fontawesome</a></p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751acefe84bf.png"></p><p>点击顶部导航栏的icons</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ad8fe887b.png"></p><p>比如我在搜索栏里搜索bilibili<br>点击你想要的图标</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ade0a08b5.png"></p><p>这里他给了一个html</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;i class=&quot;fa-brands fa-bilibili&quot;&gt;&lt;/i&gt;```</span><br></pre></td></tr></table></figure><p>把里面的fa-brands fa-bilibili复制下来</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 原来代码</span><br><span class="line">首页: / || fas fa-home</span><br><span class="line">#修改后</span><br><span class="line">首页: / || fa-brands fa-bilibili</span><br></pre></td></tr></table></figure><p>至此修改完毕</p>]]></content:encoded>
+      
+      
+      
+      <category domain="https://blog.mengmengmao.cn/tags/butterfly/">butterfly</category>
+      
+      <category domain="https://blog.mengmengmao.cn/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <comments>https://blog.mengmengmao.cn/42497/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>12月到了</title>

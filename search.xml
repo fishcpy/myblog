@@ -398,9 +398,80 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
     <content><![CDATA[<![CDATA[<p style=""><a href="https://ai.fishcpy.us.kg/" target="_blank" rel="noopener">https://ai.fishcpy.us.kg/</a></p>]]></content>
   </entry>
   <entry>
+    <title>本站历程</title>
+    <url>/56827/</url>
+    <content><![CDATA[# 本站历程
+
+2024.9 宝塔面板无法安装，找得了1panel面板
+
+2024.9 在应用商店里发现halo建站，开始了我的建站之路
+
+2024.9 发布自己的第一篇文章
+
+2024.9 购买了云服务器
+
+2024.10 发现wordpass有一款主题特别好看，于是转到wordpass
+
+2024.11 wordpass优化不好，有转到hexo倾向
+
+2024.12 全站正式转到hexo，开始对butterfly美化
+
+2024.12 基本定型
+
+
+等待发展
+]]></content>
+  </entry>
+  <entry>
     <title>水-1</title>
     <url>/2/</url>
     <content><![CDATA[<![CDATA[<p style="">提示词：写一篇400字的描述中国的作文</p><h1 style="" id="%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%96%87%E5%8C%96%E4%BC%A0%E7%BB%9F">中国的文化传统</h1><p style="">中国是一个拥有悠久历史和丰富文化传统的国家。中国的文化源远流长，包括诗歌、绘画、音乐、戏剧、建筑等多个领域，都展现出独特的魅力。其中，中国的书法被誉为“东方艺术之花”，每一笔每一画都蕴含着深厚的文化内涵。中国的传统绘画以山水、花鸟为主题，追求意境的抒发和笔墨的韵味，体现了中国人对自然的独特感悟。</p><p style="">中国的音乐也是独具特色，古代的乐曲如《广陵散》、《阳关三叠》等流传至今，展现了中国人对音乐艺术的热爱和追求。中国的传统戏曲更是独树一帜，有京剧、豫剧、越剧等不同类型，每一种戏曲都有其独特的表演风格和表现形式，深受中国人民的喜爱。</p><p style="">此外，中国的建筑也是举世闻名，如万里长城、故宫等建筑奇迹，展现了中国古代建筑工艺的精湛和气势恢宏。中国的传统建筑注重“天人合一”的理念，追求与自然的和谐共生，体现了中国人对宇宙和谐的追求。</p><p style="">总的来说，中国的文化传统是丰富多彩的，融合了诗歌、绘画、音乐、戏剧、建筑等多种艺术形式，展现了中国人民对美好生活的向往和追求。这些传统文化不仅丰富了中国人民的精神生活，也为世界文化的多样性做出了重要贡献。</p><p style=""></p><p style="">AI 也可能犯错，请仔细辨别</p><p style=""></p>]]></content>
+  </entry>
+  <entry>
+    <title>购买雨云服务器并部署hexo博客-购买云服务器</title>
+    <url>/42850/</url>
+    <content><![CDATA[# 为什么要用云服务器部署静态博客
+
+hexo为静态博客，可以直接在github部署。
+
+但是例如我这个域名github.mengmengmao.cn ping就有30个测速节点无法ping通
+
+但是有了云服务器就不一样了，基本全国都可以ping通，例如我这个域名blog.mengmengmao.cn ping之后只有2个节点无法ping通
+
+# 购买云服务器
+
+本次使用的云服务商为[雨云]([https://](https://www.rainyun.com/home))
+
+打开雨云官网
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/06/6752d64e51d1c.png)
+
+点击登录/注册，经行注册，优惠码可以填mmm
+
+或者点击[这里一键填写]([https://](https://www.rainyun.com/mmm_))
+
+点击导航栏的总览>云服务器>购买云服务器
+
+本人建议用香港的云服务器，有35ms和80ms的
+
+如果对延迟有需求的可以选择35ms的，反之可以选择80ms的
+
+演示使用80ms的，因为上行相对来说更高一些
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/06/6752d80303d56.png)
+
+点击立即购买，充钱后就可以购买成功
+
+至此购买云服务器结束
+]]></content>
+      <categories>
+        <category>建站</category>
+        <category>云服务器</category>
+      </categories>
+      <tags>
+        <tag>建站</tag>
+        <tag>云服务器</tag>
+      </tags>
   </entry>
   <entry>
     <title>跨学科主题学习作业</title>

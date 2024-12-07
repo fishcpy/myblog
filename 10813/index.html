@@ -1,0 +1,471 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>引入Aplayer播放音乐-自定义api地址 | 萌萌猫的小破站</title><meta name="author" content="萌萌猫"><meta name="copyright" content="萌萌猫"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="此文章仅适用于akilar糖果屋中的  引入Aplayer播放音乐 文章 https:&#x2F;&#x2F;akilar.top&#x2F;posts&#x2F;3afa069a&#x2F; ，其他请自行测试] 1.为什么要自定义api地址meting_js的官方api很不稳定，播放歌曲断断续续，所以要自定义api地址 2.如何自定义api地址akilar糖果屋中有这样一些字 4.在主题配置文件[Blogroot]\_config.butte">
+<meta property="og:type" content="article">
+<meta property="og:title" content="引入Aplayer播放音乐-自定义api地址">
+<meta property="og:url" content="https://blog.mengmengmao.cn/10813/index.html">
+<meta property="og:site_name" content="萌萌猫的小破站">
+<meta property="og:description" content="此文章仅适用于akilar糖果屋中的  引入Aplayer播放音乐 文章 https:&#x2F;&#x2F;akilar.top&#x2F;posts&#x2F;3afa069a&#x2F; ，其他请自行测试] 1.为什么要自定义api地址meting_js的官方api很不稳定，播放歌曲断断续续，所以要自定义api地址 2.如何自定义api地址akilar糖果屋中有这样一些字 4.在主题配置文件[Blogroot]\_config.butte">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.mengmengmao.cn/img/%E5%B0%81%E9%9D%A2%E8%BF%98%E6%B2%A1%E6%83%B3%E5%A5%BD--%E8%90%8C%E8%90%8C%E7%8C%AB.png">
+<meta property="article:published_time" content="2024-12-07T07:18:08.308Z">
+<meta property="article:modified_time" content="2024-12-07T07:21:33.425Z">
+<meta property="article:author" content="萌萌猫">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.mengmengmao.cn/img/%E5%B0%81%E9%9D%A2%E8%BF%98%E6%B2%A1%E6%83%B3%E5%A5%BD--%E8%90%8C%E8%90%8C%E7%8C%AB.png"><link rel="shortcut icon" href="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png"><link rel="canonical" href="https://blog.mengmengmao.cn/10813/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//static.cloudflareinsights.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="AWueHP5nS57NdVg6ECZpMMnqG24iRycpAsIjf9BtjMY"/><meta name="baidu-site-verification" content="codeva-F2sJMmFw7o"/><meta name="msvalidate.01" content="EE0A06506CD5C31143F7CF9AF01BF99B"/><meta name="360-site-verification" content="37c4940caf4ec4c44dae028a1fd0b1bf"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script defer="defer" data-pjax="data-pjax" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;04f665e73eff49a2b75565c97492d3d2&quot;}"></script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "p53404cnil");</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '引入Aplayer播放音乐-自定义api地址',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css" /><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/rss.xml" title="萌萌猫的小破站" type="application/rss+xml">
+</head><body><div id="web_bg" style="background-image: url(/img/背景图.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa-regular fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fa-solid fa-train-subway"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 节点</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://blog.mengmengmao.cn/"><i class="fa-fw fas fa-link"></i><span> 主节点</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://github.mengmengmao.cn/"><i class="fa-fw fas fa-link"></i><span> github</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vercel.mengmengmao.cn/"><i class="fa-fw fas fa-link"></i><span> vercel</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></li><li><a class="site-page child" href="/%E7%AB%99%E9%95%BF%E5%9B%9E%E5%BF%86%E5%BD%95"><i class="fa-fw fas fa-heart"></i><span> 站长回忆录</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://mengmengmao.cn/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://s.mengmengmao.cn/status/mengmengmao"><i class="fa-fw fas fa-heart"></i><span> 站点可用性检测</span></a></li><li><a class="site-page child" href="/56827/"><i class="fa-fw fas fa-heart"></i><span> 本站历程</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/封面还没想好--萌萌猫.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png" alt="Logo"><span class="site-name">萌萌猫的小破站</span></a><a class="nav-page-title" href="/"><span class="site-name">引入Aplayer播放音乐-自定义api地址</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa-regular fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fa-solid fa-train-subway"></i><span> 开往</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 节点</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="https://blog.mengmengmao.cn/"><i class="fa-fw fas fa-link"></i><span> 主节点</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://github.mengmengmao.cn/"><i class="fa-fw fas fa-link"></i><span> github</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vercel.mengmengmao.cn/"><i class="fa-fw fas fa-link"></i><span> vercel</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></li><li><a class="site-page child" href="/%E7%AB%99%E9%95%BF%E5%9B%9E%E5%BF%86%E5%BD%95"><i class="fa-fw fas fa-heart"></i><span> 站长回忆录</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://mengmengmao.cn/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://s.mengmengmao.cn/status/mengmengmao"><i class="fa-fw fas fa-heart"></i><span> 站点可用性检测</span></a></li><li><a class="site-page child" href="/56827/"><i class="fa-fw fas fa-heart"></i><span> 本站历程</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">引入Aplayer播放音乐-自定义api地址</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-07T07:18:08.308Z" title="发表于 2024-12-07 15:18:08">2024-12-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-07T07:21:33.425Z" title="更新于 2024-12-07 15:21:33">2024-12-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/10813/#post-comment"><span id="ArtalkCount"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:10,&quot;messagePrev&quot;:&quot;已经有&quot;,&quot;messageNext&quot;:&quot;天未更新，文章内容可能已过时。&quot;,&quot;postUpdate&quot;:&quot;2024-12-07 15:21:33&quot;}" hidden></div><blockquote>
+<h2 id="此文章仅适用于akilar糖果屋中的-引入Aplayer播放音乐-文章-https-akilar-top-posts-3afa069a-，其他请自行测试"><a href="#此文章仅适用于akilar糖果屋中的-引入Aplayer播放音乐-文章-https-akilar-top-posts-3afa069a-，其他请自行测试" class="headerlink" title="此文章仅适用于akilar糖果屋中的  引入Aplayer播放音乐 文章 https://akilar.top/posts/3afa069a/ ，其他请自行测试]"></a>此文章仅适用于akilar糖果屋中的  <strong>引入Aplayer播放音乐</strong> 文章 <a target="_blank" rel="noopener" href="https://akilar.top/posts/3afa069a/">https://akilar.top/posts/3afa069a/</a> ，其他请自行测试]</h2></blockquote>
+<h1 id="1-为什么要自定义api地址"><a href="#1-为什么要自定义api地址" class="headerlink" title="1.为什么要自定义api地址"></a>1.为什么要自定义api地址</h1><p>meting_js的官方api很不稳定，播放歌曲断断续续，所以要自定义api地址</p>
+<h1 id="2-如何自定义api地址"><a href="#2-如何自定义api地址" class="headerlink" title="2.如何自定义api地址"></a>2.如何自定义api地址</h1><p>akilar糖果屋中有这样一些字</p>
+<p>4.在主题配置文件<code>[Blogroot]\_config.butterfly.yml</code>的inject配置项中添加Aplayer的容器。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">  bottom:</span><br><span class="line">    - &lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;5183531430&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-fixed=&quot;true&quot; data-mini=&quot;true&quot; data-listFolded=&quot;false&quot; data-order=&quot;random&quot; data-preload=&quot;none&quot; data-autoplay=&quot;false&quot; muted&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Aplayer的网易云歌单接口时不时的会挂掉，所以如果你确定你配置正确，但是歌单还是没有出现。不妨去看看其他人的站点是不是也没有Aplayer标签了来判断是Aplayer本身接口的问题还是自己配置出错的问题。</li>
+</ol>
+<p>里面并没有说如何自定义api地址</p>
+<p>所根据我的尝试，成功自定义api地址</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># akilar糖果屋中原本代码</span><br><span class="line">- &lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;5183531430&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-fixed=&quot;true&quot; data-mini=&quot;true&quot; data-listFolded=&quot;false&quot; data-order=&quot;random&quot; data-preload=&quot;none&quot; data-autoplay=&quot;false&quot; muted&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"># 修改后</span><br><span class="line">- &lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;5183531430&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-fixed=&quot;true&quot; data-mini=&quot;true&quot; data-listFolded=&quot;false&quot; data-order=&quot;random&quot; data-preload=&quot;none&quot; data-autoplay=&quot;false&quot; data-meting_api=&quot;https://meting.qjqq.cn/?server=:server&amp;type=:type&amp;id=:id&amp;auth=:auth&amp;r=:r&quot; muted&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>根据上方的配置参数，这里添加了一个data-meting_api&#x3D;”<a target="_blank" rel="noopener" href="https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r">https://meting.qjqq.cn/?server=:server&amp;type=:type&amp;id=:id&amp;auth=:auth&amp;r=:r</a>“</p>
+<p>如果以后这个挂了也可以自建或者使用别人的api</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.mengmengmao.cn">萌萌猫</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.mengmengmao.cn/10813/">https://blog.mengmengmao.cn/10813/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.mengmengmao.cn" target="_blank">萌萌猫的小破站</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/%E5%B0%81%E9%9D%A2%E8%BF%98%E6%B2%A1%E6%83%B3%E5%A5%BD--%E8%90%8C%E8%90%8C%E7%8C%AB.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/56827/" title="本站历程"><img class="cover" src="/img/%E5%B0%81%E9%9D%A2%E8%BF%98%E6%B2%A1%E6%83%B3%E5%A5%BD--%E8%90%8C%E8%90%8C%E7%8C%AB.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">本站历程</div></div><div class="info-2"><div class="info-item-1">本站历程2024.9 宝塔面板无法安装，找得了1panel面板 2024.9 在应用商店里发现halo建站，开始了我的建站之路 2024.9 发布自己的第一篇文章 2024.9 购买了云服务器 2024.10 发现wordpass有一款主题特别好看，于是转到wordpass 2024.11 wordpass优化不好，有转到hexo倾向 2024.12 全站正式转到hexo，开始对butterfly美化 2024.12 基本定型 等待发展 </div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="artalk-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/1731233393-%E8%90%8C%E8%90%8C%E7%8C%AB-%E6%8A%A0%E5%9B%BE.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">萌萌猫</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/fishcpy"><i class="fab fa-github"></i><span>在github上关注我</span></a><div class="card-info-social-icons"><a class="social-icon" href="/rss.xml" target="_blank" title="rss"><i class="fa-solid fa-rss" style="color: ff4d40;"></i></a><a class="social-icon" href="https://github.com/fishcpy" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:eml@mengmengmao.cn" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/1879898443?spm_id_from=333.1007.0.0" target="_blank" title="哔哩哔哩"><i class="fa-brands fa-bilibili" style="color: ff80bf;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">你好陌生人，你还可以来qq群来找我玩 <br> <img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/02/674d95bbab402.jpg" alt="qrcode_1733137752831.jpg" title="qrcode_1733137752831.jpg" width="150" height="250" /> <br> <a target="_blank" rel="noopener" href="https://qm.qq.com/q/LrQ7yb3zm8">或者点击这里一键加群</a><br/><div class="twopeople"><div class="twopeople"><div class="container"style="height:200px;"><canvas class="illo"width="800"height="800"style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;"></canvas></div><script src="https://npm.elemecdn.com/justlovesmile-static/js/twopeople1.js"></script><script src="https://npm.elemecdn.com/justlovesmile-static/js/zdog.dist.js"></script><script id="rendered-js"src="https://npm.elemecdn.com/justlovesmile-static/js/twopeople.js"></script><style>.twopeople{margin:0;align-items:center;justify-content:center;text-align:center}canvas{display:block;margin:0 auto;cursor:move}</style></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A4%E6%96%87%E7%AB%A0%E4%BB%85%E9%80%82%E7%94%A8%E4%BA%8Eakilar%E7%B3%96%E6%9E%9C%E5%B1%8B%E4%B8%AD%E7%9A%84-%E5%BC%95%E5%85%A5Aplayer%E6%92%AD%E6%94%BE%E9%9F%B3%E4%B9%90-%E6%96%87%E7%AB%A0-https-akilar-top-posts-3afa069a-%EF%BC%8C%E5%85%B6%E4%BB%96%E8%AF%B7%E8%87%AA%E8%A1%8C%E6%B5%8B%E8%AF%95"><span class="toc-number">1.</span> <span class="toc-text">此文章仅适用于akilar糖果屋中的  引入Aplayer播放音乐 文章 https:&#x2F;&#x2F;akilar.top&#x2F;posts&#x2F;3afa069a&#x2F; ，其他请自行测试]</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%87%AA%E5%AE%9A%E4%B9%89api%E5%9C%B0%E5%9D%80"><span class="toc-number"></span> <span class="toc-text">1.为什么要自定义api地址</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89api%E5%9C%B0%E5%9D%80"><span class="toc-number"></span> <span class="toc-text">2.如何自定义api地址</span></a></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/10813/" title="引入Aplayer播放音乐-自定义api地址">引入Aplayer播放音乐-自定义api地址</a><time datetime="2024-12-07T07:18:08.308Z" title="发表于 2024-12-07 15:18:08">2024-12-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/56827/" title="本站历程">本站历程</a><time datetime="2024-12-06T11:01:09.315Z" title="发表于 2024-12-06 19:01:09">2024-12-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/42850/" title="购买雨云服务器并部署hexo博客-购买云服务器">购买雨云服务器并部署hexo博客-购买云服务器</a><time datetime="2024-12-06T10:40:15.168Z" title="发表于 2024-12-06 18:40:15">2024-12-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/42497/" title="butterfly导航栏图标修改">butterfly导航栏图标修改</a><time datetime="2024-12-05T13:24:28.512Z" title="发表于 2024-12-05 21:24:28">2024-12-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/33755/" title="12月到了">12月到了</a><time datetime="2024-12-03T10:56:06.581Z" title="发表于 2024-12-03 18:56:06">2024-12-03</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2024 By 萌萌猫</div><div class="footer_custom_text"><p> 特此声明 blog.mengmengmao.cn ,  github.mengmengmao.cn , vercel.mengmengmao.cn均为本站所有  <br />  本站由雨云提供计算服务 <br /> <p style="text-align:center" > <a href="https://icp.gov.moe/?keyword=20241732" target="_blank">萌ICP备20241732号</a>  <br />                       <p style="text-align:center" > <a href="/sitemap.xml" target="_blank">站点地图</a>  </p>                          <a style="text-decoration:none;color:#e77c8e;" href="https://travel.moe/go.html?travel=on"title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank"><img src="https://travel.moe/images/icon/icon64pink.png" style="width:24px;height:24px">异次元之旅</a>                              <a href="https://ipw.cn/ssl/?site=blog.mengmengmao.cn" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a>             </p>      <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力"> <img src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120"> </a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  let artalkItem = null
+  const option = null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+
+  const destroyArtalk = () => {
+    if (artalkItem) {
+      artalkItem.destroy()
+      artalkItem = null
+    }
+  }
+
+  const artalkChangeMode = theme => artalkItem && artalkItem.setDarkMode(theme === 'dark')
+
+  const initArtalk = (el = document, pageKey = location.pathname) => {
+    artalkItem = Artalk.init({
+      el: el.querySelector('#artalk-wrap'),
+      server: 'https://artalk.mengmengmao.cn',
+      site: '萌萌猫的小破站',
+      darkMode: document.documentElement.getAttribute('data-theme') === 'dark',
+      ...option,
+      pageKey: isShuoshuo ? pageKey : (option && option.pageKey) || pageKey
+    })
+
+    if (GLOBAL_CONFIG.lightbox === 'null') return
+    artalkItem.on('list-loaded', () => {
+      artalkItem.ctx.get('list').getCommentNodes().forEach(comment => {
+        const $content = comment.getRender().$content
+        btf.loadLightbox($content.querySelectorAll('img:not([atk-emoticon])'))
+      })
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyArtalk = () => {
+        destroyArtalk()
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    btf.addGlobalFn('pjaxSendOnce', destroyArtalk, 'destroyArtalk')
+    btf.addGlobalFn('themeChange', artalkChangeMode, 'artalk')
+  }
+
+  const loadArtalk = async (el, pageKey) => {
+    if (typeof Artalk === 'object') initArtalk(el, pageKey)
+    else {
+      await btf.getCSS('https://cdn.jsdelivr.net/npm/artalk/dist/Artalk.min.css')
+      await btf.getScript('https://cdn.jsdelivr.net/npm/artalk/dist/Artalk.min.js')
+      initArtalk(el, pageKey)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Artalk' === 'Artalk'
+      ? window.shuoshuoComment = { loadComment: loadArtalk }
+      : window.loadOtherComment = loadArtalk
+    return
+  }
+
+  if ('Artalk' === 'Artalk' || !false) {
+    if (false) btf.loadComment(document.getElementById('artalk-wrap'), loadArtalk)
+    else setTimeout(loadArtalk, 100)
+  } else {
+    window.loadOtherComment = loadArtalk
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code      
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'src'
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}"></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '暂无评论'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'artalk-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getAvatarValue = async () => {
+    const predefinedAvatarCdn = ''
+    const predefinedAvatarDefault = ''
+
+    const avatarDefaultFormat = e => e.startsWith('d=') ? e : `d=${e}`
+
+    if (predefinedAvatarCdn && predefinedAvatarDefault) {
+      return { avatarCdn: predefinedAvatarCdn, avatarDefault: avatarDefaultFormat(predefinedAvatarDefault) }
+    }
+  
+    try {
+      const res = await fetch('https://artalk.mengmengmao.cn/api/v2/conf')
+      const result = await res.json()
+      const { mirror, params, default: defaults } = result.frontend_conf.gravatar
+      const avatarCdn = predefinedAvatarCdn || mirror
+      let avatarDefault = avatarDefaultFormat(predefinedAvatarDefault || params || defaults)
+      return { avatarCdn, avatarDefault}
+    } catch (e) {
+      console.error(e)
+      return { avatarCdn: predefinedAvatarCdn, avatarDefault: avatarDefaultFormat(predefinedAvatarDefault) }
+    }
+  }
+
+  const searchParams = new URLSearchParams({
+    'site_name': '萌萌猫的小破站',
+    'limit': '6',
+  })
+
+  const getComment = async (ele) => {
+    try {
+      const res = await fetch(`https://artalk.mengmengmao.cn/api/v2/stats/latest_comments?${searchParams}`)
+      const result = await res.json()
+      const { avatarCdn, avatarDefault } = await getAvatarValue()
+      const artalk = result.data.map(e => {
+        const avatar = avatarCdn && e.email_encrypted ? `${avatarCdn}${e.email_encrypted}?${avatarDefault}` : ''
+        return {
+          'avatar': avatar,
+          'content': changeContent(e.content_marked),
+          'nick': e.nick,
+          'url': e.page_url,
+          'date': e.date,
+        }
+      })
+      btf.saveToLocal.set(keyName, JSON.stringify(artalk), 10/(60*24))
+      generateHtml(artalk, ele)
+    } catch (e) {
+      console.log(e)
+      ele.textContent= "无法获取评论，请确认相关配置是否正确"
+    }
+  }
+
+  run(keyName, getComment)
+})</script><div class="aplayer no-destroy" data-id="12916178419" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" - data-order="random" data-preload="none" data-autoplay="false" data-meting_api="https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r" muted></div><div id="smallCircle" class="circle small-circle"></div><div id="largeCircle" class="circle large-circle"></div><script src="/js/all.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="输入文字开始搜索" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><!-- hexo injector body_end start --><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><script data-pjax>
+  function butterfly_clock_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_injector_config();
+  }
+  </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题Butterfly" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><!-- hexo injector body_end end --></body></html>

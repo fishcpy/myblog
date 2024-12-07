@@ -469,6 +469,47 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
     <content><![CDATA[<![CDATA[<p style="">1 进入casaos</p><p style="">2 打开files</p><p style="">3 点击文件下方的root</p><p style="">4 打开etc文件夹</p><p style="">5 使用cirl+f搜索docker</p><p style="">6打开docker文件夹</p><p style="">7 在电脑本地创建一个txt，加入以下内容</p><pre><code class="language-json"> {n    "registry-mirrors": [n      "https://dockerhub.icu",n      "https://docker.chenby.cn",n      "https://docker.1panel.live",n      "https://docker.awsl9527.cn",n      "https://docker.anyhub.us.kg",n      "https://dhub.kubesre.xyz",n      "https://dockerproxy.cn/",n      "https://hub.rat.dev/",n      "https://docker.actima.top/"n    ]n  }</code></pre><p style="">8 保存，重命名为daemon.json</p><p style="">9 上传到docker文件夹</p><p style="">10使用ssh链接打开终端，输入以下内容</p><pre><code>sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot</code></pre><p style="">此时设备会重启，重启好了就可以用应用商店了。</p>]]></content>
   </entry>
   <entry>
+    <title>引入Aplayer播放音乐-自定义api地址</title>
+    <url>/10813/</url>
+    <content><![CDATA[> ## 此文章仅适用于akilar糖果屋中的  **引入Aplayer播放音乐** 文章 https://akilar.top/posts/3afa069a/ ，其他请自行测试]
+
+# 1.为什么要自定义api地址
+
+meting_js的官方api很不稳定，播放歌曲断断续续，所以要自定义api地址
+
+# 2.如何自定义api地址
+
+akilar糖果屋中有这样一些字
+
+4.在主题配置文件`[Blogroot]\_config.butterfly.yml`的inject配置项中添加Aplayer的容器。
+
+```
+inject:
+  head:
+  bottom:
+    - <div class="aplayer no-destroy" data-id="5183531430" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
+```
+
+1. Aplayer的网易云歌单接口时不时的会挂掉，所以如果你确定你配置正确，但是歌单还是没有出现。不妨去看看其他人的站点是不是也没有Aplayer标签了来判断是Aplayer本身接口的问题还是自己配置出错的问题。
+
+里面并没有说如何自定义api地址
+
+所根据我的尝试，成功自定义api地址
+
+```
+# akilar糖果屋中原本代码
+- <div class="aplayer no-destroy" data-id="5183531430" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
+
+# 修改后
+- <div class="aplayer no-destroy" data-id="5183531430" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" data-meting_api="https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r" muted></div>
+```
+
+根据上方的配置参数，这里添加了一个data-meting_api="https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r"
+
+如果以后这个挂了也可以自建或者使用别人的api
+]]></content>
+  </entry>
+  <entry>
     <title>我的ai网站发布啦</title>
     <url>/1/</url>
     <content><![CDATA[<![CDATA[<p style=""><a href="https://ai.fishcpy.us.kg/" target="_blank" rel="noopener">https://ai.fishcpy.us.kg/</a></p>]]></content>

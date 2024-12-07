@@ -9,8 +9,33 @@
     <atom:link href="https://blog.mengmengmao.cn/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 06 Dec 2024 11:01:10 GMT</pubDate>
+    <pubDate>Sat, 07 Dec 2024 07:21:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>引入Aplayer播放音乐-自定义api地址</title>
+      <link>https://blog.mengmengmao.cn/10813/</link>
+      <guid>https://blog.mengmengmao.cn/10813/</guid>
+      <pubDate>Sat, 07 Dec 2024 07:18:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description></description>
+          
+        
+      
+      
+      
+      <content:encoded><![CDATA[<blockquote><h2 id="此文章仅适用于akilar糖果屋中的-引入Aplayer播放音乐-文章-https-akilar-top-posts-3afa069a-，其他请自行测试"><a href="#此文章仅适用于akilar糖果屋中的-引入Aplayer播放音乐-文章-https-akilar-top-posts-3afa069a-，其他请自行测试" class="headerlink" title="此文章仅适用于akilar糖果屋中的  引入Aplayer播放音乐 文章 https://akilar.top/posts/3afa069a/ ，其他请自行测试]"></a>此文章仅适用于akilar糖果屋中的  <strong>引入Aplayer播放音乐</strong> 文章 <a href="https://akilar.top/posts/3afa069a/">https://akilar.top/posts/3afa069a/</a> ，其他请自行测试]</h2></blockquote><h1 id="1-为什么要自定义api地址"><a href="#1-为什么要自定义api地址" class="headerlink" title="1.为什么要自定义api地址"></a>1.为什么要自定义api地址</h1><p>meting_js的官方api很不稳定，播放歌曲断断续续，所以要自定义api地址</p><h1 id="2-如何自定义api地址"><a href="#2-如何自定义api地址" class="headerlink" title="2.如何自定义api地址"></a>2.如何自定义api地址</h1><p>akilar糖果屋中有这样一些字</p><p>4.在主题配置文件<code>[Blogroot]\_config.butterfly.yml</code>的inject配置项中添加Aplayer的容器。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">  bottom:</span><br><span class="line">    - &lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;5183531430&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-fixed=&quot;true&quot; data-mini=&quot;true&quot; data-listFolded=&quot;false&quot; data-order=&quot;random&quot; data-preload=&quot;none&quot; data-autoplay=&quot;false&quot; muted&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><ol><li>Aplayer的网易云歌单接口时不时的会挂掉，所以如果你确定你配置正确，但是歌单还是没有出现。不妨去看看其他人的站点是不是也没有Aplayer标签了来判断是Aplayer本身接口的问题还是自己配置出错的问题。</li></ol><p>里面并没有说如何自定义api地址</p><p>所根据我的尝试，成功自定义api地址</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># akilar糖果屋中原本代码</span><br><span class="line">- &lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;5183531430&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-fixed=&quot;true&quot; data-mini=&quot;true&quot; data-listFolded=&quot;false&quot; data-order=&quot;random&quot; data-preload=&quot;none&quot; data-autoplay=&quot;false&quot; muted&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"># 修改后</span><br><span class="line">- &lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;5183531430&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-fixed=&quot;true&quot; data-mini=&quot;true&quot; data-listFolded=&quot;false&quot; data-order=&quot;random&quot; data-preload=&quot;none&quot; data-autoplay=&quot;false&quot; data-meting_api=&quot;https://meting.qjqq.cn/?server=:server&amp;type=:type&amp;id=:id&amp;auth=:auth&amp;r=:r&quot; muted&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><p>根据上方的配置参数，这里添加了一个data-meting_api&#x3D;”<a href="https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r">https://meting.qjqq.cn/?server=:server&amp;type=:type&amp;id=:id&amp;auth=:auth&amp;r=:r</a>“</p><p>如果以后这个挂了也可以自建或者使用别人的api</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>https://blog.mengmengmao.cn/10813/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>本站历程</title>

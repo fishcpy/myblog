@@ -7645,6 +7645,19 @@ body[data-type=music] #nav-music {
     left: 50px;
   }
 }
+#about-page {
+  display: flex;
+  padding-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+#about-page .author-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  line-height: 1;
+}
 div#banners {
   display: flex;
   width: 100%;

@@ -1,0 +1,8 @@
+@font-face{
+    font-family: 'XiaolaiMonoSC-Regular';
+    font-display: swap;
+    src: url('https://ghproxy.cc/https://github.com/fishcpy/wen-jian-cun-chu/releases/download/1.1/XiaolaiMonoSC.woff2') format("truetype");
+}
+body {
+    font-family: 'XiaolaiMonoSC-Regular';
+}

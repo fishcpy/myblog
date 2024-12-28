@@ -1,8 +1,8 @@
-@font-face{
-    font-family: 'XiaolaiMonoSC-Regular';
-    font-display: swap;
-    src: url('https://ghproxy.cc/https://github.com/fishcpy/wen-jian-cun-chu/releases/download/1.1/XiaolaiMonoSC.woff2') format("truetype");
+@font-face {
+  /* 指定字体的名字 */
+  font-family: "myfont";
+  /* 服务器中字体的路径 */
+  src: url("https://github.com/fishcpy/blog-1/releases/download/font/MaoKenTangYuan-beta0.12-20210702.ttf") format("truetype");
 }
-body {
-    font-family: 'XiaolaiMonoSC-Regular';
-}
+
+font-family: myfont;

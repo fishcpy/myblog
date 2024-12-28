@@ -5,6 +5,9 @@
     <url>/33755/</url>
     <content><![CDATA[# 12月到了，我要更加努力💪
 ]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
       <tags>
         <tag>日常</tag>
       </tags>
@@ -53,6 +56,10 @@
 
 至此修改完毕
 ]]></content>
+      <categories>
+        <category>butterfly</category>
+        <category>教程</category>
+      </categories>
       <tags>
         <tag>butterfly</tag>
         <tag>教程</tag>
@@ -109,7 +116,90 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
   <entry>
     <title>一班热榜历史记录2024-2025（上半学期）</title>
     <url>/000001/</url>
-    <content><![CDATA[# 2024.12.6 星期五
+    <content><![CDATA[## 2024.12.20 星期四
+
+好
+
+1.今日数学小测多名同学100分 💯
+
+不好
+
+1.今日多名同学因上生物课时**扰乱**课堂纪律，导致生物老师直接火山爆发🔥<img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/20/676581ea4489c.png" width = "200" height = "200" align=center />
+
+> 温馨提示：距离期末考试还有18天
+## 2024.12.19 星期三
+
+> ### 考试！
+
+## 2024.12.18 星期三
+
+好
+
+1.明天模考
+2.二班一名同学好心给我们班做值日（其实是被罚的）
+
+不好
+
+1.今日历史课两名男生一直说话，让历史老师发火🔥
+## 2024.12.16 星期一
+
+好
+
+1.今日卫生表现不错，没让二班扣分
+
+不好
+
+1.今日有**一些**同学在道法课上**大闹天宫**
+2.今日多名同学给地理老**师负荆请罪**
+
+## 2024.12.13 星期五
+
+好
+
+1.英语听写六名同学100分
+2.王昕妍，陆子俊，刘嘉乐被老师评为**整理收纳小能手**
+
+不好
+
+1.今日午休一些男生在**拆家**被老师发现实施**爱的教育**
+## 2024.12.12 星期四
+
+好
+
+1.今日有同学默写pronous全对
+
+不好
+
+1.道法课上同学们开天辟地
+## 2024.12.11 星期三
+
+好
+
+1.今日李承宣数学小测100分（进步很大）
+
+不好
+
+1.今日有很多男生的羽毛球丢了（看起来很伤心），建议下次别带了，**好好学习**
+## 2024.12.10 星期二
+
+好
+
+1.今日六名同学数学小测100分
+
+不好
+
+1。今日上课有同学太energetic了
+## 2024.12.9 星期一
+
+好
+
+1.今日班级获得六星班级
+
+不好
+
+1.今日体活课三名同学玩羽毛球被点名
+2.今日班级出现了新大遍超人（翻译：抄最多）
+## 2024.12.6 星期五
 
 好
 
@@ -124,11 +214,11 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 
 2.今日许多男生被罚跑400米
 
-# 2024.12.5 星期四
+## 2024.12.5 星期四
 
 无图片
 
-# 2024.12.4 星期三
+## 2024.12.4 星期三
 
 好
 
@@ -143,7 +233,7 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 
 2.今天音乐课四名男生被老师留下
 
-# 2024.12.3 星期二
+## 2024.12.3 星期二
 
 好
 
@@ -156,7 +246,7 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 
 1.某位男生私自借高年级运动器材并损坏
 
-# 2024.12.2 星期一
+## 2024.12.2 星期一
 
 好
 
@@ -466,7 +556,148 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
   <entry>
     <title>关于casaos国内无法拉取镜像解决方法</title>
     <url>/4/</url>
-    <content><![CDATA[<![CDATA[<p style="">1 进入casaos</p><p style="">2 打开files</p><p style="">3 点击文件下方的root</p><p style="">4 打开etc文件夹</p><p style="">5 使用cirl+f搜索docker</p><p style="">6打开docker文件夹</p><p style="">7 在电脑本地创建一个txt，加入以下内容</p><pre><code class="language-json"> {n    "registry-mirrors": [n      "https://dockerhub.icu",n      "https://docker.chenby.cn",n      "https://docker.1panel.live",n      "https://docker.awsl9527.cn",n      "https://docker.anyhub.us.kg",n      "https://dhub.kubesre.xyz",n      "https://dockerproxy.cn/",n      "https://hub.rat.dev/",n      "https://docker.actima.top/"n    ]n  }</code></pre><p style="">8 保存，重命名为daemon.json</p><p style="">9 上传到docker文件夹</p><p style="">10使用ssh链接打开终端，输入以下内容</p><pre><code>sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot</code></pre><p style="">此时设备会重启，重启好了就可以用应用商店了。</p>]]></content>
+    <content><![CDATA[1 进入casaos
+
+2 打开files
+
+3 点击文件下方的root
+
+4 打开etc文件夹
+
+5 使用cirl+f搜索docker
+
+6打开docker文件夹
+
+7 在电脑本地创建一个txt，加入以下内容
+
+```json
+ {n    "registry-mirrors": [n      "https://dockerhub.icu",n      "https://docker.chenby.cn",n      "https://docker.1panel.live",n      "https://docker.awsl9527.cn",n      "https://docker.anyhub.us.kg",n      "https://dhub.kubesre.xyz",n      "https://dockerproxy.cn/",n      "https://hub.rat.dev/",n      "https://docker.actima.top/"n    ]n  }
+```
+
+8 保存，重命名为daemon.json
+
+9 上传到docker文件夹
+
+10使用ssh链接打开终端，输入以下内容
+
+```
+sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot
+```
+
+此时设备会重启，重启好了就可以用应用商店了。
+]]></content>
+      <categories>
+        <category>解决问题</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>解决问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在byrutgame上下载免费游戏</title>
+    <url>/9688/</url>
+    <content><![CDATA[# 找到游戏英文名
+在百度或必应等搜索引擎上搜索游戏英文名
+例如我搜索**地平线5英文名**
+得到FORZA HORIZON 5
+
+# 找到游戏链接
+
+打开 [byrutgame](https://byrutgame.org/)
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/676958bd6e023.png)
+
+在搜索栏里输入刚刚搜索到的游戏英文名，例如我的就是FORZA HORIZON 5
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695974ef06c.png)
+
+直接搜索
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/676959c05467d.png)
+
+> 注意：图片有红色印章的是可以联网的游戏
+
+
+
+点击想要的游戏来到这页
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695a424d63c.png)
+
+点击这个按钮下载.torrent文件
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695bec8fafd.png)
+
+# 下载下载器
+
+这里推荐qbittorrent增强版 [github](https://github.com/c0re100/qBittorrent-Enhanced-Edition/) 
+
+链接不上github的可以用 123[盘下载](https://www.123pan.com/s/rnITjv-lxY13)（仅适用于Windows）
+
+打开软件之后是这样的
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695c75c6372.png)
+
+点击左上角 文件-添加torrent文件，把刚下的文件导入进去
+
+选择文件保存位置后点击确定就可以开始下载了
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695d0cd48f0.png)
+
+下载完点击对应启动程序启动游戏
+
+> 记得在游戏设置里改语言！
+
+]]></content>
+      <categories>
+        <category>教程</category>
+        <category>游戏</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>游戏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安知鱼主题音乐馆默认歌单修改</title>
+    <url>/23139/</url>
+    <content><![CDATA[> 仅适用于[hexo-theme-anzhiyu](https://github.com/anzhiyu-c/hexo-theme-anzhiyu)，其他请自行测试
+
+
+
+## 文件路径
+
+打开博客根目录目录
+
+依次打开
+
+/themes/anzhiyu/source/js
+
+里面有一个utils.js
+
+打开它
+
+按ctrl+f搜索 getCustomPlayList: function ()
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/14/675d0caa60c94.png)
+
+文件参数是这样的
+
+修改const userId = 你歌单的id
+如果想修改歌单音乐服务商就改const userServer = netease或tencent或kugou,或xiami或 baidu
+
+这样访问 /music/接可以了，不用在后面加?id=歌单id&server=音乐服务商
+
+> 参考 [避坑：我找到了Hexo安知鱼的音乐馆配置(目前好像还没有教程)](https://blog.csdn.net/2202_75762088/article/details/138251572#:~:text=%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%B0%B1%E6%98%AFBloghemesanzhiyusourcejsutils.js%20%E6%89%93%E5%BC%80%E8%AF%A5%E6%96%87%E4%BB%B6%EF%BC%8C%E6%8C%89Ctrl%2BF%E6%90%9C%E7%B4%A2%20getCustomPlayList%3A,function%20%28%29%20%E8%BF%99%E4%B8%AA%E5%87%BD%E6%95%B0%E5%86%85%E5%B0%B1%E6%98%AF%E5%85%B3%E4%BA%8E%E9%9F%B3%E4%B9%90%E6%BA%90%E7%9A%84%E8%AE%BE%E7%BD%AE%EF%BC%8C%E6%94%B9%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B0%B1%E5%A5%BD%EF%BC%9A)。]]></content>
+      <categories>
+        <category>技术</category>
+        <category>安知鱼主题</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>安知鱼主题</tag>
+      </tags>
   </entry>
   <entry>
     <title>引入Aplayer播放音乐-自定义api地址</title>
@@ -508,50 +739,82 @@ inject:
 
 如果以后这个挂了也可以自建或者使用别人的api
 ]]></content>
+      <categories>
+        <category>解决问题</category>
+      </categories>
+      <tags>
+        <tag>解决问题</tag>
+      </tags>
   </entry>
   <entry>
     <title>我的ai网站发布啦</title>
     <url>/1/</url>
-    <content><![CDATA[<![CDATA[<p style=""><a href="https://ai.fishcpy.us.kg/" target="_blank" rel="noopener">https://ai.fishcpy.us.kg/</a></p>]]></content>
+    <content><![CDATA[<https://ai.fishcpy.us.kg/>]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+      </tags>
   </entry>
   <entry>
     <title>本站历程</title>
     <url>/56827/</url>
     <content><![CDATA[# 本站历程
 
-2024.9 宝塔面板无法安装，找得了1panel面板
+- 2024.9 宝塔面板无法安装，找到了1panel面板
 
-2024.9 在应用商店里发现halo建站，开始了我的建站之路
+- 2024.9 在应用商店里发现halo建站，开始了我的建站之路
 
-2024.9 发布自己的第一篇文章
+- 2024.9 发布自己的第一篇文章
 
-2024.9 购买了云服务器
+- 2024.9 购买了云服务器
 
-2024.10 发现wordpass有一款主题特别好看，于是转到wordpass
+- 2024.10 发现wordpass有一款主题特别好看，于是转到wordpass
 
-2024.11 wordpass优化不好，有转到hexo倾向
+- 2024.11 wordpass优化不好，有转到hexo倾向
 
-2024.12 全站正式转到hexo，开始对butterfly美化
+- 2024.12 全站正式转到hexo，开始对butterfly美化
 
-2024.12 基本定型
+- 2024.12 基本定型
 
+- 2024.12 更换安知鱼主题，启用cloudflare cdn
 
-等待发展
+- 等待发展
 ]]></content>
+      <categories>
+        <category>站点历程</category>
+      </categories>
+      <tags>
+        <tag>站点历程</tag>
+      </tags>
   </entry>
   <entry>
     <title>水-1</title>
     <url>/2/</url>
-    <content><![CDATA[<![CDATA[<p style="">提示词：写一篇400字的描述中国的作文</p><h1 style="" id="%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%96%87%E5%8C%96%E4%BC%A0%E7%BB%9F">中国的文化传统</h1><p style="">中国是一个拥有悠久历史和丰富文化传统的国家。中国的文化源远流长，包括诗歌、绘画、音乐、戏剧、建筑等多个领域，都展现出独特的魅力。其中，中国的书法被誉为“东方艺术之花”，每一笔每一画都蕴含着深厚的文化内涵。中国的传统绘画以山水、花鸟为主题，追求意境的抒发和笔墨的韵味，体现了中国人对自然的独特感悟。</p><p style="">中国的音乐也是独具特色，古代的乐曲如《广陵散》、《阳关三叠》等流传至今，展现了中国人对音乐艺术的热爱和追求。中国的传统戏曲更是独树一帜，有京剧、豫剧、越剧等不同类型，每一种戏曲都有其独特的表演风格和表现形式，深受中国人民的喜爱。</p><p style="">此外，中国的建筑也是举世闻名，如万里长城、故宫等建筑奇迹，展现了中国古代建筑工艺的精湛和气势恢宏。中国的传统建筑注重“天人合一”的理念，追求与自然的和谐共生，体现了中国人对宇宙和谐的追求。</p><p style="">总的来说，中国的文化传统是丰富多彩的，融合了诗歌、绘画、音乐、戏剧、建筑等多种艺术形式，展现了中国人民对美好生活的向往和追求。这些传统文化不仅丰富了中国人民的精神生活，也为世界文化的多样性做出了重要贡献。</p><p style=""></p><p style="">AI 也可能犯错，请仔细辨别</p><p style=""></p>]]></content>
+    <content><![CDATA[提示词：写一篇400字的描述中国的作文
+
+# 中国的文化传统
+
+中国是一个拥有悠久历史和丰富文化传统的国家。中国的文化源远流长，包括诗歌、绘画、音乐、戏剧、建筑等多个领域，都展现出独特的魅力。其中，中国的书法被誉为“东方艺术之花”，每一笔每一画都蕴含着深厚的文化内涵。中国的传统绘画以山水、花鸟为主题，追求意境的抒发和笔墨的韵味，体现了中国人对自然的独特感悟。
+
+中国的音乐也是独具特色，古代的乐曲如《广陵散》、《阳关三叠》等流传至今，展现了中国人对音乐艺术的热爱和追求。中国的传统戏曲更是独树一帜，有京剧、豫剧、越剧等不同类型，每一种戏曲都有其独特的表演风格和表现形式，深受中国人民的喜爱。
+
+此外，中国的建筑也是举世闻名，如万里长城、故宫等建筑奇迹，展现了中国古代建筑工艺的精湛和气势恢宏。中国的传统建筑注重“天人合一”的理念，追求与自然的和谐共生，体现了中国人对宇宙和谐的追求。
+
+总的来说，中国的文化传统是丰富多彩的，融合了诗歌、绘画、音乐、戏剧、建筑等多种艺术形式，展现了中国人民对美好生活的向往和追求。这些传统文化不仅丰富了中国人民的精神生活，也为世界文化的多样性做出了重要贡献。
+
+> AI 也可能犯错，请仔细辨别]]></content>
   </entry>
   <entry>
     <title>购买雨云服务器并部署hexo博客-购买云服务器</title>
     <url>/42850/</url>
-    <content><![CDATA[# 为什么要用云服务器部署静态博客
+    <content><![CDATA[
+# 为什么要用云服务器部署静态博客
 
 hexo为静态博客，可以直接在github部署。
 
-但是例如我这个域名github.mengmengmao.cn ping就有30个测速节点无法ping通
+但是例如我这个域名github.mengmengmao.cn ping就有30个测速节点无法ping通，并且github每个仓库只有500MB存储空间
 
 但是有了云服务器就不一样了，基本全国都可以ping通，例如我这个域名blog.mengmengmao.cn ping之后只有2个节点无法ping通
 
@@ -584,8 +847,10 @@ hexo为静态博客，可以直接在github部署。
       <categories>
         <category>建站</category>
         <category>云服务器</category>
+        <category>hexo</category>
       </categories>
       <tags>
+        <tag>hexo</tag>
         <tag>建站</tag>
         <tag>云服务器</tag>
       </tags>
@@ -593,6 +858,26 @@ hexo为静态博客，可以直接在github部署。
   <entry>
     <title>跨学科主题学习作业</title>
     <url>/3/</url>
-    <content><![CDATA[<![CDATA[<p style="">语文</p><p style=""><img src="https://img.picui.cn/free/2024/10/06/670293716bdfc.jpg" width="772px" height="546px" style="display: inline-block"></p><p style=""></p><p style="">数学</p><p style=""><img src="https://img.picui.cn/free/2024/10/06/670297f56dae0.jpg" width="772px" height="1095px" style="display: inline-block"></p><p style=""></p><p style="">英语</p><p style=""><img src="https://img.picui.cn/free/2024/10/06/67029820edbeb.jpg" width="772px" height="1112px" style="display: inline-block"></p><p style="">地理</p><p style=""><img src="/upload/670297beb3d96-cnun.jpg" width="100%" height="100%" style="display: inline-block"></p><p style=""></p><p style=""></p><p style=""></p>]]></content>
+    <content><![CDATA[语文
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecb374c4fc.png)
+
+数学
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecbac2dfbc.png)
+
+英语
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecbbe5f090.png)
+
+地理
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecb7c59df5.png)]]></content>
+      <categories>
+        <category>作业</category>
+      </categories>
+      <tags>
+        <tag>作业</tag>
+      </tags>
   </entry>
 </search>

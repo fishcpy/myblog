@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.mengmengmao.cn/README.html</loc>
+    
+    <lastmod>2025-02-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mengmengmao.cn/posts/46462/</loc>
     
     <lastmod>2025-02-06</lastmod>
@@ -74,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://blog.mengmengmao.cn/%E4%B8%80%E7%8F%AD%E7%9F%A5%E8%AF%86%E7%82%B9/index.html</loc>
+    <loc>https://blog.mengmengmao.cn/%E4%B8%80%E7%8F%AD%E5%9B%BE%E5%BA%93/index.html</loc>
     
     <lastmod>2025-01-10</lastmod>
     
@@ -83,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://blog.mengmengmao.cn/%E4%B8%80%E7%8F%AD%E5%9B%BE%E5%BA%93/index.html</loc>
+    <loc>https://blog.mengmengmao.cn/%E4%B8%80%E7%8F%AD%E7%9F%A5%E8%AF%86%E7%82%B9/index.html</loc>
     
     <lastmod>2025-01-10</lastmod>
     
@@ -155,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://blog.mengmengmao.cn/fcircle/index.html</loc>
+    <loc>https://blog.mengmengmao.cn/essay/index.html</loc>
     
     <lastmod>2025-01-10</lastmod>
     
@@ -164,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://blog.mengmengmao.cn/essay/index.html</loc>
+    <loc>https://blog.mengmengmao.cn/fcircle/index.html</loc>
     
     <lastmod>2025-01-10</lastmod>
     

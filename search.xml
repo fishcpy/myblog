@@ -1,410 +1,1024 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>启用cloudflare cdn后js无法正常加载解决办法</title>
-      <link href="/posts/46462/"/>
-      <url>/posts/46462/</url>
-      
-        <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><h3 id="前段时间想提升一下多人的网站性能，就把cloudflare-cdn打开了，发现评论区和关于页的部分东西加载不正常。"><a href="#前段时间想提升一下多人的网站性能，就把cloudflare-cdn打开了，发现评论区和关于页的部分东西加载不正常。" class="headerlink" title="前段时间想提升一下多人的网站性能，就把cloudflare cdn打开了，发现评论区和关于页的部分东西加载不正常。"></a>前段时间想提升一下多人的网站性能，就把cloudflare cdn打开了，发现评论区和关于页的部分东西加载不正常。</h3><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h3 id="1-在cloudflare控制面板中点击域名"><a href="#1-在cloudflare控制面板中点击域名" class="headerlink" title="1.在cloudflare控制面板中点击域名"></a>1.在cloudflare控制面板中点击域名</h3><p><img src="https://png.mengmengmao.cn/img/2025/01/18/678b9c4de7f20.jpg"></p><h3 id="2-点击侧边栏的-速度-优化-内容优化-把里面的-Rocket-Loader™-关掉"><a href="#2-点击侧边栏的-速度-优化-内容优化-把里面的-Rocket-Loader™-关掉" class="headerlink" title="2.点击侧边栏的 速度-优化-内容优化 把里面的 Rocket Loader™ 关掉"></a>2.点击侧边栏的 速度-优化-内容优化 把里面的 Rocket Loader™ 关掉</h3><p><img src="https://png.mengmengmao.cn/img/2025/01/18/678b9d081c70e.jpg"></p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>12月到了</title>
+    <url>/posts/33755/</url>
+    <content><![CDATA[# 12月到了，我要更加努力💪
+]]></content>
       <categories>
-          
-          <category> 解决问题 </category>
-          
-          <category> CDN </category>
-          
+        <category>日常</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 解决问题 </tag>
-            
-            <tag> CDN </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>水-1</title>
-      <link href="/posts/2/"/>
-      <url>/posts/2/</url>
-      
-        <content type="html"><![CDATA[<p>提示词：写一篇400字的描述中国的作文</p><h1 id="中国的文化传统"><a href="#中国的文化传统" class="headerlink" title="中国的文化传统"></a>中国的文化传统</h1><p>中国是一个拥有悠久历史和丰富文化传统的国家。中国的文化源远流长，包括诗歌、绘画、音乐、戏剧、建筑等多个领域，都展现出独特的魅力。其中，中国的书法被誉为“东方艺术之花”，每一笔每一画都蕴含着深厚的文化内涵。中国的传统绘画以山水、花鸟为主题，追求意境的抒发和笔墨的韵味，体现了中国人对自然的独特感悟。</p><p>中国的音乐也是独具特色，古代的乐曲如《广陵散》、《阳关三叠》等流传至今，展现了中国人对音乐艺术的热爱和追求。中国的传统戏曲更是独树一帜，有京剧、豫剧、越剧等不同类型，每一种戏曲都有其独特的表演风格和表现形式，深受中国人民的喜爱。</p><p>此外，中国的建筑也是举世闻名，如万里长城、故宫等建筑奇迹，展现了中国古代建筑工艺的精湛和气势恢宏。中国的传统建筑注重“天人合一”的理念，追求与自然的和谐共生，体现了中国人对宇宙和谐的追求。</p><p>总的来说，中国的文化传统是丰富多彩的，融合了诗歌、绘画、音乐、戏剧、建筑等多种艺术形式，展现了中国人民对美好生活的向往和追求。这些传统文化不仅丰富了中国人民的精神生活，也为世界文化的多样性做出了重要贡献。</p><blockquote><p>AI 也可能犯错，请仔细辨别</p></blockquote>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>给你的博客加上一个十年倒计时吧</title>
-      <link href="/posts/39860/"/>
-      <url>/posts/39860/</url>
-      
-        <content type="html"><![CDATA[<blockquote><h2 id="效果预览-关于-fishcpy的小破站"><a href="#效果预览-关于-fishcpy的小破站" class="headerlink" title="效果预览 关于 fishcpy的小破站"></a>效果预览 <a href="https://mengmengmao.cn/about/">关于 fishcpy的小破站</a></h2></blockquote><h1 id="打开：-你博客目录-themes-anzhiyu-source-js"><a href="#打开：-你博客目录-themes-anzhiyu-source-js" class="headerlink" title="打开： 你博客目录&#x2F;themes&#x2F;anzhiyu&#x2F;source&#x2F;js"></a>打开： 你博客目录&#x2F;themes&#x2F;anzhiyu&#x2F;source&#x2F;js</h1><p>在里面新建一个.js文件，例如我新建了一个clock.js文件<br>编辑文件，加入下面代码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">// 设置倒计时的目标日期</span><br><span class="line">var countDownDate = new Date(&quot;September 6, 2034 00:00:00&quot;).getTime();</span><br><span class="line"></span><br><span class="line">// 更新倒计时每秒</span><br><span class="line">var x = setInterval(function() &#123;</span><br><span class="line">    var now = new Date().getTime();</span><br><span class="line">    var distance = countDownDate - now;</span><br><span class="line"></span><br><span class="line">    // 计算天、小时、分钟和秒</span><br><span class="line">    var days = Math.floor(distance / (1000 * 60 * 60 * 24));</span><br><span class="line">    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));</span><br><span class="line">    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));</span><br><span class="line">    var seconds = Math.floor((distance % (1000 * 60)) / 1000);</span><br><span class="line"></span><br><span class="line">    // 显示结果</span><br><span class="line">    document.getElementById(&quot;countdown&quot;).innerHTML = days + &quot;天 &quot; + hours + &quot;小时 &quot;</span><br><span class="line">    + minutes + &quot;分钟 &quot; + seconds + &quot;秒 &quot;;</span><br><span class="line"></span><br><span class="line">    // 如果倒计时结束，显示消息</span><br><span class="line">    if (distance &lt; 0) &#123;</span><br><span class="line">        clearInterval(x);</span><br><span class="line">        document.getElementById(&quot;countdown&quot;).innerHTML = &quot;你发现了彩蛋&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, 1000);</span><br></pre></td></tr></table></figure><table><thead><tr><th>参数</th><th>注释</th><th>可改值</th></tr></thead><tbody><tr><td>你发现了彩蛋</td><td>倒计时结束的文字</td><td>随意</td></tr><tr><td>September 6</td><td>日期</td><td>英文月份+日期</td></tr><tr><td>2034 00:00:00</td><td>日期</td><td>年份+具体时间</td></tr></tbody></table><h1 id="在你要的文件里-本人仅测试了md文件-加入下面代码即可实现"><a href="#在你要的文件里-本人仅测试了md文件-加入下面代码即可实现" class="headerlink" title="在你要的文件里(本人仅测试了md文件)加入下面代码即可实现"></a>在你要的文件里(本人仅测试了md文件)加入下面代码即可实现</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.big-font &#123;</span><br><span class="line">  font-size: 50px; /* 你可以根据需要调整这个大小 */</span><br><span class="line">  font-weight: bold;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;countdown&quot; class=&quot;big-font&quot;&gt;&lt;/div&gt; &lt;!-- 应用大字体样式 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;script data-pjax defer src=&#x27;/js/clock.js&#x27;&gt;&lt;/script&gt;</span><br><span class="line">&lt;div class=&quot;.pjax-reload&quot;&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure><table><thead><tr><th>参数</th><th>注释</th><th>可改值</th></tr></thead><tbody><tr><td>50px</td><td>大小</td><td><a href="https://geek-docs.com/html/html-ask-answer/824_html_how_to_change_font_size_in_html.html">可以看一下这个</a></td></tr><tr><td>&#x2F;js&#x2F;clock.js</td><td>文件位置</td><td>&#x2F;js&#x2F;文件名.js， 文件名为你刚创建的文件名</td></tr></tbody></table>]]></content>
-      
-      
+      <tags>
+        <tag>日常</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>butterfly导航栏图标修改</title>
+    <url>/posts/42497/</url>
+    <content><![CDATA[# 导航栏图标
+
+我看了官方配置文件，里面好像没有关于导航栏图标的描述，修改完效果如下
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ab17651d2.png)
+
+官方配置代码如下
+
+```
+例： 首页: / || fas fa-home
+```
+
+打开[fontawesome](https://fontawesome.com/)
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751acefe84bf.png)
+
+点击顶部导航栏的icons
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ad8fe887b.png)
+
+比如我在搜索栏里搜索bilibili
+点击你想要的图标
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ade0a08b5.png)
+
+这里他给了一个html
+
+```
+<i class="fa-brands fa-bilibili"></i>```
+```
+
+把里面的fa-brands fa-bilibili复制下来
+
+```
+# 原来代码
+首页: / || fas fa-home
+#修改后
+首页: / || fa-brands fa-bilibili
+```
+
+至此修改完毕
+]]></content>
       <categories>
-          
-          <category> html </category>
-          
-          <category> css </category>
-          
-          <category> 教程 </category>
-          
+        <category>butterfly</category>
+        <category>教程</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-            <tag> css </tag>
-            
-            <tag> html </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>在byrutgame上下载免费游戏</title>
-      <link href="/posts/9688/"/>
-      <url>/posts/9688/</url>
-      
-        <content type="html"><![CDATA[<h1 id="找到游戏英文名"><a href="#找到游戏英文名" class="headerlink" title="找到游戏英文名"></a>找到游戏英文名</h1><p>在百度或必应等搜索引擎上搜索游戏英文名<br>例如我搜索<strong>地平线5英文名</strong><br>得到FORZA HORIZON 5</p><h1 id="找到游戏链接"><a href="#找到游戏链接" class="headerlink" title="找到游戏链接"></a>找到游戏链接</h1><p>打开 <a href="https://byrutgame.org/">byrutgame</a></p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/676958bd6e023.png"></p><p>在搜索栏里输入刚刚搜索到的游戏英文名，例如我的就是FORZA HORIZON 5</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695974ef06c.png"></p><p>直接搜索</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/676959c05467d.png"></p><blockquote><p>注意：图片有红色印章的是可以联网的游戏</p></blockquote><p>点击想要的游戏来到这页</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695a424d63c.png"></p><p>点击这个按钮下载.torrent文件</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695bec8fafd.png"></p><h1 id="下载下载器"><a href="#下载下载器" class="headerlink" title="下载下载器"></a>下载下载器</h1><p>这里推荐qbittorrent增强版 <a href="https://github.com/c0re100/qBittorrent-Enhanced-Edition/">github</a> </p><p>链接不上github的可以用 123<a href="https://www.123pan.com/s/rnITjv-lxY13">盘下载</a>（仅适用于Windows）</p><p>打开软件之后是这样的</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695c75c6372.png"></p><p>点击左上角 文件-添加torrent文件，把刚下的文件导入进去</p><p>选择文件保存位置后点击确定就可以开始下载了</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695d0cd48f0.png"></p><p>下载完点击对应启动程序启动游戏</p><blockquote><p>记得在游戏设置里改语言！</p></blockquote>]]></content>
-      
-      
+      <tags>
+        <tag>butterfly</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/1243066710/</url>
+    <content><![CDATA[Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+
+## Quick Start
+
+### Create a new post
+
+```bash
+$ hexo new "My New Post"
+```
+
+More info: [Writing](https://hexo.io/docs/writing.html)
+
+### Run server
+
+```bash
+$ hexo server
+```
+
+More info: [Server](https://hexo.io/docs/server.html)
+
+### Generate static files
+
+```bash
+$ hexo generate
+```
+
+More info: [Generating](https://hexo.io/docs/generating.html)
+
+### Deploy to remote sites
+
+```bash
+$ hexo deploy
+```
+
+More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+]]></content>
       <categories>
-          
-          <category> 教程 </category>
-          
-          <category> 游戏 </category>
-          
+        <category>hallo word</category>
+        <category>hexo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-            <tag> 游戏 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>安知鱼主题音乐馆默认歌单修改</title>
-      <link href="/posts/23139/"/>
-      <url>/posts/23139/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>仅适用于<a href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu">hexo-theme-anzhiyu</a>，其他请自行测试</p></blockquote><h2 id="文件路径"><a href="#文件路径" class="headerlink" title="文件路径"></a>文件路径</h2><p>打开博客根目录目录</p><p>依次打开</p><p>&#x2F;themes&#x2F;anzhiyu&#x2F;source&#x2F;js</p><p>里面有一个utils.js</p><p>打开它</p><p>按ctrl+f搜索 getCustomPlayList: function ()</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/14/675d0caa60c94.png"></p><p>文件参数是这样的</p><p>修改const userId &#x3D; 你歌单的id<br>如果想修改歌单音乐服务商就改const userServer &#x3D; netease或tencent或kugou,或xiami或 baidu</p><p>这样访问 &#x2F;music&#x2F;接可以了，不用在后面加?id&#x3D;歌单id&amp;server&#x3D;音乐服务商</p><blockquote><p>参考 <a href="https://blog.csdn.net/2202_75762088/article/details/138251572#:~:text=%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%B0%B1%E6%98%AFBloghemesanzhiyusourcejsutils.js%20%E6%89%93%E5%BC%80%E8%AF%A5%E6%96%87%E4%BB%B6%EF%BC%8C%E6%8C%89Ctrl%2BF%E6%90%9C%E7%B4%A2%20getCustomPlayList%3A,function%20%28%29%20%E8%BF%99%E4%B8%AA%E5%87%BD%E6%95%B0%E5%86%85%E5%B0%B1%E6%98%AF%E5%85%B3%E4%BA%8E%E9%9F%B3%E4%B9%90%E6%BA%90%E7%9A%84%E8%AE%BE%E7%BD%AE%EF%BC%8C%E6%94%B9%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B0%B1%E5%A5%BD%EF%BC%9A">避坑：我找到了Hexo安知鱼的音乐馆配置(目前好像还没有教程)</a>。</p></blockquote>]]></content>
-      
-      
+      <tags>
+        <tag>hallo word</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一班热榜历史记录2024-2025（上半学期）</title>
+    <url>/posts/000001/</url>
+    <content><![CDATA[> 完结
+## 2024.12.27 星期五
+
+无图片
+
+## 2024.12.26 星期四
+
+好
+
+1.唐语彤帮助老师发口罩
+2.今天语文课老师听课，同学们表现优异
+
+不好
+
+1.体育课后，两名同学**自由搏击**
+## 2024.12.25 星期三
+
+好
+
+1.语文模拟考优秀平均分比年级优秀平均分高出一半（太棒了）
+2.英语小测一名同学满分💯
+
+不好
+
+1.王yu好
+
+1.语文模拟考优秀平均分比年级优秀平均分高出一半（太棒了）
+2.英语小测一名同学满分💯
+
+不好
+
+1.王昱涵值日太不认真了跟没扫一样，批评他
+## 2024.12.24 星期二
+
+无图片
+
+## 2024.12.23 星期一
+
+无，图片
+
+## 2024.12.20 星期五
+
+好
+
+1.今日数学小测多名同学100分 💯
+
+不好
+
+1.今日多名同学因上生物课时**扰乱**课堂纪律，导致生物老师直接火山爆发🔥<img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/20/676581ea4489c.png" width = "200" height = "200" align=center />
+
+> 温馨提示：距离期末考试还有18天
+## 2024.12.19 星期四
+
+> ### 考试！
+
+## 2024.12.18 星期三
+
+好
+
+1.明天模考
+2.二班一名同学好心给我们班做值日（其实是被罚的）
+
+不好
+
+1.今日历史课两名男生一直说话，让历史老师发火🔥
+## 2024.12.16 星期一
+
+好
+
+1.今日卫生表现不错，没让二班扣分
+
+不好
+
+1.今日有**一些**同学在道法课上**大闹天宫**
+2.今日多名同学给地理老**师负荆请罪**
+
+## 2024.12.13 星期五
+
+好
+
+1.英语听写六名同学100分
+2.王昕妍，陆子俊，刘嘉乐被老师评为**整理收纳小能手**
+
+不好
+
+1.今日午休一些男生在**拆家**被老师发现实施**爱的教育**
+## 2024.12.12 星期四
+
+好
+
+1.今日有同学默写pronous全对
+
+不好
+
+1.道法课上同学们开天辟地
+## 2024.12.11 星期三
+
+好
+
+1.今日李承宣数学小测100分（进步很大）
+
+不好
+
+1.今日有很多男生的羽毛球丢了（看起来很伤心），建议下次别带了，**好好学习**
+## 2024.12.10 星期二
+
+好
+
+1.今日六名同学数学小测100分
+
+不好
+
+1。今日上课有同学太energetic了
+## 2024.12.9 星期一
+
+好
+
+1.今日班级获得六星班级
+
+不好
+
+1.今日体活课三名同学玩羽毛球被点名
+2.今日班级出现了新大遍超人（翻译：抄最多）
+## 2024.12.6 星期五
+
+好
+
+
+1.今日多名同学英语听写全对
+
+
+不好
+
+
+1.今日地理课两名同学罚站
+
+2.今日许多男生被罚跑400米
+
+## 2024.12.5 星期四
+
+无图片
+
+## 2024.12.4 星期三
+
+好
+
+
+1.数学阶段测试张宇泽同学轻松拿下年纪和班级双第一👍
+
+
+不好
+
+
+1.今天又有一名男生弄坏了班级公共器材
+
+2.今天音乐课四名男生被老师留下
+
+## 2024.12.3 星期二
+
+好
+
+
+1.班级几名同学主动领取运动器材
+
+
+不好
+
+
+1.某位男生私自借高年级运动器材并损坏
+
+## 2024.12.2 星期一
+
+好
+
+
+1.今日班级获得 **三帆星旗** 和 **小熊**
+
+2.今日地理课几位同学不用写作业
+
+
+不好
+
+
+今日有几位同学上课老说话
+
+## 2024.11.29 星期五
+
+好
+
+
+1.数学考试同学们表现优异，值得表扬👍
+
+2.索林熙数学课被表扬，继续努力
+
+
+不好
+
+
+1.某名同学被调到“金牌VIP”座位
+
+2.音乐课某人“cossplay”蚂蚱
+
+## 2024.11.28 星期四
+
+无图片
+
+数学老师信息：
+
+课前小测共有39位同学获得满分💯
+
+## 2024.11.27 星期三
+
+好
+
+1.今日数学小测多名同学100分
+
+不好
+
+1.英语课纪律不好
+
+2.今日有一名同学再次没写完作业
+
+## 2024.11.26 星期二
+
+好
+
+1.闫博凯同学数学公开课讲题思路清晰被表扬
+
+2.部分同学在课间积极讨论数学问题
+
+不好
+
+1.三名同学在食堂“传达情报”被抓捕
+
+## 2024.11.25 星期一
+
+好
+
+1.上周获得五星班级（继续加油）
+2.雨给郑讲题
+3.闫博凯给李子宇贴心披外套 wo！
+
+不好
+
+1.早读三名同学说话
+2.地理课三名同学习题抄写
+3.英语课三名同学总说话
+
+## 2024.11.22 星期五
+
+好
+
+1.今天语文默写22名同学满分
+2.经过全班共同努力，争取到了下周二的数学公开课
+
+## 2024.11.21 星期四
+
+好
+
+1.今天数学小测32同学💯分
+
+2.体育课老师表扬了三名女生
+
+不好
+
+无
+
+## 2024.11.20 星期三
+
+好
+
+1.今天数学小测多名同学💯分
+
+不好
+
+1.自习课一名同学“创意DIY”
+
+2.某名同学生物课“神游天外”
+
+班主任信息
+
+大课间，唐语彤，张耘卓奋笔疾书。刘溢昕张紫涵在背古诗。王思萌，张雨泽，马敏萱，郑旭晴，闫博凯，郭佳怡，孟诗颖在安静学习。王欣妍问完各科老师问题，还在背初中语文古诗词拓展。
+
+## 2024.11.19 星期二
+
+好
+
+1.英语阅读单词梳理许多同学积极发言
+
+2.同学们数学小条积极改错
+
+不好
+
+1.李同学喜提跑步大礼包
+
+2。某位同学体育课玩闹被抓
+
+## 2024.11.18 星期一
+
+无图片
+
+数学老师信息
+
+今天早上进行了第1、2章的基础知识过关，共有20名同学一次性通关。恭喜以下同学
+王思萌，侯芊黛，刘溢昕，刘佳懿，张耘卓，张雨泽，孟诗颖，王昕妍，李子宇，闫博凯，于浩楠，陈骏洁，姜子跃，王腾煊，唐语彤，郑旭晴，杜明露，李嘉晟，陆子俊，李泽辰。
+
+## 2024.11.15 星期五
+
+无图片
+
+## 2024.11.14 星期四
+
+无图片
+
+## 2024.11.13星期三
+
+好
+
+1、今日数学计算多人100分
+
+2、今日课间多名同学认真学习
+
+不好
+
+1、有一位同学被地理老师罚写
+
+2、有一位同学地理课上写作业
+
+3、今日有一位同学午休搞破坏
+
+4、有一位同学不做课前准备（多次）
+
+## 2024.11.12星期二
+
+好
+
+1、李承宣遵守班级规定，知错就改
+
+2、数学课上小测27人全对
+
+3、数学错题同学积极改错
+
+不好
+
+1、今日某位老师抓拍午休混乱瞬间
+
+2、王腾煊午休奇怪睡姿（今日奇怪事件）
+
+## 2024.11.11星期一
+
+好<br> 1、毛立珑数学课被老师表扬<br> 2、数学小测很多同学满分<br> 不好 <br>1、一名同学罚抄时写“天书”<br>
+
+## 2024.11.8 星期五
+
+好<br> 1.今日英语听写很多人听写100分<br> 2.今日有一些同学学习态度十分不错<br> 不好<br> 1.今日有一位同学因为某些原因扣了文明一分<br> 2.今日英语课有很多人笑 <br>3.今日有多名同学没完成作业<br>
+
+## 2024.11.7 星期四
+
+好<br> 1.索林熙今日上课被数学老师表扬<br> 2.今日毛立龙英语练习满分 不好<br> 1.今日有一位同学给书改名（语文改甲骨文，英语改鸟语，历史改拉史。。。）<br> 2.今日生物课纪律不好<br>
+
+## 2024.11.6 星期三
+
+好<br> 1,.今天早读大多数同学按时背诵短文<br> 2.李承宣英语课被老师表扬<br> 3.李子宇同学引体向上做了三个<br> 不好<br> 1.一名同学音乐课活跃过度 <br>2.英语课有一部分人没有按时交英语作业，喜提罚抄一遍<br>
+
+## 2024.11.5 星期二
+
+好 <br>1.今日有些人贡献口罩给同学 <br>2.数学课有些同学回答问题 不好<br> 1.今日好多同学午休写作业吵闹<br> 2.今日有三名同学在文明就餐区吃饭<br>
+
+## 2024.11.4 星期一
+
+好<br> 1.今日唐雨彤在班级里修复地板<br> 不好 <br>1.今日有很多同学没有完成英语作业 <br>2.今日卫生扣了一分<br>
+
+## 2024.11.1 星期五
+
+好<br> 1.今日英语听写20人满分<br> 2.在考试中有很多同学获得优秀奖进步奖 <br>3.今日李嘉晟多次主动回答问题 <br>4今日有很多同学在班级里学习 不好<br> 1.今日舞蹈有两人逃课<br> 2.今日上课有很多人没做课前准备<br> 3今日上操有同学乱动乱说话
+
+## 2024.10.31 星期四
+
+无，图片
+
+## 2024.10.30 星期三
+
+无，图片
+
+## 2024.10.29 星期二
+
+考试，无
+
+## 2024.10.28 星期一
+
+没有图片 今日有考试
+
+## 2024.10.25 星期五
+
+好<br> 1 今日默写有 11 名同学 100 分 <br>不好 <br>1 无，大家都很棒<br> 每日一笑<br> 1 今日班级进行了 2b 铅笔争夺战，伤亡人众多（伤是发出叫声，亡是没抢到）<br> 2 今日课间 有一位同学被老师罚叫了100“鹅” 3 今日生物课有一位同学PK输了，用抹布擦脸<br>
+
+最后祝大家，下周星期一、星期二都能取得理想成绩。 --fish 2024.10.25<br>
+
+## 2024.10.24 星期四
+
+好<br> 1 有 22 名同学语文小测满分💯<br> 2 今日李嘉晟多次回答问题<br> 不好<br> 1 有一位同学上课迟到 5 分钟 <br>2 有几位同学没有做课前准备 <br>
+
+## 2024.10.23 星期三
+
+好 <br>1 今日龚晟鑫第一个背完英语 <br>2 17 名同学语文听写全对 <br>3 李承宣上课认真<br> 不好 <br>1 今日有个别同学没写英语作业 <br>2 今日还有几位同学上体育课违反纪律 <br>每日一笑 <br>今日两位同学在课间写天书<br>
+
+## 2024.10.22 星期二
+
+没有图片，无热榜 <br>年纪表扬👍 <br>优秀班干部：侯芊黛，唐语彤，刘佳懿 优秀课代表：刘溢昕，王思萌，张云卓 <br>学习标兵：于浩楠，张宇泽，李子宇<br> 主动帮忙打扫卫生：刘嘉乐，申嘉怡，李承轩，王沛禹，郑旭晴，张云卓<br> 班主任信息<br> 今日小测后八首古诗默写。以下同学全对：刘佳懿，杜明露，李泽辰，王思萌，于浩楠，王腾煊，陈骏洁。错一个的同学有闫博凯，白晰，张雨泽，侯芊黛，陆子俊，郑旭晴，辛栋，李子宇，姜子跃。其中白晰同学进步明显，态度积极，特此表扬。明天默写继续听写这八首古诗。期待同学们更好的巩固。
+
+## 2024.10.21 星期一
+
+好<br> 1 今天班级获得六星班级<br> 2龚晟鑫给马一然饭卡<br> 不好<br> 1 有几位同学没写作业 <br>班主任信息 <br>上一周表现优秀的班委（以下为班委年级组评选）<br> 学习标兵：于浩楠，张雨泽，李子宇 <br>优秀班干部：侯芊黛，唐语彤，刘佳懿 <br>优秀课代表：刘溢昕，王思萌，张耘卓 <br>运动会助人为乐，年级表彰卫生小组为张耘卓小组。组员刘嘉乐，申嘉怡，李承轩，王沛禹，郑旭晴。
+
+## 2024.10.18 星期五 运动会
+
+今日无热榜 [运动会图库 点这里](/yi-ban-2024-di-jiu-jie-qiu-ji-tian-jing-yun-dong-hui-tu-ku)
+
+## 2024.10.17 星期四 运动会
+
+好 1 龚晟鑫和张雨泽提供自助餐 2 班委们很负责 3 今日运动员们十分卖力 4 王昕妍和刘佳懿无私奉献 不好 1 有几位同学违反纪律 [运动会图库 点击这里](/yi-ban-2024-di-jiu-jie-qiu-ji-tian-jing-yun-dong-hui-tu-ku)
+
+## 2024.10.16 星期三
+
+好 1 李嘉晟上课十分认真 2 今日有十个人听写全对 💯 不好 1 无
+
+## 2024.10.15 星期二
+
+好 1 今日耿思凡主动借饭卡给索林熙 2 李承宣课上被老师表扬 👍 3 今日语文听写 15 个全对💯 不好 1 今日某人没写英语作业（小马哥）🐎 2 两位同学记律太差👎 班主任信息 今天继续听写论语十二章，以下同学全对。辛栋，孟诗颖，郭佳怡，李嘉晟，张紫涵，于浩楠，张耘卓，闫博凯，王思萌，陈骏洁，王腾煊，张紫萱，马一然，姜子跃。王昱涵，张雨泽。恭喜以上同学。今天班里小伙子表现很好。期待大家更好表现。
+
+## 2024.10.14 星期一
+
+好 1 姜子跃，王昱涵和侯睿祺上课认真听讲 2 今日论语默写有 20 人全对 3.1 张紫萱，侯芊黛和孟诗颖为优秀课代表 3.2 王昕妍，张紫萱和段茗涵为优秀班委 3.3 杜明露，汪洋和闫博凯为学习标兵 不好 1 今日有一名同学所有作业都没带 2 今日升旗时，两位同学乱动，享受了免费健身服务 3两位同学历史作业在讲台，被历史老师请到班级后面（已补完） 4 今日小干部扣了3分😭
+
+## 2024.10.12 星期六
+
+好 1 王昕妍，陈骏洁，段茗涵当选学生代表 2 毛立龙在班里认真学习 不好 1 两位同学在课上吵架 2 有一位同学逃值日 3 地理课上有几位同学没拿地球仪 4 四位同学课间跳舞
+
+## 2024.10.11 星期五
+
+好 1 今日王沛禹主动为班级喊口号 2 今日班委会正式成立 3 今日有 10 名同学默写全对，23 名同学优秀 4 索林熙分享自己珍藏的昆虫标本 不好 1 三名同学上课玩笔+罗阵 2 两名同学在图书馆说话 班主任信息 今天语文课默写全对的的同学有王思萌，辛栋，张耘卓，杜明露，张紫萱，刘溢昕，孟诗颖，陈骏洁，郭佳怡，段茗涵。错两个以内的同学有，李泽辰，郑旭晴，王昱涵，王腾煊，张紫涵，李子宇，李嘉晟，侯芊黛，闫博凯，王欣妍，陆子俊，马敏萱于浩楠，张雨泽。恭喜以上同学。期待看到更多孩子优秀的表现。
+
+## 2024.10.10 星期四
+
+好 1 今天有八个同学英语听写 100 分 2 张雨泽数学 100 分（周二热搜） 3 本周卫生角没有扣分，十分难得 4 刘佳懿，梦诗颖，刘溢昕，张耘卓，王思萌，于浩楠语文默写全对 不好 1 有两位男生在图书馆说小话 2 某位同学道法课带历史书，历史课带道法书 3 某人在历史课上写作业
+
+## 2024.10.9 星期三
+
+好 1 张雨泽数学 100 分（至今未超越） 2 刘佳懿，梦诗颖，刘溢昕，张耘卓，王思萌，于浩楠语文听写 100 分 不好 1 昨天有 4 个男生没找老师背论语 2 早读有位同学说话被罚站
+
+## 2024.10.8 星期二
+
+好 1 张雨泽数学 100 分 2 姜子跃和索林熙自觉在教室学习 3 马敏宣背完语文书 4 王腾煊回答了许多男生不会的问题 不好 1 数学课上 4 个男生回答不出问题 2 有两位男生在生物课上说话
+
+# 更早以前
+
+没有啦，那时一班热榜都还没有啊！
+
+# 维护名单
+
+
+|                   |        |
+| ----------------- | ------ |
+| 名字              | 分组   |
+| 孟\*\*            | 班委   |
+| fishcpy | 班委   |
+| 郭\*\*            | 班委   |
+| 陈\*\*            | 班委   |
+| 梁\*              | 班主任 |
+]]></content>
       <categories>
-          
-          <category> 技术 </category>
-          
-          <category> 安知鱼主题 </category>
-          
+        <category>家校</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-            <tag> 安知鱼主题 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>引入Aplayer播放音乐-自定义api地址</title>
-      <link href="/posts/10813/"/>
-      <url>/posts/10813/</url>
-      
-        <content type="html"><![CDATA[<blockquote><h2 id="此文章仅适用于akilar糖果屋中的-引入Aplayer播放音乐-文章-https-akilar-top-posts-3afa069a-，其他请自行测试"><a href="#此文章仅适用于akilar糖果屋中的-引入Aplayer播放音乐-文章-https-akilar-top-posts-3afa069a-，其他请自行测试" class="headerlink" title="此文章仅适用于akilar糖果屋中的  引入Aplayer播放音乐 文章 https://akilar.top/posts/3afa069a/ ，其他请自行测试]"></a>此文章仅适用于akilar糖果屋中的  <strong>引入Aplayer播放音乐</strong> 文章 <a href="https://akilar.top/posts/3afa069a/">https://akilar.top/posts/3afa069a/</a> ，其他请自行测试]</h2></blockquote><h1 id="1-为什么要自定义api地址"><a href="#1-为什么要自定义api地址" class="headerlink" title="1.为什么要自定义api地址"></a>1.为什么要自定义api地址</h1><p>meting_js的官方api很不稳定，播放歌曲断断续续，所以要自定义api地址</p><h1 id="2-如何自定义api地址"><a href="#2-如何自定义api地址" class="headerlink" title="2.如何自定义api地址"></a>2.如何自定义api地址</h1><p>akilar糖果屋中有这样一些字</p><p>4.在主题配置文件<code>[Blogroot]\_config.butterfly.yml</code>的inject配置项中添加Aplayer的容器。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">  bottom:</span><br><span class="line">    - &lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;5183531430&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-fixed=&quot;true&quot; data-mini=&quot;true&quot; data-listFolded=&quot;false&quot; data-order=&quot;random&quot; data-preload=&quot;none&quot; data-autoplay=&quot;false&quot; muted&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><ol><li>Aplayer的网易云歌单接口时不时的会挂掉，所以如果你确定你配置正确，但是歌单还是没有出现。不妨去看看其他人的站点是不是也没有Aplayer标签了来判断是Aplayer本身接口的问题还是自己配置出错的问题。</li></ol><p>里面并没有说如何自定义api地址</p><p>所根据我的尝试，成功自定义api地址</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># akilar糖果屋中原本代码</span><br><span class="line">- &lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;5183531430&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-fixed=&quot;true&quot; data-mini=&quot;true&quot; data-listFolded=&quot;false&quot; data-order=&quot;random&quot; data-preload=&quot;none&quot; data-autoplay=&quot;false&quot; muted&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"># 修改后</span><br><span class="line">- &lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;5183531430&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-fixed=&quot;true&quot; data-mini=&quot;true&quot; data-listFolded=&quot;false&quot; data-order=&quot;random&quot; data-preload=&quot;none&quot; data-autoplay=&quot;false&quot; data-meting_api=&quot;https://meting.qjqq.cn/?server=:server&amp;type=:type&amp;id=:id&amp;auth=:auth&amp;r=:r&quot; muted&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><p>根据上方的配置参数，这里添加了一个data-meting_api&#x3D;”<a href="https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r">https://meting.qjqq.cn/?server=:server&amp;type=:type&amp;id=:id&amp;auth=:auth&amp;r=:r</a>“</p><p>如果以后这个挂了也可以自建或者使用别人的api</p>]]></content>
-      
-      
+      <tags>
+        <tag>家校</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于casaos国内无法拉取镜像解决方法</title>
+    <url>/posts/4/</url>
+    <content><![CDATA[1 进入casaos
+
+2 打开files
+
+3 点击文件下方的root
+
+4 打开etc文件夹
+
+5 使用cirl+f搜索docker
+
+6打开docker文件夹
+
+7 在电脑本地创建一个txt，加入以下内容
+
+```json
+ {n    "registry-mirrors": [n      "https://dockerhub.icu",n      "https://docker.chenby.cn",n      "https://docker.1panel.live",n      "https://docker.awsl9527.cn",n      "https://docker.anyhub.us.kg",n      "https://dhub.kubesre.xyz",n      "https://dockerproxy.cn/",n      "https://hub.rat.dev/",n      "https://docker.actima.top/"n    ]n  }
+```
+
+8 保存，重命名为daemon.json
+
+9 上传到docker文件夹
+
+10使用ssh链接打开终端，输入以下内容
+
+```
+sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot
+```
+
+此时设备会重启，重启好了就可以用应用商店了。
+]]></content>
       <categories>
-          
-          <category> 解决问题 </category>
-          
+        <category>解决问题</category>
+        <category>教程</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 解决问题 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>本站历程</title>
-      <link href="/posts/56827/"/>
-      <url>/posts/56827/</url>
-      
-        <content type="html"><![CDATA[<h1 id="本站历程"><a href="#本站历程" class="headerlink" title="本站历程"></a>本站历程</h1><ul><li><p>2024.9 宝塔面板无法安装，找到了1panel面板</p></li><li><p>2024.9 在应用商店里发现halo建站，开始了我的建站之路</p></li><li><p>2024.9 发布自己的第一篇文章</p></li><li><p>2024.9 购买了云服务器</p></li><li><p>2024.10 发现wordpass有一款主题特别好看，于是转到WordPress</p></li><li><p>2024.11 wordpass优化不好，有转到hexo倾向</p></li><li><p>2024.12 全站正式转到hexo，开始对butterfly美化</p></li><li><p>2024.12 基本定型</p></li><li><p>2024.12 更换安知鱼主题，启用cloudflare cdn</p></li><li><p>2025.1.1 安知鱼主题加载太慢，并且页脚不能加 html，关闭 cloudflare CDN</p></li><li><p>等待发展</p></li></ul>]]></content>
-      
-      
+      <tags>
+        <tag>教程</tag>
+        <tag>解决问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>启用cloudflare cdn后js无法正常加载解决办法</title>
+    <url>/posts/46462/</url>
+    <content><![CDATA[# 问题描述
+### 前段时间想提升一下多人的网站性能，就把cloudflare cdn打开了，发现评论区和关于页的部分东西加载不正常。
+# 解决方法
+
+### 1.在cloudflare控制面板中点击域名
+
+![](https://png.mengmengmao.cn/img/2025/01/18/678b9c4de7f20.jpg)
+
+### 2.点击侧边栏的 速度-优化-内容优化 把里面的 Rocket Loader™ 关掉
+
+![](https://png.mengmengmao.cn/img/2025/01/18/678b9d081c70e.jpg)
+]]></content>
       <categories>
-          
-          <category> 站点历程 </category>
-          
+        <category>解决问题</category>
+        <category>CDN</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 站点历程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>购买雨云服务器并部署hexo博客-购买云服务器</title>
-      <link href="/posts/42850/"/>
-      <url>/posts/42850/</url>
-      
-        <content type="html"><![CDATA[<h1 id="为什么要用云服务器部署静态博客"><a href="#为什么要用云服务器部署静态博客" class="headerlink" title="为什么要用云服务器部署静态博客"></a>为什么要用云服务器部署静态博客</h1><p>hexo为静态博客，可以直接在github部署。</p><p>但是例如我这个域名github.mengmengmao.cn ping就有30个测速节点无法ping通，并且github每个仓库只有500MB存储空间</p><p>但是有了云服务器就不一样了，基本全国都可以ping通，例如我这个域名blog.mengmengmao.cn ping之后只有2个节点无法ping通</p><h1 id="购买云服务器"><a href="#购买云服务器" class="headerlink" title="购买云服务器"></a>购买云服务器</h1><p>本次使用的云服务商为 <a href="https://www.rainyun.com/home">雨云</a></p><p>打开雨云官网</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/06/6752d64e51d1c.png"></p><p>点击登录&#x2F;注册，经行注册，优惠码可以填fishcpy</p><p>或者点击<a href="https://www.rainyun.com/mmm_">这里一键填写</a></p><p>点击导航栏的总览&gt;云服务器&gt;购买云服务器</p><p>本人建议用香港的云服务器，有35ms和80ms的</p><p>如果对延迟有需求的可以选择35ms的，反之可以选择80ms的</p><p>演示使用80ms的，因为上行相对来说更高一些</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/06/6752d80303d56.png"></p><p>点击立即购买，充钱后就可以购买成功</p><p>至此购买云服务器结束</p>]]></content>
-      
-      
+      <tags>
+        <tag>解决问题</tag>
+        <tag>CDN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在byrutgame上下载免费游戏</title>
+    <url>/posts/9688/</url>
+    <content><![CDATA[# 找到游戏英文名
+在百度或必应等搜索引擎上搜索游戏英文名
+例如我搜索**地平线5英文名**
+得到FORZA HORIZON 5
+
+# 找到游戏链接
+
+打开 [byrutgame](https://byrutgame.org/)
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/676958bd6e023.png)
+
+在搜索栏里输入刚刚搜索到的游戏英文名，例如我的就是FORZA HORIZON 5
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695974ef06c.png)
+
+直接搜索
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/676959c05467d.png)
+
+> 注意：图片有红色印章的是可以联网的游戏
+
+
+
+点击想要的游戏来到这页
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695a424d63c.png)
+
+点击这个按钮下载.torrent文件
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695bec8fafd.png)
+
+# 下载下载器
+
+这里推荐qbittorrent增强版 [github](https://github.com/c0re100/qBittorrent-Enhanced-Edition/) 
+
+链接不上github的可以用 123[盘下载](https://www.123pan.com/s/rnITjv-lxY13)（仅适用于Windows）
+
+打开软件之后是这样的
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695c75c6372.png)
+
+点击左上角 文件-添加torrent文件，把刚下的文件导入进去
+
+选择文件保存位置后点击确定就可以开始下载了
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/23/67695d0cd48f0.png)
+
+下载完点击对应启动程序启动游戏
+
+> 记得在游戏设置里改语言！
+
+]]></content>
       <categories>
-          
-          <category> 建站 </category>
-          
-          <category> 云服务器 </category>
-          
-          <category> hexo </category>
-          
+        <category>教程</category>
+        <category>游戏</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> 建站 </tag>
-            
-            <tag> 云服务器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>butterfly导航栏图标修改</title>
-      <link href="/posts/42497/"/>
-      <url>/posts/42497/</url>
-      
-        <content type="html"><![CDATA[<h1 id="导航栏图标"><a href="#导航栏图标" class="headerlink" title="导航栏图标"></a>导航栏图标</h1><p>我看了官方配置文件，里面好像没有关于导航栏图标的描述，修改完效果如下<br><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ab17651d2.png"></p><p>官方配置代码如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例： 首页: / || fas fa-home</span><br></pre></td></tr></table></figure><p>打开<a href="https://fontawesome.com/">fontawesome</a></p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751acefe84bf.png"></p><p>点击顶部导航栏的icons</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ad8fe887b.png"></p><p>比如我在搜索栏里搜索bilibili<br>点击你想要的图标</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/05/6751ade0a08b5.png"></p><p>这里他给了一个html</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;i class=&quot;fa-brands fa-bilibili&quot;&gt;&lt;/i&gt;```</span><br></pre></td></tr></table></figure><p>把里面的fa-brands fa-bilibili复制下来</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 原来代码</span><br><span class="line">首页: / || fas fa-home</span><br><span class="line">#修改后</span><br><span class="line">首页: / || fa-brands fa-bilibili</span><br></pre></td></tr></table></figure><p>至此修改完毕</p>]]></content>
-      
-      
+      <tags>
+        <tag>教程</tag>
+        <tag>游戏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安知鱼主题音乐馆默认歌单修改</title>
+    <url>/posts/23139/</url>
+    <content><![CDATA[> 仅适用于[hexo-theme-anzhiyu](https://github.com/anzhiyu-c/hexo-theme-anzhiyu)，其他请自行测试
+
+
+
+## 文件路径
+
+打开博客根目录目录
+
+依次打开
+
+/themes/anzhiyu/source/js
+
+里面有一个utils.js
+
+打开它
+
+按ctrl+f搜索 getCustomPlayList: function ()
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/14/675d0caa60c94.png)
+
+文件参数是这样的
+
+修改const userId = 你歌单的id
+如果想修改歌单音乐服务商就改const userServer = netease或tencent或kugou,或xiami或 baidu
+
+这样访问 /music/接可以了，不用在后面加?id=歌单id&server=音乐服务商
+
+> 参考 [避坑：我找到了Hexo安知鱼的音乐馆配置(目前好像还没有教程)](https://blog.csdn.net/2202_75762088/article/details/138251572#:~:text=%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%B0%B1%E6%98%AFBloghemesanzhiyusourcejsutils.js%20%E6%89%93%E5%BC%80%E8%AF%A5%E6%96%87%E4%BB%B6%EF%BC%8C%E6%8C%89Ctrl%2BF%E6%90%9C%E7%B4%A2%20getCustomPlayList%3A,function%20%28%29%20%E8%BF%99%E4%B8%AA%E5%87%BD%E6%95%B0%E5%86%85%E5%B0%B1%E6%98%AF%E5%85%B3%E4%BA%8E%E9%9F%B3%E4%B9%90%E6%BA%90%E7%9A%84%E8%AE%BE%E7%BD%AE%EF%BC%8C%E6%94%B9%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B0%B1%E5%A5%BD%EF%BC%9A)。]]></content>
       <categories>
-          
-          <category> butterfly </category>
-          
-          <category> 教程 </category>
-          
+        <category>技术</category>
+        <category>安知鱼主题</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> butterfly </tag>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>12月到了</title>
-      <link href="/posts/33755/"/>
-      <url>/posts/33755/</url>
-      
-        <content type="html"><![CDATA[<h1 id="12月到了，我要更加努力💪"><a href="#12月到了，我要更加努力💪" class="headerlink" title="12月到了，我要更加努力💪"></a>12月到了，我要更加努力💪</h1>]]></content>
-      
-      
+      <tags>
+        <tag>技术</tag>
+        <tag>安知鱼主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>引入Aplayer播放音乐-自定义api地址</title>
+    <url>/posts/10813/</url>
+    <content><![CDATA[> ## 此文章仅适用于akilar糖果屋中的  **引入Aplayer播放音乐** 文章 https://akilar.top/posts/3afa069a/ ，其他请自行测试]
+
+# 1.为什么要自定义api地址
+
+meting_js的官方api很不稳定，播放歌曲断断续续，所以要自定义api地址
+
+# 2.如何自定义api地址
+
+akilar糖果屋中有这样一些字
+
+4.在主题配置文件`[Blogroot]\_config.butterfly.yml`的inject配置项中添加Aplayer的容器。
+
+```
+inject:
+  head:
+  bottom:
+    - <div class="aplayer no-destroy" data-id="5183531430" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
+```
+
+1. Aplayer的网易云歌单接口时不时的会挂掉，所以如果你确定你配置正确，但是歌单还是没有出现。不妨去看看其他人的站点是不是也没有Aplayer标签了来判断是Aplayer本身接口的问题还是自己配置出错的问题。
+
+里面并没有说如何自定义api地址
+
+所根据我的尝试，成功自定义api地址
+
+```
+# akilar糖果屋中原本代码
+- <div class="aplayer no-destroy" data-id="5183531430" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
+
+# 修改后
+- <div class="aplayer no-destroy" data-id="5183531430" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" data-meting_api="https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r" muted></div>
+```
+
+根据上方的配置参数，这里添加了一个data-meting_api="https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r"
+
+如果以后这个挂了也可以自建或者使用别人的api
+]]></content>
       <categories>
-          
-          <category> 日常 </category>
-          
+        <category>解决问题</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 日常 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>跨学科主题学习作业</title>
-      <link href="/posts/3/"/>
-      <url>/posts/3/</url>
-      
-        <content type="html"><![CDATA[<p>语文</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecb374c4fc.png"></p><p>数学</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecbac2dfbc.png"></p><p>英语</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecbbe5f090.png"></p><p>地理</p><p><img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecb7c59df5.png"></p>]]></content>
-      
-      
+      <tags>
+        <tag>解决问题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的ai网站发布啦</title>
+    <url>/posts/1/</url>
+    <content><![CDATA[<https://ai.fishcpy.us.kg/>]]></content>
       <categories>
-          
-          <category> 作业 </category>
-          
+        <category>AI</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 作业 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>一班热榜历史记录2024-2025（上半学期）</title>
-      <link href="/posts/000001/"/>
-      <url>/posts/000001/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>完结</p></blockquote><h2 id="2024-12-27-星期五"><a href="#2024-12-27-星期五" class="headerlink" title="2024.12.27 星期五"></a>2024.12.27 星期五</h2><p>无图片</p><h2 id="2024-12-26-星期四"><a href="#2024-12-26-星期四" class="headerlink" title="2024.12.26 星期四"></a>2024.12.26 星期四</h2><p>好</p><p>1.唐语彤帮助老师发口罩<br>2.今天语文课老师听课，同学们表现优异</p><p>不好</p><p>1.体育课后，两名同学<strong>自由搏击</strong></p><h2 id="2024-12-25-星期三"><a href="#2024-12-25-星期三" class="headerlink" title="2024.12.25 星期三"></a>2024.12.25 星期三</h2><p>好</p><p>1.语文模拟考优秀平均分比年级优秀平均分高出一半（太棒了）<br>2.英语小测一名同学满分💯</p><p>不好</p><p>1.王yu好</p><p>1.语文模拟考优秀平均分比年级优秀平均分高出一半（太棒了）<br>2.英语小测一名同学满分💯</p><p>不好</p><p>1.王昱涵值日太不认真了跟没扫一样，批评他</p><h2 id="2024-12-24-星期二"><a href="#2024-12-24-星期二" class="headerlink" title="2024.12.24 星期二"></a>2024.12.24 星期二</h2><p>无图片</p><h2 id="2024-12-23-星期一"><a href="#2024-12-23-星期一" class="headerlink" title="2024.12.23 星期一"></a>2024.12.23 星期一</h2><p>无，图片</p><h2 id="2024-12-20-星期五"><a href="#2024-12-20-星期五" class="headerlink" title="2024.12.20 星期五"></a>2024.12.20 星期五</h2><p>好</p><p>1.今日数学小测多名同学100分 💯</p><p>不好</p><p>1.今日多名同学因上生物课时<strong>扰乱</strong>课堂纪律，导致生物老师直接火山爆发🔥<img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/20/676581ea4489c.png" width = "200" height = "200" align=center /></p><blockquote><p>温馨提示：距离期末考试还有18天</p></blockquote><h2 id="2024-12-19-星期四"><a href="#2024-12-19-星期四" class="headerlink" title="2024.12.19 星期四"></a>2024.12.19 星期四</h2><blockquote><h3 id="考试！"><a href="#考试！" class="headerlink" title="考试！"></a>考试！</h3></blockquote><h2 id="2024-12-18-星期三"><a href="#2024-12-18-星期三" class="headerlink" title="2024.12.18 星期三"></a>2024.12.18 星期三</h2><p>好</p><p>1.明天模考<br>2.二班一名同学好心给我们班做值日（其实是被罚的）</p><p>不好</p><p>1.今日历史课两名男生一直说话，让历史老师发火🔥</p><h2 id="2024-12-16-星期一"><a href="#2024-12-16-星期一" class="headerlink" title="2024.12.16 星期一"></a>2024.12.16 星期一</h2><p>好</p><p>1.今日卫生表现不错，没让二班扣分</p><p>不好</p><p>1.今日有<strong>一些</strong>同学在道法课上<strong>大闹天宫</strong><br>2.今日多名同学给地理老<strong>师负荆请罪</strong></p><h2 id="2024-12-13-星期五"><a href="#2024-12-13-星期五" class="headerlink" title="2024.12.13 星期五"></a>2024.12.13 星期五</h2><p>好</p><p>1.英语听写六名同学100分<br>2.王昕妍，陆子俊，刘嘉乐被老师评为<strong>整理收纳小能手</strong></p><p>不好</p><p>1.今日午休一些男生在<strong>拆家</strong>被老师发现实施<strong>爱的教育</strong></p><h2 id="2024-12-12-星期四"><a href="#2024-12-12-星期四" class="headerlink" title="2024.12.12 星期四"></a>2024.12.12 星期四</h2><p>好</p><p>1.今日有同学默写pronous全对</p><p>不好</p><p>1.道法课上同学们开天辟地</p><h2 id="2024-12-11-星期三"><a href="#2024-12-11-星期三" class="headerlink" title="2024.12.11 星期三"></a>2024.12.11 星期三</h2><p>好</p><p>1.今日李承宣数学小测100分（进步很大）</p><p>不好</p><p>1.今日有很多男生的羽毛球丢了（看起来很伤心），建议下次别带了，<strong>好好学习</strong></p><h2 id="2024-12-10-星期二"><a href="#2024-12-10-星期二" class="headerlink" title="2024.12.10 星期二"></a>2024.12.10 星期二</h2><p>好</p><p>1.今日六名同学数学小测100分</p><p>不好</p><p>1。今日上课有同学太energetic了</p><h2 id="2024-12-9-星期一"><a href="#2024-12-9-星期一" class="headerlink" title="2024.12.9 星期一"></a>2024.12.9 星期一</h2><p>好</p><p>1.今日班级获得六星班级</p><p>不好</p><p>1.今日体活课三名同学玩羽毛球被点名<br>2.今日班级出现了新大遍超人（翻译：抄最多）</p><h2 id="2024-12-6-星期五"><a href="#2024-12-6-星期五" class="headerlink" title="2024.12.6 星期五"></a>2024.12.6 星期五</h2><p>好</p><p>1.今日多名同学英语听写全对</p><p>不好</p><p>1.今日地理课两名同学罚站</p><p>2.今日许多男生被罚跑400米</p><h2 id="2024-12-5-星期四"><a href="#2024-12-5-星期四" class="headerlink" title="2024.12.5 星期四"></a>2024.12.5 星期四</h2><p>无图片</p><h2 id="2024-12-4-星期三"><a href="#2024-12-4-星期三" class="headerlink" title="2024.12.4 星期三"></a>2024.12.4 星期三</h2><p>好</p><p>1.数学阶段测试张宇泽同学轻松拿下年纪和班级双第一👍</p><p>不好</p><p>1.今天又有一名男生弄坏了班级公共器材</p><p>2.今天音乐课四名男生被老师留下</p><h2 id="2024-12-3-星期二"><a href="#2024-12-3-星期二" class="headerlink" title="2024.12.3 星期二"></a>2024.12.3 星期二</h2><p>好</p><p>1.班级几名同学主动领取运动器材</p><p>不好</p><p>1.某位男生私自借高年级运动器材并损坏</p><h2 id="2024-12-2-星期一"><a href="#2024-12-2-星期一" class="headerlink" title="2024.12.2 星期一"></a>2024.12.2 星期一</h2><p>好</p><p>1.今日班级获得 <strong>三帆星旗</strong> 和 <strong>小熊</strong></p><p>2.今日地理课几位同学不用写作业</p><p>不好</p><p>今日有几位同学上课老说话</p><h2 id="2024-11-29-星期五"><a href="#2024-11-29-星期五" class="headerlink" title="2024.11.29 星期五"></a>2024.11.29 星期五</h2><p>好</p><p>1.数学考试同学们表现优异，值得表扬👍</p><p>2.索林熙数学课被表扬，继续努力</p><p>不好</p><p>1.某名同学被调到“金牌VIP”座位</p><p>2.音乐课某人“cossplay”蚂蚱</p><h2 id="2024-11-28-星期四"><a href="#2024-11-28-星期四" class="headerlink" title="2024.11.28 星期四"></a>2024.11.28 星期四</h2><p>无图片</p><p>数学老师信息：</p><p>课前小测共有39位同学获得满分💯</p><h2 id="2024-11-27-星期三"><a href="#2024-11-27-星期三" class="headerlink" title="2024.11.27 星期三"></a>2024.11.27 星期三</h2><p>好</p><p>1.今日数学小测多名同学100分</p><p>不好</p><p>1.英语课纪律不好</p><p>2.今日有一名同学再次没写完作业</p><h2 id="2024-11-26-星期二"><a href="#2024-11-26-星期二" class="headerlink" title="2024.11.26 星期二"></a>2024.11.26 星期二</h2><p>好</p><p>1.闫博凯同学数学公开课讲题思路清晰被表扬</p><p>2.部分同学在课间积极讨论数学问题</p><p>不好</p><p>1.三名同学在食堂“传达情报”被抓捕</p><h2 id="2024-11-25-星期一"><a href="#2024-11-25-星期一" class="headerlink" title="2024.11.25 星期一"></a>2024.11.25 星期一</h2><p>好</p><p>1.上周获得五星班级（继续加油）<br>2.雨给郑讲题<br>3.闫博凯给李子宇贴心披外套 wo！</p><p>不好</p><p>1.早读三名同学说话<br>2.地理课三名同学习题抄写<br>3.英语课三名同学总说话</p><h2 id="2024-11-22-星期五"><a href="#2024-11-22-星期五" class="headerlink" title="2024.11.22 星期五"></a>2024.11.22 星期五</h2><p>好</p><p>1.今天语文默写22名同学满分<br>2.经过全班共同努力，争取到了下周二的数学公开课</p><h2 id="2024-11-21-星期四"><a href="#2024-11-21-星期四" class="headerlink" title="2024.11.21 星期四"></a>2024.11.21 星期四</h2><p>好</p><p>1.今天数学小测32同学💯分</p><p>2.体育课老师表扬了三名女生</p><p>不好</p><p>无</p><h2 id="2024-11-20-星期三"><a href="#2024-11-20-星期三" class="headerlink" title="2024.11.20 星期三"></a>2024.11.20 星期三</h2><p>好</p><p>1.今天数学小测多名同学💯分</p><p>不好</p><p>1.自习课一名同学“创意DIY”</p><p>2.某名同学生物课“神游天外”</p><p>班主任信息</p><p>大课间，唐语彤，张耘卓奋笔疾书。刘溢昕张紫涵在背古诗。王思萌，张雨泽，马敏萱，郑旭晴，闫博凯，郭佳怡，孟诗颖在安静学习。王欣妍问完各科老师问题，还在背初中语文古诗词拓展。</p><h2 id="2024-11-19-星期二"><a href="#2024-11-19-星期二" class="headerlink" title="2024.11.19 星期二"></a>2024.11.19 星期二</h2><p>好</p><p>1.英语阅读单词梳理许多同学积极发言</p><p>2.同学们数学小条积极改错</p><p>不好</p><p>1.李同学喜提跑步大礼包</p><p>2。某位同学体育课玩闹被抓</p><h2 id="2024-11-18-星期一"><a href="#2024-11-18-星期一" class="headerlink" title="2024.11.18 星期一"></a>2024.11.18 星期一</h2><p>无图片</p><p>数学老师信息</p><p>今天早上进行了第1、2章的基础知识过关，共有20名同学一次性通关。恭喜以下同学<br>王思萌，侯芊黛，刘溢昕，刘佳懿，张耘卓，张雨泽，孟诗颖，王昕妍，李子宇，闫博凯，于浩楠，陈骏洁，姜子跃，王腾煊，唐语彤，郑旭晴，杜明露，李嘉晟，陆子俊，李泽辰。</p><h2 id="2024-11-15-星期五"><a href="#2024-11-15-星期五" class="headerlink" title="2024.11.15 星期五"></a>2024.11.15 星期五</h2><p>无图片</p><h2 id="2024-11-14-星期四"><a href="#2024-11-14-星期四" class="headerlink" title="2024.11.14 星期四"></a>2024.11.14 星期四</h2><p>无图片</p><h2 id="2024-11-13星期三"><a href="#2024-11-13星期三" class="headerlink" title="2024.11.13星期三"></a>2024.11.13星期三</h2><p>好</p><p>1、今日数学计算多人100分</p><p>2、今日课间多名同学认真学习</p><p>不好</p><p>1、有一位同学被地理老师罚写</p><p>2、有一位同学地理课上写作业</p><p>3、今日有一位同学午休搞破坏</p><p>4、有一位同学不做课前准备（多次）</p><h2 id="2024-11-12星期二"><a href="#2024-11-12星期二" class="headerlink" title="2024.11.12星期二"></a>2024.11.12星期二</h2><p>好</p><p>1、李承宣遵守班级规定，知错就改</p><p>2、数学课上小测27人全对</p><p>3、数学错题同学积极改错</p><p>不好</p><p>1、今日某位老师抓拍午休混乱瞬间</p><p>2、王腾煊午休奇怪睡姿（今日奇怪事件）</p><h2 id="2024-11-11星期一"><a href="#2024-11-11星期一" class="headerlink" title="2024.11.11星期一"></a>2024.11.11星期一</h2><p>好<br> 1、毛立珑数学课被老师表扬<br> 2、数学小测很多同学满分<br> 不好 <br>1、一名同学罚抄时写“天书”<br></p><h2 id="2024-11-8-星期五"><a href="#2024-11-8-星期五" class="headerlink" title="2024.11.8 星期五"></a>2024.11.8 星期五</h2><p>好<br> 1.今日英语听写很多人听写100分<br> 2.今日有一些同学学习态度十分不错<br> 不好<br> 1.今日有一位同学因为某些原因扣了文明一分<br> 2.今日英语课有很多人笑 <br>3.今日有多名同学没完成作业<br></p><h2 id="2024-11-7-星期四"><a href="#2024-11-7-星期四" class="headerlink" title="2024.11.7 星期四"></a>2024.11.7 星期四</h2><p>好<br> 1.索林熙今日上课被数学老师表扬<br> 2.今日毛立龙英语练习满分 不好<br> 1.今日有一位同学给书改名（语文改甲骨文，英语改鸟语，历史改拉史。。。）<br> 2.今日生物课纪律不好<br></p><h2 id="2024-11-6-星期三"><a href="#2024-11-6-星期三" class="headerlink" title="2024.11.6 星期三"></a>2024.11.6 星期三</h2><p>好<br> 1,.今天早读大多数同学按时背诵短文<br> 2.李承宣英语课被老师表扬<br> 3.李子宇同学引体向上做了三个<br> 不好<br> 1.一名同学音乐课活跃过度 <br>2.英语课有一部分人没有按时交英语作业，喜提罚抄一遍<br></p><h2 id="2024-11-5-星期二"><a href="#2024-11-5-星期二" class="headerlink" title="2024.11.5 星期二"></a>2024.11.5 星期二</h2><p>好 <br>1.今日有些人贡献口罩给同学 <br>2.数学课有些同学回答问题 不好<br> 1.今日好多同学午休写作业吵闹<br> 2.今日有三名同学在文明就餐区吃饭<br></p><h2 id="2024-11-4-星期一"><a href="#2024-11-4-星期一" class="headerlink" title="2024.11.4 星期一"></a>2024.11.4 星期一</h2><p>好<br> 1.今日唐雨彤在班级里修复地板<br> 不好 <br>1.今日有很多同学没有完成英语作业 <br>2.今日卫生扣了一分<br></p><h2 id="2024-11-1-星期五"><a href="#2024-11-1-星期五" class="headerlink" title="2024.11.1 星期五"></a>2024.11.1 星期五</h2><p>好<br> 1.今日英语听写20人满分<br> 2.在考试中有很多同学获得优秀奖进步奖 <br>3.今日李嘉晟多次主动回答问题 <br>4今日有很多同学在班级里学习 不好<br> 1.今日舞蹈有两人逃课<br> 2.今日上课有很多人没做课前准备<br> 3今日上操有同学乱动乱说话</p><h2 id="2024-10-31-星期四"><a href="#2024-10-31-星期四" class="headerlink" title="2024.10.31 星期四"></a>2024.10.31 星期四</h2><p>无，图片</p><h2 id="2024-10-30-星期三"><a href="#2024-10-30-星期三" class="headerlink" title="2024.10.30 星期三"></a>2024.10.30 星期三</h2><p>无，图片</p><h2 id="2024-10-29-星期二"><a href="#2024-10-29-星期二" class="headerlink" title="2024.10.29 星期二"></a>2024.10.29 星期二</h2><p>考试，无</p><h2 id="2024-10-28-星期一"><a href="#2024-10-28-星期一" class="headerlink" title="2024.10.28 星期一"></a>2024.10.28 星期一</h2><p>没有图片 今日有考试</p><h2 id="2024-10-25-星期五"><a href="#2024-10-25-星期五" class="headerlink" title="2024.10.25 星期五"></a>2024.10.25 星期五</h2><p>好<br> 1 今日默写有 11 名同学 100 分 <br>不好 <br>1 无，大家都很棒<br> 每日一笑<br> 1 今日班级进行了 2b 铅笔争夺战，伤亡人众多（伤是发出叫声，亡是没抢到）<br> 2 今日课间 有一位同学被老师罚叫了100“鹅” 3 今日生物课有一位同学PK输了，用抹布擦脸<br></p><p>最后祝大家，下周星期一、星期二都能取得理想成绩。 –fish 2024.10.25<br></p><h2 id="2024-10-24-星期四"><a href="#2024-10-24-星期四" class="headerlink" title="2024.10.24 星期四"></a>2024.10.24 星期四</h2><p>好<br> 1 有 22 名同学语文小测满分💯<br> 2 今日李嘉晟多次回答问题<br> 不好<br> 1 有一位同学上课迟到 5 分钟 <br>2 有几位同学没有做课前准备 <br></p><h2 id="2024-10-23-星期三"><a href="#2024-10-23-星期三" class="headerlink" title="2024.10.23 星期三"></a>2024.10.23 星期三</h2><p>好 <br>1 今日龚晟鑫第一个背完英语 <br>2 17 名同学语文听写全对 <br>3 李承宣上课认真<br> 不好 <br>1 今日有个别同学没写英语作业 <br>2 今日还有几位同学上体育课违反纪律 <br>每日一笑 <br>今日两位同学在课间写天书<br></p><h2 id="2024-10-22-星期二"><a href="#2024-10-22-星期二" class="headerlink" title="2024.10.22 星期二"></a>2024.10.22 星期二</h2><p>没有图片，无热榜 <br>年纪表扬👍 <br>优秀班干部：侯芊黛，唐语彤，刘佳懿 优秀课代表：刘溢昕，王思萌，张云卓 <br>学习标兵：于浩楠，张宇泽，李子宇<br> 主动帮忙打扫卫生：刘嘉乐，申嘉怡，李承轩，王沛禹，郑旭晴，张云卓<br> 班主任信息<br> 今日小测后八首古诗默写。以下同学全对：刘佳懿，杜明露，李泽辰，王思萌，于浩楠，王腾煊，陈骏洁。错一个的同学有闫博凯，白晰，张雨泽，侯芊黛，陆子俊，郑旭晴，辛栋，李子宇，姜子跃。其中白晰同学进步明显，态度积极，特此表扬。明天默写继续听写这八首古诗。期待同学们更好的巩固。</p><h2 id="2024-10-21-星期一"><a href="#2024-10-21-星期一" class="headerlink" title="2024.10.21 星期一"></a>2024.10.21 星期一</h2><p>好<br> 1 今天班级获得六星班级<br> 2龚晟鑫给马一然饭卡<br> 不好<br> 1 有几位同学没写作业 <br>班主任信息 <br>上一周表现优秀的班委（以下为班委年级组评选）<br> 学习标兵：于浩楠，张雨泽，李子宇 <br>优秀班干部：侯芊黛，唐语彤，刘佳懿 <br>优秀课代表：刘溢昕，王思萌，张耘卓 <br>运动会助人为乐，年级表彰卫生小组为张耘卓小组。组员刘嘉乐，申嘉怡，李承轩，王沛禹，郑旭晴。</p><h2 id="2024-10-18-星期五-运动会"><a href="#2024-10-18-星期五-运动会" class="headerlink" title="2024.10.18 星期五 运动会"></a>2024.10.18 星期五 运动会</h2><p>今日无热榜 <a href="/yi-ban-2024-di-jiu-jie-qiu-ji-tian-jing-yun-dong-hui-tu-ku">运动会图库 点这里</a></p><h2 id="2024-10-17-星期四-运动会"><a href="#2024-10-17-星期四-运动会" class="headerlink" title="2024.10.17 星期四 运动会"></a>2024.10.17 星期四 运动会</h2><p>好 1 龚晟鑫和张雨泽提供自助餐 2 班委们很负责 3 今日运动员们十分卖力 4 王昕妍和刘佳懿无私奉献 不好 1 有几位同学违反纪律 <a href="/yi-ban-2024-di-jiu-jie-qiu-ji-tian-jing-yun-dong-hui-tu-ku">运动会图库 点击这里</a></p><h2 id="2024-10-16-星期三"><a href="#2024-10-16-星期三" class="headerlink" title="2024.10.16 星期三"></a>2024.10.16 星期三</h2><p>好 1 李嘉晟上课十分认真 2 今日有十个人听写全对 💯 不好 1 无</p><h2 id="2024-10-15-星期二"><a href="#2024-10-15-星期二" class="headerlink" title="2024.10.15 星期二"></a>2024.10.15 星期二</h2><p>好 1 今日耿思凡主动借饭卡给索林熙 2 李承宣课上被老师表扬 👍 3 今日语文听写 15 个全对💯 不好 1 今日某人没写英语作业（小马哥）🐎 2 两位同学记律太差👎 班主任信息 今天继续听写论语十二章，以下同学全对。辛栋，孟诗颖，郭佳怡，李嘉晟，张紫涵，于浩楠，张耘卓，闫博凯，王思萌，陈骏洁，王腾煊，张紫萱，马一然，姜子跃。王昱涵，张雨泽。恭喜以上同学。今天班里小伙子表现很好。期待大家更好表现。</p><h2 id="2024-10-14-星期一"><a href="#2024-10-14-星期一" class="headerlink" title="2024.10.14 星期一"></a>2024.10.14 星期一</h2><p>好 1 姜子跃，王昱涵和侯睿祺上课认真听讲 2 今日论语默写有 20 人全对 3.1 张紫萱，侯芊黛和孟诗颖为优秀课代表 3.2 王昕妍，张紫萱和段茗涵为优秀班委 3.3 杜明露，汪洋和闫博凯为学习标兵 不好 1 今日有一名同学所有作业都没带 2 今日升旗时，两位同学乱动，享受了免费健身服务 3两位同学历史作业在讲台，被历史老师请到班级后面（已补完） 4 今日小干部扣了3分😭</p><h2 id="2024-10-12-星期六"><a href="#2024-10-12-星期六" class="headerlink" title="2024.10.12 星期六"></a>2024.10.12 星期六</h2><p>好 1 王昕妍，陈骏洁，段茗涵当选学生代表 2 毛立龙在班里认真学习 不好 1 两位同学在课上吵架 2 有一位同学逃值日 3 地理课上有几位同学没拿地球仪 4 四位同学课间跳舞</p><h2 id="2024-10-11-星期五"><a href="#2024-10-11-星期五" class="headerlink" title="2024.10.11 星期五"></a>2024.10.11 星期五</h2><p>好 1 今日王沛禹主动为班级喊口号 2 今日班委会正式成立 3 今日有 10 名同学默写全对，23 名同学优秀 4 索林熙分享自己珍藏的昆虫标本 不好 1 三名同学上课玩笔+罗阵 2 两名同学在图书馆说话 班主任信息 今天语文课默写全对的的同学有王思萌，辛栋，张耘卓，杜明露，张紫萱，刘溢昕，孟诗颖，陈骏洁，郭佳怡，段茗涵。错两个以内的同学有，李泽辰，郑旭晴，王昱涵，王腾煊，张紫涵，李子宇，李嘉晟，侯芊黛，闫博凯，王欣妍，陆子俊，马敏萱于浩楠，张雨泽。恭喜以上同学。期待看到更多孩子优秀的表现。</p><h2 id="2024-10-10-星期四"><a href="#2024-10-10-星期四" class="headerlink" title="2024.10.10 星期四"></a>2024.10.10 星期四</h2><p>好 1 今天有八个同学英语听写 100 分 2 张雨泽数学 100 分（周二热搜） 3 本周卫生角没有扣分，十分难得 4 刘佳懿，梦诗颖，刘溢昕，张耘卓，王思萌，于浩楠语文默写全对 不好 1 有两位男生在图书馆说小话 2 某位同学道法课带历史书，历史课带道法书 3 某人在历史课上写作业</p><h2 id="2024-10-9-星期三"><a href="#2024-10-9-星期三" class="headerlink" title="2024.10.9 星期三"></a>2024.10.9 星期三</h2><p>好 1 张雨泽数学 100 分（至今未超越） 2 刘佳懿，梦诗颖，刘溢昕，张耘卓，王思萌，于浩楠语文听写 100 分 不好 1 昨天有 4 个男生没找老师背论语 2 早读有位同学说话被罚站</p><h2 id="2024-10-8-星期二"><a href="#2024-10-8-星期二" class="headerlink" title="2024.10.8 星期二"></a>2024.10.8 星期二</h2><p>好 1 张雨泽数学 100 分 2 姜子跃和索林熙自觉在教室学习 3 马敏宣背完语文书 4 王腾煊回答了许多男生不会的问题 不好 1 数学课上 4 个男生回答不出问题 2 有两位男生在生物课上说话</p><h1 id="更早以前"><a href="#更早以前" class="headerlink" title="更早以前"></a>更早以前</h1><p>没有啦，那时一班热榜都还没有啊！</p><h1 id="维护名单"><a href="#维护名单" class="headerlink" title="维护名单"></a>维护名单</h1><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>名字</td><td>分组</td></tr><tr><td>孟**</td><td>班委</td></tr><tr><td>fishcpy</td><td>班委</td></tr><tr><td>郭**</td><td>班委</td></tr><tr><td>陈**</td><td>班委</td></tr><tr><td>梁*</td><td>班主任</td></tr></tbody></table>]]></content>
-      
-      
+      <tags>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本站历程</title>
+    <url>/posts/56827/</url>
+    <content><![CDATA[# 本站历程
+
+- 2024.9 宝塔面板无法安装，找到了1panel面板
+
+- 2024.9 在应用商店里发现halo建站，开始了我的建站之路
+
+- 2024.9 发布自己的第一篇文章
+
+- 2024.9 购买了云服务器
+
+- 2024.10 发现wordpass有一款主题特别好看，于是转到WordPress
+
+- 2024.11 wordpass优化不好，有转到hexo倾向
+
+- 2024.12 全站正式转到hexo，开始对butterfly美化
+
+- 2024.12 基本定型
+
+- 2024.12 更换安知鱼主题，启用cloudflare cdn
+
+- 2025.1.1 安知鱼主题加载太慢，并且页脚不能加 html，关闭 cloudflare CDN
+
+- 等待发展
+]]></content>
       <categories>
-          
-          <category> 家校 </category>
-          
+        <category>站点历程</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 家校 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的ai网站发布啦</title>
-      <link href="/posts/1/"/>
-      <url>/posts/1/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://ai.fishcpy.us.kg/">https://ai.fishcpy.us.kg/</a></p>]]></content>
-      
-      
+      <tags>
+        <tag>站点历程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>水-1</title>
+    <url>/posts/2/</url>
+    <content><![CDATA[提示词：写一篇400字的描述中国的作文
+
+# 中国的文化传统
+
+中国是一个拥有悠久历史和丰富文化传统的国家。中国的文化源远流长，包括诗歌、绘画、音乐、戏剧、建筑等多个领域，都展现出独特的魅力。其中，中国的书法被誉为“东方艺术之花”，每一笔每一画都蕴含着深厚的文化内涵。中国的传统绘画以山水、花鸟为主题，追求意境的抒发和笔墨的韵味，体现了中国人对自然的独特感悟。
+
+中国的音乐也是独具特色，古代的乐曲如《广陵散》、《阳关三叠》等流传至今，展现了中国人对音乐艺术的热爱和追求。中国的传统戏曲更是独树一帜，有京剧、豫剧、越剧等不同类型，每一种戏曲都有其独特的表演风格和表现形式，深受中国人民的喜爱。
+
+此外，中国的建筑也是举世闻名，如万里长城、故宫等建筑奇迹，展现了中国古代建筑工艺的精湛和气势恢宏。中国的传统建筑注重“天人合一”的理念，追求与自然的和谐共生，体现了中国人对宇宙和谐的追求。
+
+总的来说，中国的文化传统是丰富多彩的，融合了诗歌、绘画、音乐、戏剧、建筑等多种艺术形式，展现了中国人民对美好生活的向往和追求。这些传统文化不仅丰富了中国人民的精神生活，也为世界文化的多样性做出了重要贡献。
+
+> AI 也可能犯错，请仔细辨别]]></content>
+  </entry>
+  <entry>
+    <title>给你的博客加上一个十年倒计时吧</title>
+    <url>/posts/39860/</url>
+    <content><![CDATA[
+> ## 效果预览 [关于 fishcpy的小破站](https://mengmengmao.cn/about/)
+# 打开： 你博客目录/themes/anzhiyu/source/js
+在里面新建一个.js文件，例如我新建了一个clock.js文件
+编辑文件，加入下面代码
+```
+        // 设置倒计时的目标日期
+        var countDownDate = new Date("September 6, 2034 00:00:00").getTime();
+
+        // 更新倒计时每秒
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            // 计算天、小时、分钟和秒
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // 显示结果
+            document.getElementById("countdown").innerHTML = days + "天 " + hours + "小时 "
+            + minutes + "分钟 " + seconds + "秒 ";
+
+            // 如果倒计时结束，显示消息
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "你发现了彩蛋";
+            }
+        }, 1000);
+```
+
+| 参数 | 注释 | 可改值 |
+| ----------- | ----------- | ----------- |
+| 你发现了彩蛋 | 倒计时结束的文字 | 随意 |
+| September 6 | 日期 | 英文月份+日期 |
+| 2034 00:00:00 | 日期 | 年份+具体时间 |
+
+# 在你要的文件里(本人仅测试了md文件)加入下面代码即可实现
+```
+<style>
+.big-font {
+  font-size: 50px; /* 你可以根据需要调整这个大小 */
+  font-weight: bold;
+}
+
+</style>
+
+<body>
+
+<div id="countdown" class="big-font"></div> <!-- 应用大字体样式 -->
+
+<script data-pjax defer src='/js/clock.js'></script>
+<div class=".pjax-reload">
+</body>
+```
+
+| 参数 | 注释 | 可改值 |
+| ----------- | ----------- | ----------- |
+| 50px | 大小 | [可以看一下这个](https://geek-docs.com/html/html-ask-answer/824_html_how_to_change_font_size_in_html.html) |
+| /js/clock.js | 文件位置 | /js/文件名.js， 文件名为你刚创建的文件名|]]></content>
       <categories>
-          
-          <category> AI </category>
-          
+        <category>html</category>
+        <category>css</category>
+        <category>教程</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> AI </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于casaos国内无法拉取镜像解决方法</title>
-      <link href="/posts/4/"/>
-      <url>/posts/4/</url>
-      
-        <content type="html"><![CDATA[<p>1 进入casaos</p><p>2 打开files</p><p>3 点击文件下方的root</p><p>4 打开etc文件夹</p><p>5 使用cirl+f搜索docker</p><p>6打开docker文件夹</p><p>7 在电脑本地创建一个txt，加入以下内容</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span>n    <span class="attr">&quot;registry-mirrors&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span>n      <span class="string">&quot;https://dockerhub.icu&quot;</span><span class="punctuation">,</span>n      <span class="string">&quot;https://docker.chenby.cn&quot;</span><span class="punctuation">,</span>n      <span class="string">&quot;https://docker.1panel.live&quot;</span><span class="punctuation">,</span>n      <span class="string">&quot;https://docker.awsl9527.cn&quot;</span><span class="punctuation">,</span>n      <span class="string">&quot;https://docker.anyhub.us.kg&quot;</span><span class="punctuation">,</span>n      <span class="string">&quot;https://dhub.kubesre.xyz&quot;</span><span class="punctuation">,</span>n      <span class="string">&quot;https://dockerproxy.cn/&quot;</span><span class="punctuation">,</span>n      <span class="string">&quot;https://hub.rat.dev/&quot;</span><span class="punctuation">,</span>n      <span class="string">&quot;https://docker.actima.top/&quot;</span>n    <span class="punctuation">]</span>n  <span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>8 保存，重命名为daemon.json</p><p>9 上传到docker文件夹</p><p>10使用ssh链接打开终端，输入以下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot</span><br></pre></td></tr></table></figure><p>此时设备会重启，重启好了就可以用应用商店了。</p>]]></content>
-      
-      
+      <tags>
+        <tag>教程</tag>
+        <tag>css</tag>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>购买雨云服务器并部署hexo博客-购买云服务器</title>
+    <url>/posts/42850/</url>
+    <content><![CDATA[
+# 为什么要用云服务器部署静态博客
+
+hexo为静态博客，可以直接在github部署。
+
+但是例如我这个域名github.mengmengmao.cn ping就有30个测速节点无法ping通，并且github每个仓库只有500MB存储空间
+
+但是有了云服务器就不一样了，基本全国都可以ping通，例如我这个域名blog.mengmengmao.cn ping之后只有2个节点无法ping通
+
+# 购买云服务器
+
+本次使用的云服务商为 [雨云](https://www.rainyun.com/home)
+
+打开雨云官网
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/06/6752d64e51d1c.png)
+
+点击登录/注册，经行注册，优惠码可以填fishcpy
+
+或者点击[这里一键填写](https://www.rainyun.com/mmm_)
+
+点击导航栏的总览>云服务器>购买云服务器
+
+本人建议用香港的云服务器，有35ms和80ms的
+
+如果对延迟有需求的可以选择35ms的，反之可以选择80ms的
+
+演示使用80ms的，因为上行相对来说更高一些
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/06/6752d80303d56.png)
+
+点击立即购买，充钱后就可以购买成功
+
+至此购买云服务器结束
+]]></content>
       <categories>
-          
-          <category> 解决问题 </category>
-          
-          <category> 教程 </category>
-          
+        <category>建站</category>
+        <category>云服务器</category>
+        <category>hexo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-            <tag> 解决问题 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/posts/1243066710/"/>
-      <url>/posts/1243066710/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
+      <tags>
+        <tag>hexo</tag>
+        <tag>建站</tag>
+        <tag>云服务器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>跨学科主题学习作业</title>
+    <url>/posts/3/</url>
+    <content><![CDATA[语文
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecb374c4fc.png)
+
+数学
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecbac2dfbc.png)
+
+英语
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecbbe5f090.png)
+
+地理
+
+![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecb7c59df5.png)]]></content>
       <categories>
-          
-          <category> hallo word </category>
-          
-          <category> hexo </category>
-          
+        <category>作业</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hallo word </tag>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>作业</tag>
+      </tags>
+  </entry>
 </search>

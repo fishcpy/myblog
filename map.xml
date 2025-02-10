@@ -92,6 +92,15 @@
   </url>
   
   <url>
+    <loc>https://blog.mengmengmao.cn/%E4%B8%80%E7%8F%AD%E7%9F%A5%E8%AF%86%E7%82%B9/index.html</loc>
+    
+    <lastmod>2025-01-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.mengmengmao.cn/%E4%B8%80%E7%8F%AD%E5%9B%BE%E5%BA%93/index.html</loc>
     
     <lastmod>2025-01-10</lastmod>
@@ -110,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://blog.mengmengmao.cn/%E4%B8%80%E7%8F%AD%E7%9F%A5%E8%AF%86%E7%82%B9/index.html</loc>
+    <loc>https://blog.mengmengmao.cn/messageboard/index.html</loc>
     
     <lastmod>2025-01-10</lastmod>
     
@@ -129,15 +138,6 @@
   
   <url>
     <loc>https://blog.mengmengmao.cn/messages/index.html</loc>
-    
-    <lastmod>2025-01-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mengmengmao.cn/messageboard/index.html</loc>
     
     <lastmod>2025-01-10</lastmod>
     

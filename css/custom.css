@@ -197,7 +197,7 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 @font-face{
     font-family: 'MaoKenTang';
     font-display: swap;
-    src: url('/font/MaoKenTan.woff2') format("truetype");
+    src: url('https://gh.llkk.cc/https://github.com/fishcpy/blog-1/blob/main/font/MaoKenTan.woff2') format("truetype");
 }
 body {
     font-family: 'MaoKenTang';

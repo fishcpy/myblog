@@ -66,8 +66,8 @@
       </tags>
   </entry>
   <entry>
-    <title>12月到了</title>
-    <url>/posts/33755/</url>
+    <title>greasyfork新可用地址</title>
+    <url>/posts/61002/</url>
     <content><![CDATA[# 由于greasyfork在中国突然被sni阻断，这里提供一个新地址
 
 ## 中文:
@@ -117,10 +117,12 @@ Tencent Cloud: 119.29.29.29
 Google: 8.8.8.8
 Cloudflare: 1.1.1.1]]></content>
       <categories>
-        <category>日常</category>
+        <category>解决问题</category>
+        <category>greasyfork</category>
       </categories>
       <tags>
-        <tag>日常</tag>
+        <tag>解决问题</tag>
+        <tag>greasyfork</tag>
       </tags>
   </entry>
   <entry>

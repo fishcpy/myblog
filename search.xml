@@ -70,6 +70,16 @@
     <url>/posts/61002/</url>
     <content><![CDATA[# 由于greasyfork在中国突然被sni阻断，这里提供一个新地址
 
+# 25.2.14更新
+更新长期地址自动跳转
+
+请求地址 https://nextgo.us.kg/api
+例；
+原先地址 https://www.greasyfork.us.kg/zh-CN/scripts/by-site/bilibili.com
+长期自动跳转地址 https://nextgo.us.kg/api/zh-CN/scripts/by-site/bilibili.com
+
+使用这个可以长期自动跳转到最新域名
+
 ## 中文:
 
 新域名 https://nextgo.us.kg/ (此域名为中转,确保以后更换域名不用费劲心思再找)

@@ -185,48 +185,6 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
       </tags>
   </entry>
   <entry>
-    <title>关于casaos国内无法拉取镜像解决方法</title>
-    <url>/posts/4/</url>
-    <content><![CDATA[1 进入casaos
-
-2 打开files
-
-3 点击文件下方的root
-
-4 打开etc文件夹
-
-5 使用cirl+f搜索docker
-
-6打开docker文件夹
-
-7 在电脑本地创建一个txt，加入以下内容
-
-```json
- {n    "registry-mirrors": [n      "https://dockerhub.icu",n      "https://docker.chenby.cn",n      "https://docker.1panel.live",n      "https://docker.awsl9527.cn",n      "https://docker.anyhub.us.kg",n      "https://dhub.kubesre.xyz",n      "https://dockerproxy.cn/",n      "https://hub.rat.dev/",n      "https://docker.actima.top/"n    ]n  }
-```
-
-8 保存，重命名为daemon.json
-
-9 上传到docker文件夹
-
-10使用ssh链接打开终端，输入以下内容
-
-```
-sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot
-```
-
-此时设备会重启，重启好了就可以用应用商店了。
-]]></content>
-      <categories>
-        <category>解决问题</category>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>解决问题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一班热榜历史记录2024-2025（上半学期）</title>
     <url>/posts/000001/</url>
     <content><![CDATA[> 完结
@@ -704,6 +662,48 @@ sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot
       </categories>
       <tags>
         <tag>家校</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于casaos国内无法拉取镜像解决方法</title>
+    <url>/posts/4/</url>
+    <content><![CDATA[1 进入casaos
+
+2 打开files
+
+3 点击文件下方的root
+
+4 打开etc文件夹
+
+5 使用cirl+f搜索docker
+
+6打开docker文件夹
+
+7 在电脑本地创建一个txt，加入以下内容
+
+```json
+ {n    "registry-mirrors": [n      "https://dockerhub.icu",n      "https://docker.chenby.cn",n      "https://docker.1panel.live",n      "https://docker.awsl9527.cn",n      "https://docker.anyhub.us.kg",n      "https://dhub.kubesre.xyz",n      "https://dockerproxy.cn/",n      "https://hub.rat.dev/",n      "https://docker.actima.top/"n    ]n  }
+```
+
+8 保存，重命名为daemon.json
+
+9 上传到docker文件夹
+
+10使用ssh链接打开终端，输入以下内容
+
+```
+sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot
+```
+
+此时设备会重启，重启好了就可以用应用商店了。
+]]></content>
+      <categories>
+        <category>解决问题</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>解决问题</tag>
       </tags>
   </entry>
   <entry>

@@ -707,6 +707,30 @@ sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot
       </tags>
   </entry>
   <entry>
+    <title>启用cloudflare cdn后js无法正常加载解决办法</title>
+    <url>/posts/46462/</url>
+    <content><![CDATA[# 问题描述
+### 前段时间想提升一下多人的网站性能，就把cloudflare cdn打开了，发现评论区和关于页的部分东西加载不正常。
+# 解决方法
+
+### 1.在cloudflare控制面板中点击域名
+
+![](https://png.mengmengmao.cn/img/2025/01/18/678b9c4de7f20.jpg)
+
+### 2.点击侧边栏的 速度-优化-内容优化 把里面的 Rocket Loader™ 关掉
+
+![](https://png.mengmengmao.cn/img/2025/01/18/678b9d081c70e.jpg)
+]]></content>
+      <categories>
+        <category>解决问题</category>
+        <category>CDN</category>
+      </categories>
+      <tags>
+        <tag>解决问题</tag>
+        <tag>CDN</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>在byrutgame上下载免费游戏</title>
     <url>/posts/9688/</url>
     <content><![CDATA[# 找到游戏英文名
@@ -1066,30 +1090,6 @@ hexo为静态博客，可以直接在github部署。
       </categories>
       <tags>
         <tag>作业</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>启用cloudflare cdn后js无法正常加载解决办法</title>
-    <url>/posts/46462/</url>
-    <content><![CDATA[# 问题描述
-### 前段时间想提升一下多人的网站性能，就把cloudflare cdn打开了，发现评论区和关于页的部分东西加载不正常。
-# 解决方法
-
-### 1.在cloudflare控制面板中点击域名
-
-![](https://png.mengmengmao.cn/img/2025/01/18/678b9c4de7f20.jpg)
-
-### 2.点击侧边栏的 速度-优化-内容优化 把里面的 Rocket Loader™ 关掉
-
-![](https://png.mengmengmao.cn/img/2025/01/18/678b9d081c70e.jpg)
-]]></content>
-      <categories>
-        <category>解决问题</category>
-        <category>CDN</category>
-      </categories>
-      <tags>
-        <tag>解决问题</tag>
-        <tag>CDN</tag>
       </tags>
   </entry>
 </search>

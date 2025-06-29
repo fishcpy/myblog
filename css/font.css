@@ -1,8 +1,0 @@
-@font-face {
-  /* 指定字体的名字 */
-  font-family: "myfont";
-  /* 服务器中字体的路径 */
-  src: url("https://github.com/fishcpy/blog-1/releases/download/font/MaoKenTangYuan-beta0.12-20210702.ttf") format("truetype");
-}
-
-font-family: myfont;

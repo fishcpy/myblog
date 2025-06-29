@@ -3,20 +3,20 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>萌萌猫的小破站</title>
+    <title>fishcpy的小破站</title>
     <link>https://blog.mengmengmao.cn/</link>
     
     <atom:link href="https://blog.mengmengmao.cn/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 26 Dec 2024 16:20:25 GMT</pubDate>
+    <pubDate>Fri, 10 Jan 2025 03:06:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>水-1</title>
-      <link>https://blog.mengmengmao.cn/2/</link>
-      <guid>https://blog.mengmengmao.cn/2/</guid>
-      <pubDate>Thu, 26 Dec 2024 12:23:20 GMT</pubDate>
+      <link>https://blog.mengmengmao.cn/posts/2/</link>
+      <guid>https://blog.mengmengmao.cn/posts/2/</guid>
+      <pubDate>Fri, 10 Jan 2025 03:06:27 GMT</pubDate>
       
         
         
@@ -33,14 +33,51 @@
       
       
       
-      <comments>https://blog.mengmengmao.cn/2/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/2/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>给你的博客加上一个十年倒计时吧</title>
+      <link>https://blog.mengmengmao.cn/posts/39860/</link>
+      <guid>https://blog.mengmengmao.cn/posts/39860/</guid>
+      <pubDate>Fri, 10 Jan 2025 03:06:27 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description></description>
+          
+        
+      
+      
+      
+      <content:encoded><![CDATA[<blockquote><h2 id="效果预览-关于-fishcpy的小破站"><a href="#效果预览-关于-fishcpy的小破站" class="headerlink" title="效果预览 关于 fishcpy的小破站"></a>效果预览 <a href="https://mengmengmao.cn/about/">关于 fishcpy的小破站</a></h2></blockquote><h1 id="打开：-你博客目录-themes-anzhiyu-source-js"><a href="#打开：-你博客目录-themes-anzhiyu-source-js" class="headerlink" title="打开： 你博客目录&#x2F;themes&#x2F;anzhiyu&#x2F;source&#x2F;js"></a>打开： 你博客目录&#x2F;themes&#x2F;anzhiyu&#x2F;source&#x2F;js</h1><p>在里面新建一个.js文件，例如我新建了一个clock.js文件<br>编辑文件，加入下面代码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">// 设置倒计时的目标日期</span><br><span class="line">var countDownDate = new Date(&quot;September 6, 2034 00:00:00&quot;).getTime();</span><br><span class="line"></span><br><span class="line">// 更新倒计时每秒</span><br><span class="line">var x = setInterval(function() &#123;</span><br><span class="line">    var now = new Date().getTime();</span><br><span class="line">    var distance = countDownDate - now;</span><br><span class="line"></span><br><span class="line">    // 计算天、小时、分钟和秒</span><br><span class="line">    var days = Math.floor(distance / (1000 * 60 * 60 * 24));</span><br><span class="line">    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));</span><br><span class="line">    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));</span><br><span class="line">    var seconds = Math.floor((distance % (1000 * 60)) / 1000);</span><br><span class="line"></span><br><span class="line">    // 显示结果</span><br><span class="line">    document.getElementById(&quot;countdown&quot;).innerHTML = days + &quot;天 &quot; + hours + &quot;小时 &quot;</span><br><span class="line">    + minutes + &quot;分钟 &quot; + seconds + &quot;秒 &quot;;</span><br><span class="line"></span><br><span class="line">    // 如果倒计时结束，显示消息</span><br><span class="line">    if (distance &lt; 0) &#123;</span><br><span class="line">        clearInterval(x);</span><br><span class="line">        document.getElementById(&quot;countdown&quot;).innerHTML = &quot;你发现了彩蛋&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, 1000);</span><br></pre></td></tr></table></figure><table><thead><tr><th>参数</th><th>注释</th><th>可改值</th></tr></thead><tbody><tr><td>你发现了彩蛋</td><td>倒计时结束的文字</td><td>随意</td></tr><tr><td>September 6</td><td>日期</td><td>英文月份+日期</td></tr><tr><td>2034 00:00:00</td><td>日期</td><td>年份+具体时间</td></tr></tbody></table><h1 id="在你要的文件里-本人仅测试了md文件-加入下面代码即可实现"><a href="#在你要的文件里-本人仅测试了md文件-加入下面代码即可实现" class="headerlink" title="在你要的文件里(本人仅测试了md文件)加入下面代码即可实现"></a>在你要的文件里(本人仅测试了md文件)加入下面代码即可实现</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">.big-font &#123;</span><br><span class="line">  font-size: 50px; /* 你可以根据需要调整这个大小 */</span><br><span class="line">  font-weight: bold;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;countdown&quot; class=&quot;big-font&quot;&gt;&lt;/div&gt; &lt;!-- 应用大字体样式 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;script data-pjax defer src=&#x27;/js/clock.js&#x27;&gt;&lt;/script&gt;</span><br><span class="line">&lt;div class=&quot;.pjax-reload&quot;&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure><table><thead><tr><th>参数</th><th>注释</th><th>可改值</th></tr></thead><tbody><tr><td>50px</td><td>大小</td><td><a href="https://geek-docs.com/html/html-ask-answer/824_html_how_to_change_font_size_in_html.html">可以看一下这个</a></td></tr><tr><td>&#x2F;js&#x2F;clock.js</td><td>文件位置</td><td>&#x2F;js&#x2F;文件名.js， 文件名为你刚创建的文件名</td></tr></tbody></table>]]></content:encoded>
+      
+      
+      <category domain="https://blog.mengmengmao.cn/categories/html/">html</category>
+      
+      <category domain="https://blog.mengmengmao.cn/categories/html/css/">css</category>
+      
+      <category domain="https://blog.mengmengmao.cn/categories/html/css/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.mengmengmao.cn/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="https://blog.mengmengmao.cn/tags/css/">css</category>
+      
+      <category domain="https://blog.mengmengmao.cn/tags/html/">html</category>
+      
+      
+      <comments>https://blog.mengmengmao.cn/posts/39860/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>在byrutgame上下载免费游戏</title>
-      <link>https://blog.mengmengmao.cn/9688/</link>
-      <guid>https://blog.mengmengmao.cn/9688/</guid>
+      <link>https://blog.mengmengmao.cn/posts/9688/</link>
+      <guid>https://blog.mengmengmao.cn/posts/9688/</guid>
       <pubDate>Sun, 22 Dec 2024 16:20:17 GMT</pubDate>
       
       <description>在byrutgame上下载免费游戏</description>
@@ -60,14 +97,14 @@
       <category domain="https://blog.mengmengmao.cn/tags/%E6%B8%B8%E6%88%8F/">游戏</category>
       
       
-      <comments>https://blog.mengmengmao.cn/9688/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/9688/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>安知鱼主题音乐馆默认歌单修改</title>
-      <link>https://blog.mengmengmao.cn/23139/</link>
-      <guid>https://blog.mengmengmao.cn/23139/</guid>
+      <link>https://blog.mengmengmao.cn/posts/23139/</link>
+      <guid>https://blog.mengmengmao.cn/posts/23139/</guid>
       <pubDate>Sat, 14 Dec 2024 07:12:08 GMT</pubDate>
       
         
@@ -93,14 +130,14 @@
       <category domain="https://blog.mengmengmao.cn/tags/%E5%AE%89%E7%9F%A5%E9%B1%BC%E4%B8%BB%E9%A2%98/">安知鱼主题</category>
       
       
-      <comments>https://blog.mengmengmao.cn/23139/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/23139/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>引入Aplayer播放音乐-自定义api地址</title>
-      <link>https://blog.mengmengmao.cn/10813/</link>
-      <guid>https://blog.mengmengmao.cn/10813/</guid>
+      <link>https://blog.mengmengmao.cn/posts/10813/</link>
+      <guid>https://blog.mengmengmao.cn/posts/10813/</guid>
       <pubDate>Sat, 07 Dec 2024 07:18:08 GMT</pubDate>
       
         
@@ -122,14 +159,14 @@
       <category domain="https://blog.mengmengmao.cn/tags/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/">解决问题</category>
       
       
-      <comments>https://blog.mengmengmao.cn/10813/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/10813/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>本站历程</title>
-      <link>https://blog.mengmengmao.cn/56827/</link>
-      <guid>https://blog.mengmengmao.cn/56827/</guid>
+      <link>https://blog.mengmengmao.cn/posts/56827/</link>
+      <guid>https://blog.mengmengmao.cn/posts/56827/</guid>
       <pubDate>Fri, 06 Dec 2024 11:01:09 GMT</pubDate>
       
         
@@ -151,14 +188,14 @@
       <category domain="https://blog.mengmengmao.cn/tags/%E7%AB%99%E7%82%B9%E5%8E%86%E7%A8%8B/">站点历程</category>
       
       
-      <comments>https://blog.mengmengmao.cn/56827/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/56827/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>购买雨云服务器并部署hexo博客-购买云服务器</title>
-      <link>https://blog.mengmengmao.cn/42850/</link>
-      <guid>https://blog.mengmengmao.cn/42850/</guid>
+      <link>https://blog.mengmengmao.cn/posts/42850/</link>
+      <guid>https://blog.mengmengmao.cn/posts/42850/</guid>
       <pubDate>Fri, 06 Dec 2024 10:40:15 GMT</pubDate>
       
         
@@ -188,14 +225,14 @@
       <category domain="https://blog.mengmengmao.cn/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">云服务器</category>
       
       
-      <comments>https://blog.mengmengmao.cn/42850/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/42850/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>butterfly导航栏图标修改</title>
-      <link>https://blog.mengmengmao.cn/42497/</link>
-      <guid>https://blog.mengmengmao.cn/42497/</guid>
+      <link>https://blog.mengmengmao.cn/posts/42497/</link>
+      <guid>https://blog.mengmengmao.cn/posts/42497/</guid>
       <pubDate>Thu, 05 Dec 2024 13:24:28 GMT</pubDate>
       
         
@@ -221,14 +258,14 @@
       <category domain="https://blog.mengmengmao.cn/tags/%E6%95%99%E7%A8%8B/">教程</category>
       
       
-      <comments>https://blog.mengmengmao.cn/42497/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/42497/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>12月到了</title>
-      <link>https://blog.mengmengmao.cn/33755/</link>
-      <guid>https://blog.mengmengmao.cn/33755/</guid>
+      <link>https://blog.mengmengmao.cn/posts/33755/</link>
+      <guid>https://blog.mengmengmao.cn/posts/33755/</guid>
       <pubDate>Tue, 03 Dec 2024 10:56:06 GMT</pubDate>
       
       <description>12月到了</description>
@@ -244,14 +281,14 @@
       <category domain="https://blog.mengmengmao.cn/tags/%E6%97%A5%E5%B8%B8/">日常</category>
       
       
-      <comments>https://blog.mengmengmao.cn/33755/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/33755/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>跨学科主题学习作业</title>
-      <link>https://blog.mengmengmao.cn/3/</link>
-      <guid>https://blog.mengmengmao.cn/3/</guid>
+      <link>https://blog.mengmengmao.cn/posts/3/</link>
+      <guid>https://blog.mengmengmao.cn/posts/3/</guid>
       <pubDate>Sat, 19 Oct 2024 16:10:17 GMT</pubDate>
       
         
@@ -273,21 +310,21 @@
       <category domain="https://blog.mengmengmao.cn/tags/%E4%BD%9C%E4%B8%9A/">作业</category>
       
       
-      <comments>https://blog.mengmengmao.cn/3/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/3/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>一班热榜历史记录2024-2025（上半学期）</title>
-      <link>https://blog.mengmengmao.cn/000001/</link>
-      <guid>https://blog.mengmengmao.cn/000001/</guid>
+      <link>https://blog.mengmengmao.cn/posts/000001/</link>
+      <guid>https://blog.mengmengmao.cn/posts/000001/</guid>
       <pubDate>Thu, 19 Sep 2024 16:10:17 GMT</pubDate>
       
       <description>一班热榜历史记录2024-2025（上半学期）</description>
       
       
       
-      <content:encoded><![CDATA[<h2 id="2024-12-20-星期四"><a href="#2024-12-20-星期四" class="headerlink" title="2024.12.20 星期四"></a>2024.12.20 星期四</h2><p>好</p><p>1.今日数学小测多名同学100分 💯</p><p>不好</p><p>1.今日多名同学因上生物课时<strong>扰乱</strong>课堂纪律，导致生物老师直接火山爆发🔥<img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/20/676581ea4489c.png" width = "200" height = "200" align=center /></p><blockquote><p>温馨提示：距离期末考试还有18天</p></blockquote><h2 id="2024-12-19-星期三"><a href="#2024-12-19-星期三" class="headerlink" title="2024.12.19 星期三"></a>2024.12.19 星期三</h2><blockquote><h3 id="考试！"><a href="#考试！" class="headerlink" title="考试！"></a>考试！</h3></blockquote><h2 id="2024-12-18-星期三"><a href="#2024-12-18-星期三" class="headerlink" title="2024.12.18 星期三"></a>2024.12.18 星期三</h2><p>好</p><p>1.明天模考<br>2.二班一名同学好心给我们班做值日（其实是被罚的）</p><p>不好</p><p>1.今日历史课两名男生一直说话，让历史老师发火🔥</p><h2 id="2024-12-16-星期一"><a href="#2024-12-16-星期一" class="headerlink" title="2024.12.16 星期一"></a>2024.12.16 星期一</h2><p>好</p><p>1.今日卫生表现不错，没让二班扣分</p><p>不好</p><p>1.今日有<strong>一些</strong>同学在道法课上<strong>大闹天宫</strong><br>2.今日多名同学给地理老<strong>师负荆请罪</strong></p><h2 id="2024-12-13-星期五"><a href="#2024-12-13-星期五" class="headerlink" title="2024.12.13 星期五"></a>2024.12.13 星期五</h2><p>好</p><p>1.英语听写六名同学100分<br>2.王昕妍，陆子俊，刘嘉乐被老师评为<strong>整理收纳小能手</strong></p><p>不好</p><p>1.今日午休一些男生在<strong>拆家</strong>被老师发现实施<strong>爱的教育</strong></p><h2 id="2024-12-12-星期四"><a href="#2024-12-12-星期四" class="headerlink" title="2024.12.12 星期四"></a>2024.12.12 星期四</h2><p>好</p><p>1.今日有同学默写pronous全对</p><p>不好</p><p>1.道法课上同学们开天辟地</p><h2 id="2024-12-11-星期三"><a href="#2024-12-11-星期三" class="headerlink" title="2024.12.11 星期三"></a>2024.12.11 星期三</h2><p>好</p><p>1.今日李承宣数学小测100分（进步很大）</p><p>不好</p><p>1.今日有很多男生的羽毛球丢了（看起来很伤心），建议下次别带了，<strong>好好学习</strong></p><h2 id="2024-12-10-星期二"><a href="#2024-12-10-星期二" class="headerlink" title="2024.12.10 星期二"></a>2024.12.10 星期二</h2><p>好</p><p>1.今日六名同学数学小测100分</p><p>不好</p><p>1。今日上课有同学太energetic了</p><h2 id="2024-12-9-星期一"><a href="#2024-12-9-星期一" class="headerlink" title="2024.12.9 星期一"></a>2024.12.9 星期一</h2><p>好</p><p>1.今日班级获得六星班级</p><p>不好</p><p>1.今日体活课三名同学玩羽毛球被点名<br>2.今日班级出现了新大遍超人（翻译：抄最多）</p><h2 id="2024-12-6-星期五"><a href="#2024-12-6-星期五" class="headerlink" title="2024.12.6 星期五"></a>2024.12.6 星期五</h2><p>好</p><p>1.今日多名同学英语听写全对</p><p>不好</p><p>1.今日地理课两名同学罚站</p><p>2.今日许多男生被罚跑400米</p><h2 id="2024-12-5-星期四"><a href="#2024-12-5-星期四" class="headerlink" title="2024.12.5 星期四"></a>2024.12.5 星期四</h2><p>无图片</p><h2 id="2024-12-4-星期三"><a href="#2024-12-4-星期三" class="headerlink" title="2024.12.4 星期三"></a>2024.12.4 星期三</h2><p>好</p><p>1.数学阶段测试张宇泽同学轻松拿下年纪和班级双第一👍</p><p>不好</p><p>1.今天又有一名男生弄坏了班级公共器材</p><p>2.今天音乐课四名男生被老师留下</p><h2 id="2024-12-3-星期二"><a href="#2024-12-3-星期二" class="headerlink" title="2024.12.3 星期二"></a>2024.12.3 星期二</h2><p>好</p><p>1.班级几名同学主动领取运动器材</p><p>不好</p><p>1.某位男生私自借高年级运动器材并损坏</p><h2 id="2024-12-2-星期一"><a href="#2024-12-2-星期一" class="headerlink" title="2024.12.2 星期一"></a>2024.12.2 星期一</h2><p>好</p><p>1.今日班级获得 <strong>三帆星旗</strong> 和 <strong>小熊</strong></p><p>2.今日地理课几位同学不用写作业</p><p>不好</p><p>今日有几位同学上课老说话</p><h2 id="2024-11-29-星期五"><a href="#2024-11-29-星期五" class="headerlink" title="2024.11.29 星期五"></a>2024.11.29 星期五</h2><p>好</p><p>1.数学考试同学们表现优异，值得表扬👍</p><p>2.索林熙数学课被表扬，继续努力</p><p>不好</p><p>1.某名同学被调到“金牌VIP”座位</p><p>2.音乐课某人“cossplay”蚂蚱</p><h2 id="2024-11-28-星期四"><a href="#2024-11-28-星期四" class="headerlink" title="2024.11.28 星期四"></a>2024.11.28 星期四</h2><p>无图片</p><p>数学老师信息：</p><p>课前小测共有39位同学获得满分💯</p><h2 id="2024-11-27-星期三"><a href="#2024-11-27-星期三" class="headerlink" title="2024.11.27 星期三"></a>2024.11.27 星期三</h2><p>好</p><p>1.今日数学小测多名同学100分</p><p>不好</p><p>1.英语课纪律不好</p><p>2.今日有一名同学再次没写完作业</p><h2 id="2024-11-26-星期二"><a href="#2024-11-26-星期二" class="headerlink" title="2024.11.26 星期二"></a>2024.11.26 星期二</h2><p>好</p><p>1.闫博凯同学数学公开课讲题思路清晰被表扬</p><p>2.部分同学在课间积极讨论数学问题</p><p>不好</p><p>1.三名同学在食堂“传达情报”被抓捕</p><h2 id="2024-11-25-星期一"><a href="#2024-11-25-星期一" class="headerlink" title="2024.11.25 星期一"></a>2024.11.25 星期一</h2><p>好</p><p>1.上周获得五星班级（继续加油）<br>2.雨给郑讲题<br>3.闫博凯给李子宇贴心披外套 wo！</p><p>不好</p><p>1.早读三名同学说话<br>2.地理课三名同学习题抄写<br>3.英语课三名同学总说话</p><h2 id="2024-11-22-星期五"><a href="#2024-11-22-星期五" class="headerlink" title="2024.11.22 星期五"></a>2024.11.22 星期五</h2><p>好</p><p>1.今天语文默写22名同学满分<br>2.经过全班共同努力，争取到了下周二的数学公开课</p><h2 id="2024-11-21-星期四"><a href="#2024-11-21-星期四" class="headerlink" title="2024.11.21 星期四"></a>2024.11.21 星期四</h2><p>好</p><p>1.今天数学小测32同学💯分</p><p>2.体育课老师表扬了三名女生</p><p>不好</p><p>无</p><h2 id="2024-11-20-星期三"><a href="#2024-11-20-星期三" class="headerlink" title="2024.11.20 星期三"></a>2024.11.20 星期三</h2><p>好</p><p>1.今天数学小测多名同学💯分</p><p>不好</p><p>1.自习课一名同学“创意DIY”</p><p>2.某名同学生物课“神游天外”</p><p>班主任信息</p><p>大课间，唐语彤，张耘卓奋笔疾书。刘溢昕张紫涵在背古诗。王思萌，张雨泽，马敏萱，郑旭晴，闫博凯，郭佳怡，孟诗颖在安静学习。王欣妍问完各科老师问题，还在背初中语文古诗词拓展。</p><h2 id="2024-11-19-星期二"><a href="#2024-11-19-星期二" class="headerlink" title="2024.11.19 星期二"></a>2024.11.19 星期二</h2><p>好</p><p>1.英语阅读单词梳理许多同学积极发言</p><p>2.同学们数学小条积极改错</p><p>不好</p><p>1.李同学喜提跑步大礼包</p><p>2。某位同学体育课玩闹被抓</p><h2 id="2024-11-18-星期一"><a href="#2024-11-18-星期一" class="headerlink" title="2024.11.18 星期一"></a>2024.11.18 星期一</h2><p>无图片</p><p>数学老师信息</p><p>今天早上进行了第1、2章的基础知识过关，共有20名同学一次性通关。恭喜以下同学<br>王思萌，侯芊黛，刘溢昕，刘佳懿，张耘卓，张雨泽，孟诗颖，王昕妍，李子宇，闫博凯，于浩楠，陈骏洁，姜子跃，王腾煊，唐语彤，郑旭晴，杜明露，李嘉晟，陆子俊，李泽辰。</p><h2 id="2024-11-15-星期五"><a href="#2024-11-15-星期五" class="headerlink" title="2024.11.15 星期五"></a>2024.11.15 星期五</h2><p>无图片</p><h2 id="2024-11-14-星期四"><a href="#2024-11-14-星期四" class="headerlink" title="2024.11.14 星期四"></a>2024.11.14 星期四</h2><p>无图片</p><h2 id="2024-11-13星期三"><a href="#2024-11-13星期三" class="headerlink" title="2024.11.13星期三"></a>2024.11.13星期三</h2><p>好</p><p>1、今日数学计算多人100分</p><p>2、今日课间多名同学认真学习</p><p>不好</p><p>1、有一位同学被地理老师罚写</p><p>2、有一位同学地理课上写作业</p><p>3、今日有一位同学午休搞破坏</p><p>4、有一位同学不做课前准备（多次）</p><h2 id="2024-11-12星期二"><a href="#2024-11-12星期二" class="headerlink" title="2024.11.12星期二"></a>2024.11.12星期二</h2><p>好</p><p>1、李承宣遵守班级规定，知错就改</p><p>2、数学课上小测27人全对</p><p>3、数学错题同学积极改错</p><p>不好</p><p>1、今日某位老师抓拍午休混乱瞬间</p><p>2、王腾煊午休奇怪睡姿（今日奇怪事件）</p><h2 id="2024-11-11星期一"><a href="#2024-11-11星期一" class="headerlink" title="2024.11.11星期一"></a>2024.11.11星期一</h2><p>好<br> 1、毛立珑数学课被老师表扬<br> 2、数学小测很多同学满分<br> 不好 <br>1、一名同学罚抄时写“天书”<br></p><h2 id="2024-11-8-星期五"><a href="#2024-11-8-星期五" class="headerlink" title="2024.11.8 星期五"></a>2024.11.8 星期五</h2><p>好<br> 1.今日英语听写很多人听写100分<br> 2.今日有一些同学学习态度十分不错<br> 不好<br> 1.今日有一位同学因为某些原因扣了文明一分<br> 2.今日英语课有很多人笑 <br>3.今日有多名同学没完成作业<br></p><h2 id="2024-11-7-星期四"><a href="#2024-11-7-星期四" class="headerlink" title="2024.11.7 星期四"></a>2024.11.7 星期四</h2><p>好<br> 1.索林熙今日上课被数学老师表扬<br> 2.今日毛立龙英语练习满分 不好<br> 1.今日有一位同学给书改名（语文改甲骨文，英语改鸟语，历史改拉史。。。）<br> 2.今日生物课纪律不好<br></p><h2 id="2024-11-6-星期三"><a href="#2024-11-6-星期三" class="headerlink" title="2024.11.6 星期三"></a>2024.11.6 星期三</h2><p>好<br> 1,.今天早读大多数同学按时背诵短文<br> 2.李承宣英语课被老师表扬<br> 3.李子宇同学引体向上做了三个<br> 不好<br> 1.一名同学音乐课活跃过度 <br>2.英语课有一部分人没有按时交英语作业，喜提罚抄一遍<br></p><h2 id="2024-11-5-星期二"><a href="#2024-11-5-星期二" class="headerlink" title="2024.11.5 星期二"></a>2024.11.5 星期二</h2><p>好 <br>1.今日有些人贡献口罩给同学 <br>2.数学课有些同学回答问题 不好<br> 1.今日好多同学午休写作业吵闹<br> 2.今日有三名同学在文明就餐区吃饭<br></p><h2 id="2024-11-4-星期一"><a href="#2024-11-4-星期一" class="headerlink" title="2024.11.4 星期一"></a>2024.11.4 星期一</h2><p>好<br> 1.今日唐雨彤在班级里修复地板<br> 不好 <br>1.今日有很多同学没有完成英语作业 <br>2.今日卫生扣了一分<br></p><h2 id="2024-11-1-星期五"><a href="#2024-11-1-星期五" class="headerlink" title="2024.11.1 星期五"></a>2024.11.1 星期五</h2><p>好<br> 1.今日英语听写20人满分<br> 2.在考试中有很多同学获得优秀奖进步奖 <br>3.今日李嘉晟多次主动回答问题 <br>4今日有很多同学在班级里学习 不好<br> 1.今日舞蹈有两人逃课<br> 2.今日上课有很多人没做课前准备<br> 3今日上操有同学乱动乱说话</p><h2 id="2024-10-31-星期四"><a href="#2024-10-31-星期四" class="headerlink" title="2024.10.31 星期四"></a>2024.10.31 星期四</h2><p>无，图片</p><h2 id="2024-10-30-星期三"><a href="#2024-10-30-星期三" class="headerlink" title="2024.10.30 星期三"></a>2024.10.30 星期三</h2><p>无，图片</p><h2 id="2024-10-29-星期二"><a href="#2024-10-29-星期二" class="headerlink" title="2024.10.29 星期二"></a>2024.10.29 星期二</h2><p>考试，无</p><h2 id="2024-10-28-星期一"><a href="#2024-10-28-星期一" class="headerlink" title="2024.10.28 星期一"></a>2024.10.28 星期一</h2><p>没有图片 今日有考试</p><h2 id="2024-10-25-星期五"><a href="#2024-10-25-星期五" class="headerlink" title="2024.10.25 星期五"></a>2024.10.25 星期五</h2><p>好<br> 1 今日默写有 11 名同学 100 分 <br>不好 <br>1 无，大家都很棒<br> 每日一笑<br> 1 今日班级进行了 2b 铅笔争夺战，伤亡人众多（伤是发出叫声，亡是没抢到）<br> 2 今日课间 有一位同学被老师罚叫了100“鹅” 3 今日生物课有一位同学PK输了，用抹布擦脸<br></p><p>最后祝大家，下周星期一、星期二都能取得理想成绩。 –fish 2024.10.25<br></p><h2 id="2024-10-24-星期四"><a href="#2024-10-24-星期四" class="headerlink" title="2024.10.24 星期四"></a>2024.10.24 星期四</h2><p>好<br> 1 有 22 名同学语文小测满分💯<br> 2 今日李嘉晟多次回答问题<br> 不好<br> 1 有一位同学上课迟到 5 分钟 <br>2 有几位同学没有做课前准备 <br></p><h2 id="2024-10-23-星期三"><a href="#2024-10-23-星期三" class="headerlink" title="2024.10.23 星期三"></a>2024.10.23 星期三</h2><p>好 <br>1 今日龚晟鑫第一个背完英语 <br>2 17 名同学语文听写全对 <br>3 李承宣上课认真<br> 不好 <br>1 今日有个别同学没写英语作业 <br>2 今日还有几位同学上体育课违反纪律 <br>每日一笑 <br>今日两位同学在课间写天书<br></p><h2 id="2024-10-22-星期二"><a href="#2024-10-22-星期二" class="headerlink" title="2024.10.22 星期二"></a>2024.10.22 星期二</h2><p>没有图片，无热榜 <br>年纪表扬👍 <br>优秀班干部：侯芊黛，唐语彤，刘佳懿 优秀课代表：刘溢昕，王思萌，张云卓 <br>学习标兵：于浩楠，张宇泽，李子宇<br> 主动帮忙打扫卫生：刘嘉乐，申嘉怡，李承轩，王沛禹，郑旭晴，张云卓<br> 班主任信息<br> 今日小测后八首古诗默写。以下同学全对：刘佳懿，杜明露，李泽辰，王思萌，于浩楠，王腾煊，陈骏洁。错一个的同学有闫博凯，白晰，张雨泽，侯芊黛，陆子俊，郑旭晴，辛栋，李子宇，姜子跃。其中白晰同学进步明显，态度积极，特此表扬。明天默写继续听写这八首古诗。期待同学们更好的巩固。</p><h2 id="2024-10-21-星期一"><a href="#2024-10-21-星期一" class="headerlink" title="2024.10.21 星期一"></a>2024.10.21 星期一</h2><p>好<br> 1 今天班级获得六星班级<br> 2龚晟鑫给马一然饭卡<br> 不好<br> 1 有几位同学没写作业 <br>班主任信息 <br>上一周表现优秀的班委（以下为班委年级组评选）<br> 学习标兵：于浩楠，张雨泽，李子宇 <br>优秀班干部：侯芊黛，唐语彤，刘佳懿 <br>优秀课代表：刘溢昕，王思萌，张耘卓 <br>运动会助人为乐，年级表彰卫生小组为张耘卓小组。组员刘嘉乐，申嘉怡，李承轩，王沛禹，郑旭晴。</p><h2 id="2024-10-18-星期五-运动会"><a href="#2024-10-18-星期五-运动会" class="headerlink" title="2024.10.18 星期五 运动会"></a>2024.10.18 星期五 运动会</h2><p>今日无热榜 <a href="/yi-ban-2024-di-jiu-jie-qiu-ji-tian-jing-yun-dong-hui-tu-ku">运动会图库 点这里</a></p><h2 id="2024-10-17-星期四-运动会"><a href="#2024-10-17-星期四-运动会" class="headerlink" title="2024.10.17 星期四 运动会"></a>2024.10.17 星期四 运动会</h2><p>好 1 龚晟鑫和张雨泽提供自助餐 2 班委们很负责 3 今日运动员们十分卖力 4 王昕妍和刘佳懿无私奉献 不好 1 有几位同学违反纪律 <a href="/yi-ban-2024-di-jiu-jie-qiu-ji-tian-jing-yun-dong-hui-tu-ku">运动会图库 点击这里</a></p><h2 id="2024-10-16-星期三"><a href="#2024-10-16-星期三" class="headerlink" title="2024.10.16 星期三"></a>2024.10.16 星期三</h2><p>好 1 李嘉晟上课十分认真 2 今日有十个人听写全对 💯 不好 1 无</p><h2 id="2024-10-15-星期二"><a href="#2024-10-15-星期二" class="headerlink" title="2024.10.15 星期二"></a>2024.10.15 星期二</h2><p>好 1 今日耿思凡主动借饭卡给索林熙 2 李承宣课上被老师表扬 👍 3 今日语文听写 15 个全对💯 不好 1 今日某人没写英语作业（小马哥）🐎 2 两位同学记律太差👎 班主任信息 今天继续听写论语十二章，以下同学全对。辛栋，孟诗颖，郭佳怡，李嘉晟，张紫涵，于浩楠，张耘卓，闫博凯，王思萌，陈骏洁，王腾煊，张紫萱，马一然，姜子跃。王昱涵，张雨泽。恭喜以上同学。今天班里小伙子表现很好。期待大家更好表现。</p><h2 id="2024-10-14-星期一"><a href="#2024-10-14-星期一" class="headerlink" title="2024.10.14 星期一"></a>2024.10.14 星期一</h2><p>好 1 姜子跃，王昱涵和侯睿祺上课认真听讲 2 今日论语默写有 20 人全对 3.1 张紫萱，侯芊黛和孟诗颖为优秀课代表 3.2 王昕妍，张紫萱和段茗涵为优秀班委 3.3 杜明露，汪洋和闫博凯为学习标兵 不好 1 今日有一名同学所有作业都没带 2 今日升旗时，两位同学乱动，享受了免费健身服务 3两位同学历史作业在讲台，被历史老师请到班级后面（已补完） 4 今日小干部扣了3分😭</p><h2 id="2024-10-12-星期六"><a href="#2024-10-12-星期六" class="headerlink" title="2024.10.12 星期六"></a>2024.10.12 星期六</h2><p>好 1 王昕妍，陈骏洁，段茗涵当选学生代表 2 毛立龙在班里认真学习 不好 1 两位同学在课上吵架 2 有一位同学逃值日 3 地理课上有几位同学没拿地球仪 4 四位同学课间跳舞</p><h2 id="2024-10-11-星期五"><a href="#2024-10-11-星期五" class="headerlink" title="2024.10.11 星期五"></a>2024.10.11 星期五</h2><p>好 1 今日王沛禹主动为班级喊口号 2 今日班委会正式成立 3 今日有 10 名同学默写全对，23 名同学优秀 4 索林熙分享自己珍藏的昆虫标本 不好 1 三名同学上课玩笔+罗阵 2 两名同学在图书馆说话 班主任信息 今天语文课默写全对的的同学有王思萌，辛栋，张耘卓，杜明露，张紫萱，刘溢昕，孟诗颖，陈骏洁，郭佳怡，段茗涵。错两个以内的同学有，李泽辰，郑旭晴，王昱涵，王腾煊，张紫涵，李子宇，李嘉晟，侯芊黛，闫博凯，王欣妍，陆子俊，马敏萱于浩楠，张雨泽。恭喜以上同学。期待看到更多孩子优秀的表现。</p><h2 id="2024-10-10-星期四"><a href="#2024-10-10-星期四" class="headerlink" title="2024.10.10 星期四"></a>2024.10.10 星期四</h2><p>好 1 今天有八个同学英语听写 100 分 2 张雨泽数学 100 分（周二热搜） 3 本周卫生角没有扣分，十分难得 4 刘佳懿，梦诗颖，刘溢昕，张耘卓，王思萌，于浩楠语文默写全对 不好 1 有两位男生在图书馆说小话 2 某位同学道法课带历史书，历史课带道法书 3 某人在历史课上写作业</p><h2 id="2024-10-9-星期三"><a href="#2024-10-9-星期三" class="headerlink" title="2024.10.9 星期三"></a>2024.10.9 星期三</h2><p>好 1 张雨泽数学 100 分（至今未超越） 2 刘佳懿，梦诗颖，刘溢昕，张耘卓，王思萌，于浩楠语文听写 100 分 不好 1 昨天有 4 个男生没找老师背论语 2 早读有位同学说话被罚站</p><h2 id="2024-10-8-星期二"><a href="#2024-10-8-星期二" class="headerlink" title="2024.10.8 星期二"></a>2024.10.8 星期二</h2><p>好 1 张雨泽数学 100 分 2 姜子跃和索林熙自觉在教室学习 3 马敏宣背完语文书 4 王腾煊回答了许多男生不会的问题 不好 1 数学课上 4 个男生回答不出问题 2 有两位男生在生物课上说话</p><h1 id="更早以前"><a href="#更早以前" class="headerlink" title="更早以前"></a>更早以前</h1><p>没有啦，那时一班热榜都还没有啊！</p><h1 id="维护名单"><a href="#维护名单" class="headerlink" title="维护名单"></a>维护名单</h1><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>名字</td><td>分组</td></tr><tr><td>孟**</td><td>班委</td></tr><tr><td>萌萌猫&#x2F;咬一口的鱼</td><td>班委</td></tr><tr><td>郭**</td><td>班委</td></tr><tr><td>陈**</td><td>班委</td></tr><tr><td>梁*</td><td>班主任</td></tr></tbody></table>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>完结</p></blockquote><h2 id="2024-12-27-星期五"><a href="#2024-12-27-星期五" class="headerlink" title="2024.12.27 星期五"></a>2024.12.27 星期五</h2><p>无图片</p><h2 id="2024-12-26-星期四"><a href="#2024-12-26-星期四" class="headerlink" title="2024.12.26 星期四"></a>2024.12.26 星期四</h2><p>好</p><p>1.唐语彤帮助老师发口罩<br>2.今天语文课老师听课，同学们表现优异</p><p>不好</p><p>1.体育课后，两名同学<strong>自由搏击</strong></p><h2 id="2024-12-25-星期三"><a href="#2024-12-25-星期三" class="headerlink" title="2024.12.25 星期三"></a>2024.12.25 星期三</h2><p>好</p><p>1.语文模拟考优秀平均分比年级优秀平均分高出一半（太棒了）<br>2.英语小测一名同学满分💯</p><p>不好</p><p>1.王yu好</p><p>1.语文模拟考优秀平均分比年级优秀平均分高出一半（太棒了）<br>2.英语小测一名同学满分💯</p><p>不好</p><p>1.王昱涵值日太不认真了跟没扫一样，批评他</p><h2 id="2024-12-24-星期二"><a href="#2024-12-24-星期二" class="headerlink" title="2024.12.24 星期二"></a>2024.12.24 星期二</h2><p>无图片</p><h2 id="2024-12-23-星期一"><a href="#2024-12-23-星期一" class="headerlink" title="2024.12.23 星期一"></a>2024.12.23 星期一</h2><p>无，图片</p><h2 id="2024-12-20-星期五"><a href="#2024-12-20-星期五" class="headerlink" title="2024.12.20 星期五"></a>2024.12.20 星期五</h2><p>好</p><p>1.今日数学小测多名同学100分 💯</p><p>不好</p><p>1.今日多名同学因上生物课时<strong>扰乱</strong>课堂纪律，导致生物老师直接火山爆发🔥<img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/20/676581ea4489c.png" width = "200" height = "200" align=center /></p><blockquote><p>温馨提示：距离期末考试还有18天</p></blockquote><h2 id="2024-12-19-星期四"><a href="#2024-12-19-星期四" class="headerlink" title="2024.12.19 星期四"></a>2024.12.19 星期四</h2><blockquote><h3 id="考试！"><a href="#考试！" class="headerlink" title="考试！"></a>考试！</h3></blockquote><h2 id="2024-12-18-星期三"><a href="#2024-12-18-星期三" class="headerlink" title="2024.12.18 星期三"></a>2024.12.18 星期三</h2><p>好</p><p>1.明天模考<br>2.二班一名同学好心给我们班做值日（其实是被罚的）</p><p>不好</p><p>1.今日历史课两名男生一直说话，让历史老师发火🔥</p><h2 id="2024-12-16-星期一"><a href="#2024-12-16-星期一" class="headerlink" title="2024.12.16 星期一"></a>2024.12.16 星期一</h2><p>好</p><p>1.今日卫生表现不错，没让二班扣分</p><p>不好</p><p>1.今日有<strong>一些</strong>同学在道法课上<strong>大闹天宫</strong><br>2.今日多名同学给地理老<strong>师负荆请罪</strong></p><h2 id="2024-12-13-星期五"><a href="#2024-12-13-星期五" class="headerlink" title="2024.12.13 星期五"></a>2024.12.13 星期五</h2><p>好</p><p>1.英语听写六名同学100分<br>2.王昕妍，陆子俊，刘嘉乐被老师评为<strong>整理收纳小能手</strong></p><p>不好</p><p>1.今日午休一些男生在<strong>拆家</strong>被老师发现实施<strong>爱的教育</strong></p><h2 id="2024-12-12-星期四"><a href="#2024-12-12-星期四" class="headerlink" title="2024.12.12 星期四"></a>2024.12.12 星期四</h2><p>好</p><p>1.今日有同学默写pronous全对</p><p>不好</p><p>1.道法课上同学们开天辟地</p><h2 id="2024-12-11-星期三"><a href="#2024-12-11-星期三" class="headerlink" title="2024.12.11 星期三"></a>2024.12.11 星期三</h2><p>好</p><p>1.今日李承宣数学小测100分（进步很大）</p><p>不好</p><p>1.今日有很多男生的羽毛球丢了（看起来很伤心），建议下次别带了，<strong>好好学习</strong></p><h2 id="2024-12-10-星期二"><a href="#2024-12-10-星期二" class="headerlink" title="2024.12.10 星期二"></a>2024.12.10 星期二</h2><p>好</p><p>1.今日六名同学数学小测100分</p><p>不好</p><p>1。今日上课有同学太energetic了</p><h2 id="2024-12-9-星期一"><a href="#2024-12-9-星期一" class="headerlink" title="2024.12.9 星期一"></a>2024.12.9 星期一</h2><p>好</p><p>1.今日班级获得六星班级</p><p>不好</p><p>1.今日体活课三名同学玩羽毛球被点名<br>2.今日班级出现了新大遍超人（翻译：抄最多）</p><h2 id="2024-12-6-星期五"><a href="#2024-12-6-星期五" class="headerlink" title="2024.12.6 星期五"></a>2024.12.6 星期五</h2><p>好</p><p>1.今日多名同学英语听写全对</p><p>不好</p><p>1.今日地理课两名同学罚站</p><p>2.今日许多男生被罚跑400米</p><h2 id="2024-12-5-星期四"><a href="#2024-12-5-星期四" class="headerlink" title="2024.12.5 星期四"></a>2024.12.5 星期四</h2><p>无图片</p><h2 id="2024-12-4-星期三"><a href="#2024-12-4-星期三" class="headerlink" title="2024.12.4 星期三"></a>2024.12.4 星期三</h2><p>好</p><p>1.数学阶段测试张宇泽同学轻松拿下年纪和班级双第一👍</p><p>不好</p><p>1.今天又有一名男生弄坏了班级公共器材</p><p>2.今天音乐课四名男生被老师留下</p><h2 id="2024-12-3-星期二"><a href="#2024-12-3-星期二" class="headerlink" title="2024.12.3 星期二"></a>2024.12.3 星期二</h2><p>好</p><p>1.班级几名同学主动领取运动器材</p><p>不好</p><p>1.某位男生私自借高年级运动器材并损坏</p><h2 id="2024-12-2-星期一"><a href="#2024-12-2-星期一" class="headerlink" title="2024.12.2 星期一"></a>2024.12.2 星期一</h2><p>好</p><p>1.今日班级获得 <strong>三帆星旗</strong> 和 <strong>小熊</strong></p><p>2.今日地理课几位同学不用写作业</p><p>不好</p><p>今日有几位同学上课老说话</p><h2 id="2024-11-29-星期五"><a href="#2024-11-29-星期五" class="headerlink" title="2024.11.29 星期五"></a>2024.11.29 星期五</h2><p>好</p><p>1.数学考试同学们表现优异，值得表扬👍</p><p>2.索林熙数学课被表扬，继续努力</p><p>不好</p><p>1.某名同学被调到“金牌VIP”座位</p><p>2.音乐课某人“cossplay”蚂蚱</p><h2 id="2024-11-28-星期四"><a href="#2024-11-28-星期四" class="headerlink" title="2024.11.28 星期四"></a>2024.11.28 星期四</h2><p>无图片</p><p>数学老师信息：</p><p>课前小测共有39位同学获得满分💯</p><h2 id="2024-11-27-星期三"><a href="#2024-11-27-星期三" class="headerlink" title="2024.11.27 星期三"></a>2024.11.27 星期三</h2><p>好</p><p>1.今日数学小测多名同学100分</p><p>不好</p><p>1.英语课纪律不好</p><p>2.今日有一名同学再次没写完作业</p><h2 id="2024-11-26-星期二"><a href="#2024-11-26-星期二" class="headerlink" title="2024.11.26 星期二"></a>2024.11.26 星期二</h2><p>好</p><p>1.闫博凯同学数学公开课讲题思路清晰被表扬</p><p>2.部分同学在课间积极讨论数学问题</p><p>不好</p><p>1.三名同学在食堂“传达情报”被抓捕</p><h2 id="2024-11-25-星期一"><a href="#2024-11-25-星期一" class="headerlink" title="2024.11.25 星期一"></a>2024.11.25 星期一</h2><p>好</p><p>1.上周获得五星班级（继续加油）<br>2.雨给郑讲题<br>3.闫博凯给李子宇贴心披外套 wo！</p><p>不好</p><p>1.早读三名同学说话<br>2.地理课三名同学习题抄写<br>3.英语课三名同学总说话</p><h2 id="2024-11-22-星期五"><a href="#2024-11-22-星期五" class="headerlink" title="2024.11.22 星期五"></a>2024.11.22 星期五</h2><p>好</p><p>1.今天语文默写22名同学满分<br>2.经过全班共同努力，争取到了下周二的数学公开课</p><h2 id="2024-11-21-星期四"><a href="#2024-11-21-星期四" class="headerlink" title="2024.11.21 星期四"></a>2024.11.21 星期四</h2><p>好</p><p>1.今天数学小测32同学💯分</p><p>2.体育课老师表扬了三名女生</p><p>不好</p><p>无</p><h2 id="2024-11-20-星期三"><a href="#2024-11-20-星期三" class="headerlink" title="2024.11.20 星期三"></a>2024.11.20 星期三</h2><p>好</p><p>1.今天数学小测多名同学💯分</p><p>不好</p><p>1.自习课一名同学“创意DIY”</p><p>2.某名同学生物课“神游天外”</p><p>班主任信息</p><p>大课间，唐语彤，张耘卓奋笔疾书。刘溢昕张紫涵在背古诗。王思萌，张雨泽，马敏萱，郑旭晴，闫博凯，郭佳怡，孟诗颖在安静学习。王欣妍问完各科老师问题，还在背初中语文古诗词拓展。</p><h2 id="2024-11-19-星期二"><a href="#2024-11-19-星期二" class="headerlink" title="2024.11.19 星期二"></a>2024.11.19 星期二</h2><p>好</p><p>1.英语阅读单词梳理许多同学积极发言</p><p>2.同学们数学小条积极改错</p><p>不好</p><p>1.李同学喜提跑步大礼包</p><p>2。某位同学体育课玩闹被抓</p><h2 id="2024-11-18-星期一"><a href="#2024-11-18-星期一" class="headerlink" title="2024.11.18 星期一"></a>2024.11.18 星期一</h2><p>无图片</p><p>数学老师信息</p><p>今天早上进行了第1、2章的基础知识过关，共有20名同学一次性通关。恭喜以下同学<br>王思萌，侯芊黛，刘溢昕，刘佳懿，张耘卓，张雨泽，孟诗颖，王昕妍，李子宇，闫博凯，于浩楠，陈骏洁，姜子跃，王腾煊，唐语彤，郑旭晴，杜明露，李嘉晟，陆子俊，李泽辰。</p><h2 id="2024-11-15-星期五"><a href="#2024-11-15-星期五" class="headerlink" title="2024.11.15 星期五"></a>2024.11.15 星期五</h2><p>无图片</p><h2 id="2024-11-14-星期四"><a href="#2024-11-14-星期四" class="headerlink" title="2024.11.14 星期四"></a>2024.11.14 星期四</h2><p>无图片</p><h2 id="2024-11-13星期三"><a href="#2024-11-13星期三" class="headerlink" title="2024.11.13星期三"></a>2024.11.13星期三</h2><p>好</p><p>1、今日数学计算多人100分</p><p>2、今日课间多名同学认真学习</p><p>不好</p><p>1、有一位同学被地理老师罚写</p><p>2、有一位同学地理课上写作业</p><p>3、今日有一位同学午休搞破坏</p><p>4、有一位同学不做课前准备（多次）</p><h2 id="2024-11-12星期二"><a href="#2024-11-12星期二" class="headerlink" title="2024.11.12星期二"></a>2024.11.12星期二</h2><p>好</p><p>1、李承宣遵守班级规定，知错就改</p><p>2、数学课上小测27人全对</p><p>3、数学错题同学积极改错</p><p>不好</p><p>1、今日某位老师抓拍午休混乱瞬间</p><p>2、王腾煊午休奇怪睡姿（今日奇怪事件）</p><h2 id="2024-11-11星期一"><a href="#2024-11-11星期一" class="headerlink" title="2024.11.11星期一"></a>2024.11.11星期一</h2><p>好<br> 1、毛立珑数学课被老师表扬<br> 2、数学小测很多同学满分<br> 不好 <br>1、一名同学罚抄时写“天书”<br></p><h2 id="2024-11-8-星期五"><a href="#2024-11-8-星期五" class="headerlink" title="2024.11.8 星期五"></a>2024.11.8 星期五</h2><p>好<br> 1.今日英语听写很多人听写100分<br> 2.今日有一些同学学习态度十分不错<br> 不好<br> 1.今日有一位同学因为某些原因扣了文明一分<br> 2.今日英语课有很多人笑 <br>3.今日有多名同学没完成作业<br></p><h2 id="2024-11-7-星期四"><a href="#2024-11-7-星期四" class="headerlink" title="2024.11.7 星期四"></a>2024.11.7 星期四</h2><p>好<br> 1.索林熙今日上课被数学老师表扬<br> 2.今日毛立龙英语练习满分 不好<br> 1.今日有一位同学给书改名（语文改甲骨文，英语改鸟语，历史改拉史。。。）<br> 2.今日生物课纪律不好<br></p><h2 id="2024-11-6-星期三"><a href="#2024-11-6-星期三" class="headerlink" title="2024.11.6 星期三"></a>2024.11.6 星期三</h2><p>好<br> 1,.今天早读大多数同学按时背诵短文<br> 2.李承宣英语课被老师表扬<br> 3.李子宇同学引体向上做了三个<br> 不好<br> 1.一名同学音乐课活跃过度 <br>2.英语课有一部分人没有按时交英语作业，喜提罚抄一遍<br></p><h2 id="2024-11-5-星期二"><a href="#2024-11-5-星期二" class="headerlink" title="2024.11.5 星期二"></a>2024.11.5 星期二</h2><p>好 <br>1.今日有些人贡献口罩给同学 <br>2.数学课有些同学回答问题 不好<br> 1.今日好多同学午休写作业吵闹<br> 2.今日有三名同学在文明就餐区吃饭<br></p><h2 id="2024-11-4-星期一"><a href="#2024-11-4-星期一" class="headerlink" title="2024.11.4 星期一"></a>2024.11.4 星期一</h2><p>好<br> 1.今日唐雨彤在班级里修复地板<br> 不好 <br>1.今日有很多同学没有完成英语作业 <br>2.今日卫生扣了一分<br></p><h2 id="2024-11-1-星期五"><a href="#2024-11-1-星期五" class="headerlink" title="2024.11.1 星期五"></a>2024.11.1 星期五</h2><p>好<br> 1.今日英语听写20人满分<br> 2.在考试中有很多同学获得优秀奖进步奖 <br>3.今日李嘉晟多次主动回答问题 <br>4今日有很多同学在班级里学习 不好<br> 1.今日舞蹈有两人逃课<br> 2.今日上课有很多人没做课前准备<br> 3今日上操有同学乱动乱说话</p><h2 id="2024-10-31-星期四"><a href="#2024-10-31-星期四" class="headerlink" title="2024.10.31 星期四"></a>2024.10.31 星期四</h2><p>无，图片</p><h2 id="2024-10-30-星期三"><a href="#2024-10-30-星期三" class="headerlink" title="2024.10.30 星期三"></a>2024.10.30 星期三</h2><p>无，图片</p><h2 id="2024-10-29-星期二"><a href="#2024-10-29-星期二" class="headerlink" title="2024.10.29 星期二"></a>2024.10.29 星期二</h2><p>考试，无</p><h2 id="2024-10-28-星期一"><a href="#2024-10-28-星期一" class="headerlink" title="2024.10.28 星期一"></a>2024.10.28 星期一</h2><p>没有图片 今日有考试</p><h2 id="2024-10-25-星期五"><a href="#2024-10-25-星期五" class="headerlink" title="2024.10.25 星期五"></a>2024.10.25 星期五</h2><p>好<br> 1 今日默写有 11 名同学 100 分 <br>不好 <br>1 无，大家都很棒<br> 每日一笑<br> 1 今日班级进行了 2b 铅笔争夺战，伤亡人众多（伤是发出叫声，亡是没抢到）<br> 2 今日课间 有一位同学被老师罚叫了100“鹅” 3 今日生物课有一位同学PK输了，用抹布擦脸<br></p><p>最后祝大家，下周星期一、星期二都能取得理想成绩。 –fish 2024.10.25<br></p><h2 id="2024-10-24-星期四"><a href="#2024-10-24-星期四" class="headerlink" title="2024.10.24 星期四"></a>2024.10.24 星期四</h2><p>好<br> 1 有 22 名同学语文小测满分💯<br> 2 今日李嘉晟多次回答问题<br> 不好<br> 1 有一位同学上课迟到 5 分钟 <br>2 有几位同学没有做课前准备 <br></p><h2 id="2024-10-23-星期三"><a href="#2024-10-23-星期三" class="headerlink" title="2024.10.23 星期三"></a>2024.10.23 星期三</h2><p>好 <br>1 今日龚晟鑫第一个背完英语 <br>2 17 名同学语文听写全对 <br>3 李承宣上课认真<br> 不好 <br>1 今日有个别同学没写英语作业 <br>2 今日还有几位同学上体育课违反纪律 <br>每日一笑 <br>今日两位同学在课间写天书<br></p><h2 id="2024-10-22-星期二"><a href="#2024-10-22-星期二" class="headerlink" title="2024.10.22 星期二"></a>2024.10.22 星期二</h2><p>没有图片，无热榜 <br>年纪表扬👍 <br>优秀班干部：侯芊黛，唐语彤，刘佳懿 优秀课代表：刘溢昕，王思萌，张云卓 <br>学习标兵：于浩楠，张宇泽，李子宇<br> 主动帮忙打扫卫生：刘嘉乐，申嘉怡，李承轩，王沛禹，郑旭晴，张云卓<br> 班主任信息<br> 今日小测后八首古诗默写。以下同学全对：刘佳懿，杜明露，李泽辰，王思萌，于浩楠，王腾煊，陈骏洁。错一个的同学有闫博凯，白晰，张雨泽，侯芊黛，陆子俊，郑旭晴，辛栋，李子宇，姜子跃。其中白晰同学进步明显，态度积极，特此表扬。明天默写继续听写这八首古诗。期待同学们更好的巩固。</p><h2 id="2024-10-21-星期一"><a href="#2024-10-21-星期一" class="headerlink" title="2024.10.21 星期一"></a>2024.10.21 星期一</h2><p>好<br> 1 今天班级获得六星班级<br> 2龚晟鑫给马一然饭卡<br> 不好<br> 1 有几位同学没写作业 <br>班主任信息 <br>上一周表现优秀的班委（以下为班委年级组评选）<br> 学习标兵：于浩楠，张雨泽，李子宇 <br>优秀班干部：侯芊黛，唐语彤，刘佳懿 <br>优秀课代表：刘溢昕，王思萌，张耘卓 <br>运动会助人为乐，年级表彰卫生小组为张耘卓小组。组员刘嘉乐，申嘉怡，李承轩，王沛禹，郑旭晴。</p><h2 id="2024-10-18-星期五-运动会"><a href="#2024-10-18-星期五-运动会" class="headerlink" title="2024.10.18 星期五 运动会"></a>2024.10.18 星期五 运动会</h2><p>今日无热榜 <a href="/yi-ban-2024-di-jiu-jie-qiu-ji-tian-jing-yun-dong-hui-tu-ku">运动会图库 点这里</a></p><h2 id="2024-10-17-星期四-运动会"><a href="#2024-10-17-星期四-运动会" class="headerlink" title="2024.10.17 星期四 运动会"></a>2024.10.17 星期四 运动会</h2><p>好 1 龚晟鑫和张雨泽提供自助餐 2 班委们很负责 3 今日运动员们十分卖力 4 王昕妍和刘佳懿无私奉献 不好 1 有几位同学违反纪律 <a href="/yi-ban-2024-di-jiu-jie-qiu-ji-tian-jing-yun-dong-hui-tu-ku">运动会图库 点击这里</a></p><h2 id="2024-10-16-星期三"><a href="#2024-10-16-星期三" class="headerlink" title="2024.10.16 星期三"></a>2024.10.16 星期三</h2><p>好 1 李嘉晟上课十分认真 2 今日有十个人听写全对 💯 不好 1 无</p><h2 id="2024-10-15-星期二"><a href="#2024-10-15-星期二" class="headerlink" title="2024.10.15 星期二"></a>2024.10.15 星期二</h2><p>好 1 今日耿思凡主动借饭卡给索林熙 2 李承宣课上被老师表扬 👍 3 今日语文听写 15 个全对💯 不好 1 今日某人没写英语作业（小马哥）🐎 2 两位同学记律太差👎 班主任信息 今天继续听写论语十二章，以下同学全对。辛栋，孟诗颖，郭佳怡，李嘉晟，张紫涵，于浩楠，张耘卓，闫博凯，王思萌，陈骏洁，王腾煊，张紫萱，马一然，姜子跃。王昱涵，张雨泽。恭喜以上同学。今天班里小伙子表现很好。期待大家更好表现。</p><h2 id="2024-10-14-星期一"><a href="#2024-10-14-星期一" class="headerlink" title="2024.10.14 星期一"></a>2024.10.14 星期一</h2><p>好 1 姜子跃，王昱涵和侯睿祺上课认真听讲 2 今日论语默写有 20 人全对 3.1 张紫萱，侯芊黛和孟诗颖为优秀课代表 3.2 王昕妍，张紫萱和段茗涵为优秀班委 3.3 杜明露，汪洋和闫博凯为学习标兵 不好 1 今日有一名同学所有作业都没带 2 今日升旗时，两位同学乱动，享受了免费健身服务 3两位同学历史作业在讲台，被历史老师请到班级后面（已补完） 4 今日小干部扣了3分😭</p><h2 id="2024-10-12-星期六"><a href="#2024-10-12-星期六" class="headerlink" title="2024.10.12 星期六"></a>2024.10.12 星期六</h2><p>好 1 王昕妍，陈骏洁，段茗涵当选学生代表 2 毛立龙在班里认真学习 不好 1 两位同学在课上吵架 2 有一位同学逃值日 3 地理课上有几位同学没拿地球仪 4 四位同学课间跳舞</p><h2 id="2024-10-11-星期五"><a href="#2024-10-11-星期五" class="headerlink" title="2024.10.11 星期五"></a>2024.10.11 星期五</h2><p>好 1 今日王沛禹主动为班级喊口号 2 今日班委会正式成立 3 今日有 10 名同学默写全对，23 名同学优秀 4 索林熙分享自己珍藏的昆虫标本 不好 1 三名同学上课玩笔+罗阵 2 两名同学在图书馆说话 班主任信息 今天语文课默写全对的的同学有王思萌，辛栋，张耘卓，杜明露，张紫萱，刘溢昕，孟诗颖，陈骏洁，郭佳怡，段茗涵。错两个以内的同学有，李泽辰，郑旭晴，王昱涵，王腾煊，张紫涵，李子宇，李嘉晟，侯芊黛，闫博凯，王欣妍，陆子俊，马敏萱于浩楠，张雨泽。恭喜以上同学。期待看到更多孩子优秀的表现。</p><h2 id="2024-10-10-星期四"><a href="#2024-10-10-星期四" class="headerlink" title="2024.10.10 星期四"></a>2024.10.10 星期四</h2><p>好 1 今天有八个同学英语听写 100 分 2 张雨泽数学 100 分（周二热搜） 3 本周卫生角没有扣分，十分难得 4 刘佳懿，梦诗颖，刘溢昕，张耘卓，王思萌，于浩楠语文默写全对 不好 1 有两位男生在图书馆说小话 2 某位同学道法课带历史书，历史课带道法书 3 某人在历史课上写作业</p><h2 id="2024-10-9-星期三"><a href="#2024-10-9-星期三" class="headerlink" title="2024.10.9 星期三"></a>2024.10.9 星期三</h2><p>好 1 张雨泽数学 100 分（至今未超越） 2 刘佳懿，梦诗颖，刘溢昕，张耘卓，王思萌，于浩楠语文听写 100 分 不好 1 昨天有 4 个男生没找老师背论语 2 早读有位同学说话被罚站</p><h2 id="2024-10-8-星期二"><a href="#2024-10-8-星期二" class="headerlink" title="2024.10.8 星期二"></a>2024.10.8 星期二</h2><p>好 1 张雨泽数学 100 分 2 姜子跃和索林熙自觉在教室学习 3 马敏宣背完语文书 4 王腾煊回答了许多男生不会的问题 不好 1 数学课上 4 个男生回答不出问题 2 有两位男生在生物课上说话</p><h1 id="更早以前"><a href="#更早以前" class="headerlink" title="更早以前"></a>更早以前</h1><p>没有啦，那时一班热榜都还没有啊！</p><h1 id="维护名单"><a href="#维护名单" class="headerlink" title="维护名单"></a>维护名单</h1><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>名字</td><td>分组</td></tr><tr><td>孟**</td><td>班委</td></tr><tr><td>fishcpy</td><td>班委</td></tr><tr><td>郭**</td><td>班委</td></tr><tr><td>陈**</td><td>班委</td></tr><tr><td>梁*</td><td>班主任</td></tr></tbody></table>]]></content:encoded>
       
       
       <category domain="https://blog.mengmengmao.cn/categories/%E5%AE%B6%E6%A0%A1/">家校</category>
@@ -296,14 +333,14 @@
       <category domain="https://blog.mengmengmao.cn/tags/%E5%AE%B6%E6%A0%A1/">家校</category>
       
       
-      <comments>https://blog.mengmengmao.cn/000001/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/000001/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>我的ai网站发布啦</title>
-      <link>https://blog.mengmengmao.cn/1/</link>
-      <guid>https://blog.mengmengmao.cn/1/</guid>
+      <link>https://blog.mengmengmao.cn/posts/1/</link>
+      <guid>https://blog.mengmengmao.cn/posts/1/</guid>
       <pubDate>Mon, 09 Sep 2024 05:10:17 GMT</pubDate>
       
         
@@ -325,14 +362,14 @@
       <category domain="https://blog.mengmengmao.cn/tags/AI/">AI</category>
       
       
-      <comments>https://blog.mengmengmao.cn/1/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/1/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>关于casaos国内无法拉取镜像解决方法</title>
-      <link>https://blog.mengmengmao.cn/4/</link>
-      <guid>https://blog.mengmengmao.cn/4/</guid>
+      <link>https://blog.mengmengmao.cn/posts/4/</link>
+      <guid>https://blog.mengmengmao.cn/posts/4/</guid>
       <pubDate>Thu, 05 Sep 2024 23:10:17 GMT</pubDate>
       
         
@@ -358,14 +395,14 @@
       <category domain="https://blog.mengmengmao.cn/tags/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/">解决问题</category>
       
       
-      <comments>https://blog.mengmengmao.cn/4/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/4/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>https://blog.mengmengmao.cn/1243066710/</link>
-      <guid>https://blog.mengmengmao.cn/1243066710/</guid>
+      <link>https://blog.mengmengmao.cn/posts/1243066710/</link>
+      <guid>https://blog.mengmengmao.cn/posts/1243066710/</guid>
       <pubDate>Thu, 05 Sep 2024 02:10:17 GMT</pubDate>
       
         
@@ -391,7 +428,7 @@
       <category domain="https://blog.mengmengmao.cn/tags/hexo/">hexo</category>
       
       
-      <comments>https://blog.mengmengmao.cn/1243066710/#disqus_thread</comments>
+      <comments>https://blog.mengmengmao.cn/posts/1243066710/#disqus_thread</comments>
       
     </item>
     

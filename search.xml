@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>12月到了</title>
-    <url>/33755/</url>
+    <url>/posts/33755/</url>
     <content><![CDATA[# 12月到了，我要更加努力💪
 ]]></content>
       <categories>
@@ -14,7 +14,7 @@
   </entry>
   <entry>
     <title>butterfly导航栏图标修改</title>
-    <url>/42497/</url>
+    <url>/posts/42497/</url>
     <content><![CDATA[# 导航栏图标
 
 我看了官方配置文件，里面好像没有关于导航栏图标的描述，修改完效果如下
@@ -67,7 +67,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/1243066710/</url>
+    <url>/posts/1243066710/</url>
     <content><![CDATA[Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
 ## Quick Start
@@ -115,8 +115,48 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
   </entry>
   <entry>
     <title>一班热榜历史记录2024-2025（上半学期）</title>
-    <url>/000001/</url>
-    <content><![CDATA[## 2024.12.20 星期四
+    <url>/posts/000001/</url>
+    <content><![CDATA[> 完结
+## 2024.12.27 星期五
+
+无图片
+
+## 2024.12.26 星期四
+
+好
+
+1.唐语彤帮助老师发口罩
+2.今天语文课老师听课，同学们表现优异
+
+不好
+
+1.体育课后，两名同学**自由搏击**
+## 2024.12.25 星期三
+
+好
+
+1.语文模拟考优秀平均分比年级优秀平均分高出一半（太棒了）
+2.英语小测一名同学满分💯
+
+不好
+
+1.王yu好
+
+1.语文模拟考优秀平均分比年级优秀平均分高出一半（太棒了）
+2.英语小测一名同学满分💯
+
+不好
+
+1.王昱涵值日太不认真了跟没扫一样，批评他
+## 2024.12.24 星期二
+
+无图片
+
+## 2024.12.23 星期一
+
+无，图片
+
+## 2024.12.20 星期五
 
 好
 
@@ -127,7 +167,7 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 1.今日多名同学因上生物课时**扰乱**课堂纪律，导致生物老师直接火山爆发🔥<img src="https://blogpng.mengmengmao.cn/mengmengmao/2024/12/20/676581ea4489c.png" width = "200" height = "200" align=center />
 
 > 温馨提示：距离期末考试还有18天
-## 2024.12.19 星期三
+## 2024.12.19 星期四
 
 > ### 考试！
 
@@ -541,7 +581,7 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 | ----------------- | ------ |
 | 名字              | 分组   |
 | 孟\*\*            | 班委   |
-| 萌萌猫/咬一口的鱼 | 班委   |
+| fishcpy | 班委   |
 | 郭\*\*            | 班委   |
 | 陈\*\*            | 班委   |
 | 梁\*              | 班主任 |
@@ -555,7 +595,7 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
   </entry>
   <entry>
     <title>关于casaos国内无法拉取镜像解决方法</title>
-    <url>/4/</url>
+    <url>/posts/4/</url>
     <content><![CDATA[1 进入casaos
 
 2 打开files
@@ -597,7 +637,7 @@ sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot
   </entry>
   <entry>
     <title>在byrutgame上下载免费游戏</title>
-    <url>/9688/</url>
+    <url>/posts/9688/</url>
     <content><![CDATA[# 找到游戏英文名
 在百度或必应等搜索引擎上搜索游戏英文名
 例如我搜索**地平线5英文名**
@@ -661,7 +701,7 @@ sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot
   </entry>
   <entry>
     <title>安知鱼主题音乐馆默认歌单修改</title>
-    <url>/23139/</url>
+    <url>/posts/23139/</url>
     <content><![CDATA[> 仅适用于[hexo-theme-anzhiyu](https://github.com/anzhiyu-c/hexo-theme-anzhiyu)，其他请自行测试
 
 
@@ -701,7 +741,7 @@ sudo systemctl daemon-reloadnnsudo systemctl restart dockernnsudo reboot
   </entry>
   <entry>
     <title>引入Aplayer播放音乐-自定义api地址</title>
-    <url>/10813/</url>
+    <url>/posts/10813/</url>
     <content><![CDATA[> ## 此文章仅适用于akilar糖果屋中的  **引入Aplayer播放音乐** 文章 https://akilar.top/posts/3afa069a/ ，其他请自行测试]
 
 # 1.为什么要自定义api地址
@@ -748,7 +788,7 @@ inject:
   </entry>
   <entry>
     <title>我的ai网站发布啦</title>
-    <url>/1/</url>
+    <url>/posts/1/</url>
     <content><![CDATA[<https://ai.fishcpy.us.kg/>]]></content>
       <categories>
         <category>AI</category>
@@ -759,7 +799,7 @@ inject:
   </entry>
   <entry>
     <title>本站历程</title>
-    <url>/56827/</url>
+    <url>/posts/56827/</url>
     <content><![CDATA[# 本站历程
 
 - 2024.9 宝塔面板无法安装，找到了1panel面板
@@ -791,7 +831,7 @@ inject:
   </entry>
   <entry>
     <title>水-1</title>
-    <url>/2/</url>
+    <url>/posts/2/</url>
     <content><![CDATA[提示词：写一篇400字的描述中国的作文
 
 # 中国的文化传统
@@ -807,8 +847,83 @@ inject:
 > AI 也可能犯错，请仔细辨别]]></content>
   </entry>
   <entry>
+    <title>给你的博客加上一个十年倒计时吧</title>
+    <url>/posts/39860/</url>
+    <content><![CDATA[
+> ## 效果预览 [关于 fishcpy的小破站](https://mengmengmao.cn/about/)
+# 打开： 你博客目录/themes/anzhiyu/source/js
+在里面新建一个.js文件，例如我新建了一个clock.js文件
+编辑文件，加入下面代码
+```
+        // 设置倒计时的目标日期
+        var countDownDate = new Date("September 6, 2034 00:00:00").getTime();
+
+        // 更新倒计时每秒
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            // 计算天、小时、分钟和秒
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // 显示结果
+            document.getElementById("countdown").innerHTML = days + "天 " + hours + "小时 "
+            + minutes + "分钟 " + seconds + "秒 ";
+
+            // 如果倒计时结束，显示消息
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "你发现了彩蛋";
+            }
+        }, 1000);
+```
+
+| 参数 | 注释 | 可改值 |
+| ----------- | ----------- | ----------- |
+| 你发现了彩蛋 | 倒计时结束的文字 | 随意 |
+| September 6 | 日期 | 英文月份+日期 |
+| 2034 00:00:00 | 日期 | 年份+具体时间 |
+
+# 在你要的文件里(本人仅测试了md文件)加入下面代码即可实现
+```
+<style>
+.big-font {
+  font-size: 50px; /* 你可以根据需要调整这个大小 */
+  font-weight: bold;
+}
+
+</style>
+
+<body>
+
+<div id="countdown" class="big-font"></div> <!-- 应用大字体样式 -->
+
+<script data-pjax defer src='/js/clock.js'></script>
+<div class=".pjax-reload">
+</body>
+```
+
+| 参数 | 注释 | 可改值 |
+| ----------- | ----------- | ----------- |
+| 50px | 大小 | [可以看一下这个](https://geek-docs.com/html/html-ask-answer/824_html_how_to_change_font_size_in_html.html) |
+| /js/clock.js | 文件位置 | /js/文件名.js， 文件名为你刚创建的文件名|]]></content>
+      <categories>
+        <category>html</category>
+        <category>css</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>css</tag>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>购买雨云服务器并部署hexo博客-购买云服务器</title>
-    <url>/42850/</url>
+    <url>/posts/42850/</url>
     <content><![CDATA[
 # 为什么要用云服务器部署静态博客
 
@@ -857,7 +972,7 @@ hexo为静态博客，可以直接在github部署。
   </entry>
   <entry>
     <title>跨学科主题学习作业</title>
-    <url>/3/</url>
+    <url>/posts/3/</url>
     <content><![CDATA[语文
 
 ![](https://blogpng.mengmengmao.cn/mengmengmao/2024/12/15/675ecb374c4fc.png)
